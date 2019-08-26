@@ -10,10 +10,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_26_093930) do
+ActiveRecord::Schema.define(version: 2019_08_26_160711) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "appartements", force: :cascade do |t|
+    t.string "livraison"
+    t.boolean "actabilite"
+    t.string "localisation"
+    t.integer "prix"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "clients", force: :cascade do |t|
+    t.string "prenom"
+    t.string "nom"
+    t.string "civilite"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_clients_on_user_id"
+  end
+
+  create_table "simulations", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "client_id"
+    t.bigint "appartement_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["appartement_id"], name: "index_simulations_on_appartement_id"
+    t.index ["client_id"], name: "index_simulations_on_client_id"
+    t.index ["user_id"], name: "index_simulations_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -23,8 +53,16 @@ ActiveRecord::Schema.define(version: 2019_08_26_093930) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "prenom"
+    t.string "nom"
+    t.string "carte_t"
+    t.string "raison_sociale"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "clients", "users"
+  add_foreign_key "simulations", "appartements"
+  add_foreign_key "simulations", "clients"
+  add_foreign_key "simulations", "users"
 end
