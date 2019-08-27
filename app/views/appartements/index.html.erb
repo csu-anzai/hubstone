@@ -1,12 +1,53 @@
-<div class="container-card">
-	
-	<div class="card-product">
-  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-  <div class="card-product-infos">
-    <h2>Product name</h2>
-    <p>Product description with <strong>relevant info</strong> only.</p>
-  </div>
-</div>
+
+<div class="container-index">
+    <div class="d-flex">
+      <div class="left-side">
+        <div class="container-card">
+
+        	<div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
+            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+          <div class="card-product-infos">
+            <h2>Product name</h2>
+            <p>Product description with <strong>relevant info</strong> only.</p>
+          </div>
+          </div>
+
+          <div class="container-appartement-show collapse" id="card-details">
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#synthese" class="nav-link active" data-toggle="tab">Synthèse</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#scoring" class="nav-link" data-toggle="tab">Scoring</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#documents" class="nav-link" data-toggle="tab">Documents</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="synthese">
+                    <p>Synthese tab content ...</p>
+                </div>
+                <div class="tab-pane fade" id="scoring">
+                    <p>Scoring tab content ...</p>
+                </div>
+                <div class="tab-pane fade" id="documents">
+                    <p>Documents tab content ...</p>
+                </div>
+            </div>
+
+      </div>
+    </div>
 
 
+      </div>
+
+
+
+    <div class="right-side">
+      <p> insert map</p>
+    </div>
+   </div>
 </div>
