@@ -26,59 +26,59 @@ puts 'Creating appartements...'
 Appartement.create!(
     livraison: 'T4 2019',
     actabilite: 'Actable',
-    disponibilité: 'Disponible',
+    disponibilite: 'Disponible',
     prix: '350 000',
     lot: 'N°209',
-    étage: 'R+3',
+    etage: 'R+3',
     typologie: '4P',
     nom_programme: 'Le Clos Saint-Germain',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    département: '75'
+    departement: '75'
     )
 
 Appartement.create!(
     livraison: 'T1 2020',
     actabilite: 'Actable',
-    disponibilité: 'Indisponible',
+    disponibilite: 'Indisponible',
     prix: '230 000',
     lot: 'N°62',
-    étage: 'R+5',
+    etage: 'R+5',
     typologie: '3P',
     nom_programme: 'Les ilots de Chaumont',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    département: '75'
+    departement: '75'
     )
 
 Appartement.create!(
     livraison: 'T2 2020',
     actabilite: 'Non-actable',
-    disponibilité: 'disponible',
+    disponibilite: 'disponible',
     prix: '150 000',
     lot: 'N°12',
-    étage: 'R+2',
+    etage: 'R+2',
     typologie: '1P',
     nom_programme: "Fontaine d'Auteuil",
     promoteur: 'Kaufman & Broad',
     logo_promoteur: 'http:',
     image: 'http:',
-    département: '75'
+    departement: '75'
     )
 
 Appartement.create!(
     livraison: 'T4 2019',
     actabilite: 'actable',
-    disponibilité: 'Non-disponible',
+    disponibilite: 'Non-disponible',
     prix: '270 000',
     lot: 'N°27',
-    étage: 'R+2',
+    etage: 'R+2',
     typologie: '2P',
     nom_programme: 'Carre Seine',
     promoteur: 'Bouygues Immmobilier',
     logo_promoteur: 'http:',
     image: 'http:',
-    département: '75'
+    departement: '75'
     )
