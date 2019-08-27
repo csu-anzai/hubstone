@@ -7,6 +7,30 @@
   flex-grow: 0;
 }
 
+// .navbar-hubstone .nav-item {
+//   padding-right: 10px;
+// }
+
 .navbar-hubstone .navbar-brand img {
   height: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: $jungle;
+}
+
+.navbar-nav .nav-item .btn-flat {
+  margin-right: 30px;
+  margin-top: 8px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 16px;
+  font-weight: normal;
 }
