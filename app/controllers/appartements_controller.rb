@@ -1,5 +1,4 @@
 class AppartementsController < ApplicationController
-
   def index
     @appartements = Appartement.all
     # @appartements = policy_scope(Appartement).order(created_at: :desc)
@@ -11,7 +10,8 @@ class AppartementsController < ApplicationController
       {
         lat: appartement.latitude,
         lng: appartement.longitude,
-        infoWindow: render_to_string(partial: "info_window", locals: { appartement: appartement })
+        infoWindow: render_to_string(partial: "info_window", locals: { appartement: appartement }),
+        id: appartement.id
       }
     end
   end

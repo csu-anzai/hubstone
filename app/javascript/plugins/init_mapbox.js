@@ -26,23 +26,52 @@ const addMarkersToMap = (map, markers) => {
   });
 };
 
+const openInfoWindow = (markers) => {
+  const cards = document.querySelectorAll('.card-product');
+  cards.forEach((card, index) => {
+    card.addEventListener('mouseenter', () => {
+      markers[index].togglePopup();
+    });
+    card.addEventListener('mouseleave', () => {
+      markers[index].togglePopup();
+    });
+  });
+}
+
+const toggleCardHighLighting = (event) => {
+  const card = document.querySelector(`[data-appartement-id="${event.currentTarget.dataset.markerId}"]`);
+  card.classList.toggle('highlight');
+}
+
 const initMapbox = () => {
   const mapElement = document.getElementById('map');
 
   if (mapElement) { // only build a map if there's a div#map to inject into
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
+
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v10'
     });
+
     const markers = JSON.parse(mapElement.dataset.markers);
-  markers.forEach((marker) => {
-    new mapboxgl.Marker()
+    const mapMarkers = []
+    markers.forEach((marker) => {
+      const popup = new mabboxgl.Popup().setHTML(marker.infoWindow);
+
+    const newMarker = new mapboxgl.Marker()
       .setLngLat([ marker.lng, marker.lat ])
+      .setPopup(popup)
       .addTo(map);
+    mapMarkers.push(newMarker)
+    newMarker.getElement().dataset.markerId = marker.id;
+    newMarker.getElement().addEventListener('mouseenter', (e) => toggleCardHighlighting(e) );
+    newMarker.getElement().addEventListener('mouseleave', (e) => toggleCardHighlighting(e) );
   });
+
   addMarkersToMap(map, markers);
   fitMapToMarkers(map, markers);
+  openInfoWindow(mapMarkers);
   map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken }));
   }
 };
