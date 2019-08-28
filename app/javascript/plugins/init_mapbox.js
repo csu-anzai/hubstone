@@ -60,6 +60,7 @@ const fitMapToMarkers = (map, markers) => {
   map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 0 });
 };
 
+
 const openInfoWindow = (markers) => {
   const cards = document.querySelectorAll('.card-product');
   cards.forEach((card, index) => {
