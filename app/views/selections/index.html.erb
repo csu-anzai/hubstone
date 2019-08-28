@@ -1,0 +1,12 @@
+<div class="container-basket">
+  <%= render 'shared/banner' %>
+  <div>
+    <ul>
+      <% @selections.each do |selection| %>
+      <% appartement = selection.appartement %>
+      <%#= render 'shared/card_content', appartement %>
+
+      <% end %>
+    </ul>
+  </div>
+</div>
