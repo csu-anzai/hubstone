@@ -1,99 +1,5 @@
 <div class="container-index">
   <div class="d-flex">
-<<<<<<< HEAD
-
-    <div class="left-side">
-      <div class="container-card">
-        <div class="container-card-mamad">
-
-          <div class="card-product1">
-          <div class="img-flex"><img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-          </div>
-
-          <div class="no-flex">
-            <div class="card-product-infos row" style="margin: 0;">
-              <div class="col-3 d-flex align-items-center">
-                <h2 style="margin-left: 15px;">Le clos Saint Germain</h2>
-              </div>
-              <div class="col-3 d-flex justify-content-around align-items-center">
-                <h2>N°209</h2>
-                <h2>R+3</h2>
-              </div>
-              <div class="col-1 d-flex justify-content-center align-items-center">
-                <h2>4P</h2>
-              </div>
-              <div class="col-2 d-flex justify-content-center align-items-center">
-                <h2>T4 2019</h2>
-              </div>
-              <div class="col-3 d-flex justify-content-center align-items-center">
-                <h2>350 000 €</h2>
-              </div>
-            </div>
-          </div>
-
-            <div class="no-flex2">
-              <p>Paris(75)</p>
-            </div>
-
-            <div class="no-flex3">
-              <div class="col-3 d-flex align-items-center">
-                <%= image_tag "nexity-logo.png", class:"no-flex3-img", style: "margin-left: 15px;" %>
-              </div>
-              <div class="col-3 d-flex justify-content-center align-items-center">
-                <%= link_to "Write a story", "#", class: "btn btn-ghost" %>
-              </div>
-              <div class="col-1 d-flex justify-content-center align-items-center">
-              </div>
-              <div class="col-2 d-flex justify-content-center align-items-center">
-                <%= link_to "Write a story", "#", class: "btn btn-ghost" %>
-              </div>
-              <div class="col-3 d-flex justify-content-center align-items-center">
-                <%= link_to "Write a story", "#", class: "btn btn-ghost" %>
-              </div>
-            </div>
-
-              </div>// card-product1
-
-            </div> //container-card-mamad
-          
-
-            <div class="container-appartement-show collapse" id="card-details">
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a href="#synthese" class="nav-link active" data-toggle="tab">Synthèse</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#scoring" class="nav-link" data-toggle="tab">Scoring</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#documents" class="nav-link" data-toggle="tab">Documents</a>
-                </li>
-              </ul>
-
-              <div class="tab-content">
-                <div class="tab-pane fade show active" id="synthese">
-                  <p>Synthese tab content ...</p>
-                </div>
-                <div class="tab-pane fade" id="scoring">
-                  <p>Scoring tab content ...</p>
-                </div>
-                <div class="tab-pane fade" id="documents">
-                  <p>Documents tab content ...</p>
-                </div>
-
-              </div> //tab content
-            </div> //container-appartement show collapse
-          </div> //container-card
-        </div> //left side
-        
-      
-    
-
-    <div class="right-side">
-      <div id="map" style="width: 100%;
-        height: 600px;" data-markers="<%= @markers.to_json %>" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-      </div>
-=======
 
     <div class="left-side">
       <div class="container-card">
@@ -136,12 +42,11 @@
     </div>
 
     <div class="right-side">
-      <p>insert map</p>
->>>>>>> c4a980bd1ed20175128c4e26e171973fc66fbbdd
+      <div
+        id="map"
+        style="width: 100%; height: 600px;"
+        data-markers="<%= @markers.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
     </div>
-
   </div>
-</div>
-
-
-
