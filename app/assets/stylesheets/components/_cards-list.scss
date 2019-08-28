@@ -1,10 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+h2,
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
 .card-product {
   overflow: hidden;
   height: 120px;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
+  margin-bottom: 9px;
 }
 
 .card-product img {
@@ -15,19 +23,74 @@
 
 .card-product h2 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0;
+  color: #9B9797;
 }
 
 .card-product p {
-  font-size: 12px;
   line-height: 1.4;
-  opacity: .7;
   margin-bottom: 0;
-  margin-top: 8px;
+}
+
+#ville {
+  font-size: 14px;
+  color: #9B9797;
 }
 
 .card-product .card-product-infos {
-  padding: 16px;
+  padding: 4px;
 }
 
+.flex {
+  /*background-color: blue;*/
+}
+
+.flex .img-card {
+  width: 40px;
+  height: 40px;
+  margin-top: 8px;
+}
+
+.flex1 {
+  /*background-color: purple;*/
+}
+
+.btn-plans {
+  padding-top: 35px;
+}
+
+#orange {
+  /*background-color: orange;*/
+}
+
+.flex2 {
+  /*background-color: pink;*/
+}
+
+.flex3 {
+  /*background-color: red;*/
+}
+
+.flex3,
+.flex4 h2 {
+  text-align: center;
+}
+
+.flex3,
+.flex4 p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  align-items: center;
+  text-align: center;
+}
+
+.flex4,
+.flex1,
+.flex2,
+.flex3,
+.flex {
+  /*background-color: green;*/
+  margin-top: 10px;
+}
