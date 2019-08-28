@@ -2,7 +2,6 @@ import "bootstrap";
 
 
 // Javascript dropdown tabs for cards index
-
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
@@ -27,7 +26,5 @@ function openCity(evt, cityName) {
  //Fonction Mapbox
 import 'mapbox-gl/dist/mapbox-gl.css';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
-
 import { initMapbox } from '../plugins/init_mapbox';
-
 initMapbox();
