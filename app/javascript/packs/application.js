@@ -1,5 +1,6 @@
 import "bootstrap";
 
+
 // Javascript dropdown tabs for cards index
 function openCity(evt, cityName) {
   // Declare all variables
