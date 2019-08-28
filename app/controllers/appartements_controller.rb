@@ -1,8 +1,9 @@
 class AppartementsController < ApplicationController
-	def index
-	@appartements = Appartement.all
+
+  def index
+    @appartements = Appartement.all
     # @appartements = policy_scope(Appartement).order(created_at: :desc)
-		# @appartements = Appartement.all
+    # @appartements = Appartement.all
     #Create the Array of all 'appartements' with coordinates
     @appartements = Appartement.geocoded
     #Iterate on appartements to generate market for each one
