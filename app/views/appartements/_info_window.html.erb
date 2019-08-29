@@ -1,6 +1,10 @@
-<h2><%= appartement.nom_programme %></h2>
-
-<h3><%= appartement.promoteur  %></h3>
-<p><%= appartement.ville %></p>
-<p><%= appartement.prix %>€</p>
+<div class="card-product-marker" data-appartement-id="<%= appartement.id %>">
+  <img src= "https://source.unsplash.com/1600x900/?<%= appartement.ville%>" />
+  <div class="card-product-marker-infos">
+    <h2><%= appartement.nom_programme %></h2>
+    <h3><%= appartement.promoteur  %></h3>
+    <p><%= appartement.ville %></p>
+    <p><%= appartement.prix %>€</p>
+  </div>
+</div>
 

@@ -3,6 +3,7 @@
 
     <div class="left-side">
       <div class="container-card">
+
       <% @appartements.each do |appartement|%> 
         <div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
           <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
@@ -22,19 +23,33 @@
               <a href="#scoring" class="nav-link" data-toggle="tab">Scoring</a>
             </li>
             <li class="nav-item">
+              <a href="#data" class="nav-link" data-toggle="tab">Data</a>
+            </li>
+            <li class="nav-item">
               <a href="#documents" class="nav-link" data-toggle="tab">Documents</a>
             </li>
           </ul>
 
           <div class="tab-content">
             <div class="tab-pane fade show active" id="synthese">
-              <p>Synthese tab content ...</p>
+              <div class="synthese d-flex">
+                <img src="https://res.cloudinary.com/agazielly/image/upload/v1566994755/synthese-globale-definitive-lot_ed2e96.png" id="img-synthese-globale">
+              </div>
             </div>
             <div class="tab-pane fade" id="scoring">
-              <p>Scoring tab content ...</p>
+              <div class="synthese d-flex">
+                <img src="https://res.cloudinary.com/agazielly/image/upload/v1567002742/scoring_financier_zcghc1.png" id="img-scoring-financier">
+              </div>
+               <div class="synthese d-flex">
+                <img src="https://res.cloudinary.com/agazielly/image/upload/v1567002745/scoring-immobilier_ddacsg.png" id="img-scoring-immobilier">
+              </div>
+              <div class="synthese d-flex">
+                <img src="https://res.cloudinary.com/agazielly/image/upload/v1567002744/scoring-emplacement_fp3xkc.png" id="img-scoring-emplacement">
+              </div>
+            </div>
+            <div class="tab-pane fade" id="data">
             </div>
             <div class="tab-pane fade" id="documents">
-              <p>Documents tab content ...</p>
             </div>
           </div>
         </div>
