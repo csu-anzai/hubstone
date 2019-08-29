@@ -17,7 +17,7 @@ class SelectionsController < ApplicationController
   def destroy
     @selection = Selection.find(params[:id])
     @selection.destroy
-    redirect_to selections_path
+    redirect_to(request.referer)
   end
 
   private

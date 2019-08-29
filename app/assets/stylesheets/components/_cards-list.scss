@@ -22,7 +22,7 @@ p {
 }
 
 .card-product h2 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   margin: 0;
   color: #9B9797;
@@ -40,6 +40,8 @@ p {
 
 .card-product .card-product-infos {
   padding: 4px;
+  width: 610px;
+  position: relative;
 }
 
 .flex {
@@ -62,6 +64,8 @@ p {
 }
 
 #orange {
+  padding-right: 10px;
+  padding-left: 10px;
   /*background-color: orange;*/
 }
 
@@ -94,4 +98,10 @@ p {
 .flex {
   /*background-color: green;*/
   margin-top: 10px;
+}
+
+.flex5 {
+  position: absolute;
+  right: 5px;
+  margin-top: 30px;
 }
