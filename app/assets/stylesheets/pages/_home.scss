@@ -1,1 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 // Specific CSS for your home-page
+
+h1 {
+  font-family: "Roboto";
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.s1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/agazielly/image/upload/v1567031460/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash-min_1_zwjkgg.jpg');
+  background-size: cover;
+
+  h1 {
+    text-align: left;
+    top: 10%;
+    left: 4%;
+    position: absolute;
+    width: 400px;
+  }
+}
+
+#word-color {
+  color: #00C29A;
+  background-color: transparent !important;
+}
+
+.s2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/agazielly/image/upload/v1567031429/programme-neuf-toulouse-villa-niel-360_TD_05_1_xl_vuu0va.jpg');
+  background-size: cover;
+
+  h1 {
+    text-align: left;
+    top: 6%;
+    left: 6%;
+    position: absolute;
+    width: 400px;
+
+  }
+}
+
+.s3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/agazielly/image/upload/v1567030775/carlos-muza-hpjSkU2UYSU-unsplash-min_fkxrot.jpg');
+  background-size: cover;
+
+  h1 {
+    text-align: right;
+    top: 30%;
+    right: 10%;
+    position: absolute;
+    width: 400px;
+  }
+}
+
+.s4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://res.cloudinary.com/agazielly/image/upload/v1567030782/nastuh-abootalebi-yWwob8kwOCk-unsplash-min_tkbqco.jpg');
+  background-size: cover;
+
+  h1 {
+    text-align: left;
+    top: 27%;
+    left: 5%;
+    position: absolute;
+    width: 280px;
+  }
+}
+
+/*------ARROW ANIMATION-------*/
+span {
+  background: white !important;
+}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.demo a:hover {
+  opacity: .5;
+}
+
+#section05 a {
+  padding-top: 70px;
+}
+
+#section05 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+
+
+
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
+#arrow {
+  background: transparent !important;
+}

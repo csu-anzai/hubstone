@@ -1,4 +1,5 @@
 import "bootstrap";
+import { initFullpage } from "../plugins/fullpage";
 
 
 // Javascript dropdown tabs for cards index
@@ -28,3 +29,13 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import { initMapbox } from '../plugins/init_mapbox';
 initMapbox();
+
+//Scroll down arrow
+$(function() {
+  $('a[href*=#]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+
+initFullpage();
