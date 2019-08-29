@@ -1,5 +1,56 @@
-<div id="slim">
-
-  <p>Product description with <strong>relevant info</strong> only.</p>
+<div class="flex mr-4">
+  <div>
+    <h2>
+      <%= appartement.nom_programme %>
+    </h2>
+  </div>
+  <div>
+    <p id="ville">
+      <%= appartement.ville %> (
+      <%= appartement.departement %>)</p>
+    <%= image_tag "nexity-logo.png", class:"img-card" %>
+  </div>
 </div>
-
+<div class="flex1 mr-4">
+  <div class=" d-flex justify-content-between" id="orange">
+    <div class="">
+      <h2>
+        <%= appartement.lot %>
+      </h2>
+    </div>
+    <div class="">
+      <h2>
+        <%= appartement.etage %>
+      </h2>
+    </div>
+  </div>
+  <div class="btn-plans">
+    <%= link_to "Voir les plans", "#", class: "btn btn-ghost" %>
+  </div>
+</div>
+<div class="flex2 ml-2">
+  <h2>
+    <%= appartement.typologie %>
+  </h2>
+</div>
+<div class="flex3 ml-4">
+  <div class="col align-self-center">
+    <h2>
+      <%= appartement.livraison %>
+    </h2>
+  </div>
+  <div class="btn-actable">
+    <p>Actable</p>
+  </div>
+</div>
+<div class="flex4 ml-4">
+  <div class="col align-self-center">
+    <h2>
+      <%= appartement.prix %> €</h2>
+  </div>
+  <div class="btn-disponible">
+    <p>
+      <%= appartement.disponibilite %>
+    </p>
+  </div>
+</div>
