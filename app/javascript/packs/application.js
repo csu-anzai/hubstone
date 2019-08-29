@@ -1,5 +1,13 @@
 import "bootstrap";
 
+// Select2
+
+import 'select2/dist/css/select2.css';
+
+import { initSelect2 } from '../components/init_select2';
+
+initSelect2();
+
 
 // Javascript dropdown tabs for cards index
 function openCity(evt, cityName) {
