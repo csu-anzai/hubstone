@@ -4,13 +4,13 @@
     <div class="left-side">
       <div class="container-card">
 
-      <% @appartements.each do |appartement|%> 
-        <div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
+      <% @appartements.each do |appartement|%>
+        <div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details" data-appartement-id=<%= appartement.id %>>
           <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
           <div class="card-product-infos d-flex ml-3">
-            
+
            <%= render 'appartements/card_content',appartement:appartement %>
-            
+
           </div>
         </div>
 
