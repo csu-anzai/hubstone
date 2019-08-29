@@ -25,7 +25,7 @@ User.create!(
 puts 'Creating appartements...'
 Appartement.create!(
     livraison: 'T4 2019',
-    actabilite: 'Actable',
+    actabilite: 'actable',
     disponibilite: 'Disponible',
     prix: '350000',
     lot: 'N°209',
@@ -42,7 +42,7 @@ Appartement.create!(
 
 Appartement.create!(
     livraison: 'T1 2020',
-    actabilite: 'Actable',
+    actabilite: 'actable',
     disponibilite: 'Indisponible',
     prix: '230000',
     lot: 'N°62',
@@ -59,7 +59,7 @@ Appartement.create!(
 
 Appartement.create!(
     livraison: 'T2 2020',
-    actabilite: 'Non-actable',
+    actabilite: 'non-actable',
     disponibilite: 'disponible',
     prix: '150000',
     lot: 'N°12',

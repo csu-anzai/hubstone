@@ -1,16 +1,68 @@
+
+<div class="search-bar d-flex" >
+  <!-- <div>
+    "localisation"- autocomplete
+  </div>
+  <div>
+    "budget max" - auto complete
+  </div>
+  <div>
+    "renta min" - auto complete
+  </div> -->
+<%= form_tag appartements_path, method: :get do %>
+  <div class="search-item-1">
+   <select class="select2" name="actabilite">
+    <% Appartement::ACTABILITE.each do |actabilite| %>
+      <option></option>
+      <option value=<%= actabilite %> <%= "selected" if params[:actabilite] == actabilite %>>
+        <%= actabilite %>
+      </option>
+    <% end %>
+  </select>
+  </div>
+
+  <div class="search-item-2">
+   <select class="select2" name="livraison">
+    <% Appartement::LIVRAISON.each do |livraison| %>
+      <option></option>
+      <option value=<%=livraison.gsub(" ","-")%> <%= "selected" if params[:livraison] == livraison.gsub(" ", "-") %>>
+        <%= livraison %>
+      </option>
+    <% end %>
+  </select>
+  </div>
+
+  <div class="search-item-2">
+   <select class="select2" name="piece[]" multiple>
+    <% Appartement::PIECES.each do |piece| %>
+      <option></option>
+      <option value=<%=piece%> <%= "selected" if params[:piece] && params[:piece].include?(piece) %>>
+        <%= piece %>
+      </option>
+    <% end %>
+  </select>
+  </div>
+
+  <%= submit_tag "Filtrer", class: "btn btn-primary" %>
+  <% end %>
+</div>
+
+
+
+
 <div class="container-index">
   <div class="d-flex">
 
     <div class="left-side">
       <div class="container-card">
 
-      <% @appartements.each do |appartement|%> 
+      <% @appartements.each do |appartement|%>
         <div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
           <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
           <div class="card-product-infos d-flex ml-3">
-            
+
            <%= render 'appartements/card_content',appartement:appartement %>
-            
+
           </div>
         </div>
 
