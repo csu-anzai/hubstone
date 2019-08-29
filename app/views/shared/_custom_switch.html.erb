@@ -1,5 +1,7 @@
-<div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="custom-control-label" for="customSwitch1">Ajouter à la sélection</label>
-  <div class="customSwitch1"><p>Hello</p></div>
-</div>
+<div>
+  <% if current_user.selections.where(appartement_id: appartement.id) == []%>
+    <%= link_to "✅", appartement_selections_path(appartement), method: :post, class: 'btn btn-flat' %>
+    <% else %>
+    <%= link_to "❌", selection_path(current_user.selections.where(appartement_id: appartement.id)[0]), method: :delete, class: 'btn btn-flat' %>
+    <% end %>
+  </div>
