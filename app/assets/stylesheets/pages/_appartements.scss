@@ -8,6 +8,7 @@
   padding:20px;
 }
 
+
 .right-side {
   background-color: blue;
   width: 40%;
@@ -23,6 +24,47 @@
   width: 100%;
 }
 
+//COLLAPSE TABS ELEMENTS
+
+.tab-pane {
+padding-bottom: 40px;
+}
+
+.synthese {
+width: 80%;
+margin-left: 80px;
+margin-top: 40px;
+//border: 1px solid;
+border-color: #00C29A;
+}
+
+.container-appartement-show {
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+#img-synthese-globale {
+width: 85%;
+}
+
+#img-scoring-financier {
+width: 90%;
+}
+
+#img-scoring-immobilier {
+width: 90%;
+}
+
+#img-scoring-emplacement {
+width: 90%;
+}
+
+.nav-item a {
+color: #495057;
+}
+
+//--------------------
+
+
 #map {
   position: sticky;
 }
@@ -34,4 +76,7 @@
   }
 
 }
+
+
+
 

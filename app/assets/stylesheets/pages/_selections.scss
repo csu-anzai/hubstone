@@ -1,0 +1,35 @@
+.container-basket {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.next-step {
+  position: absolute;
+  right: 10px;
+  padding-top: 10px;
+  }
+
+.next-step a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+.next-step .btn-ghost {
+  background-color: $jungle;
+}
+
+.next-step-comparaison a {
+  color: $dark-grey;
+}
+
+.next-step-comparaison-link {
+  text-decoration: none;
+}
+
+.next-step-retour a {
+ color: $dark-grey;
+}
+
+.next-step-retour-link {
+ text-decoration: none;
+}

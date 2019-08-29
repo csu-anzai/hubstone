@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :clients
+  has_many :selections
   has_many :simulations
   has_many :appartements, through: :simulations
   validates :prenom, presence: true

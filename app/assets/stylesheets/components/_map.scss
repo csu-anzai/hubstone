@@ -1,8 +1,51 @@
 .mapboxgl-popup {
-  max-width: 200px;
+  max-width: 100% !important;
 }
 
+//marker on the map
 .mapboxgl-popup-content {
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
+  padding: 0px 0px 0px 0px !important;
+}
+
+.card-product-marker {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+
+.card-product-marker img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product-marker-infos h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product-marker-infos h3 {
+  font-size: 14px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.card-product-marker-infos p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product-marker .card-product-marker-infos {
+  padding: 16px;
+}
+.card-product.highlight {
+  box-shadow: 1px 1px 10px $jungle;
 }

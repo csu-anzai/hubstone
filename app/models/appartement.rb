@@ -1,4 +1,5 @@
 class Appartement < ApplicationRecord
+  has_many :selections
   has_many :simulations
 
   geocoded_by :adresse
