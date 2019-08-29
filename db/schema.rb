@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_27_104511) do
+ActiveRecord::Schema.define(version: 2019_08_28_134741) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,15 @@ ActiveRecord::Schema.define(version: 2019_08_27_104511) do
     t.index ["user_id"], name: "index_clients_on_user_id"
   end
 
+  create_table "selections", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "appartement_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["appartement_id"], name: "index_selections_on_appartement_id"
+    t.index ["user_id"], name: "index_selections_on_user_id"
+  end
+
   create_table "simulations", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "client_id"
@@ -74,6 +83,8 @@ ActiveRecord::Schema.define(version: 2019_08_27_104511) do
   end
 
   add_foreign_key "clients", "users"
+  add_foreign_key "selections", "appartements"
+  add_foreign_key "selections", "users"
   add_foreign_key "simulations", "appartements"
   add_foreign_key "simulations", "clients"
   add_foreign_key "simulations", "users"
