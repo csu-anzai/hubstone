@@ -5,9 +5,9 @@
       <div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
          <div class='jose pr-3 ml-3'>
           <% if selection.comparaison %>
-          <%= link_to "✅", selection_path(selection.appartement_id), method: :patch %>
+          <%= link_to "✅", selection_path(selection), method: :patch %>
           <% else %>
-          <%= link_to "❏", selection_path(selection.appartement_id), method: :patch %>
+          <%= link_to "❏", selection_path(selection), method: :patch %>
           <% end %>
         </div>
         <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
