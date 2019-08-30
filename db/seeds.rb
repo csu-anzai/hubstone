@@ -22,6 +22,13 @@ User.create!(
   password: 'password',
   carte_t: 'T01012019')
 
+User.create!(
+  prenom: 'Jean',
+  nom: 'Dupont',
+  email: 'jean@dupont.com',
+  password: 'password',
+  carte_t: 'T12345678')
+
 puts 'Creating appartements...'
 Appartement.create!(
     livraison: 'T4 2019',

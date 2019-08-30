@@ -73,10 +73,13 @@
   <div class="d-flex">
 
     <div class="left-side">
+      <div class="btn btn-ghost"><%= link_to "Voir la sélection", selections_path %></div>
       <div class="container-card">
 
       <% @appartements.each do |appartement|%>
-        <div class="card-product" data-toggle="collapse" href="#card-details-<%=appartement.id%>" role="button" aria-expanded="false" aria-controls="card-details-<%=appartement.id%>">
+
+        <div class="card-product" data-toggle="collapse" href="#card-details-<%=appartement.id%>" role="button" aria-expanded="false" aria-controls="card-details-<%=appartement.id%>" data-appartement-id=<%= appartement.id %>>
+
           <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
           <div class="card-product-infos d-flex ml-3">
 

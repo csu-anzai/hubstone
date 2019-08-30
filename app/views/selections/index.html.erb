@@ -1,0 +1,58 @@
+<%= render 'shared/banner' %>
+<div class="container-basket mt-5">
+  <div>
+    <% @selections.each do |selection| %>
+      <div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
+        <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
+        <div class="card-product-infos d-flex ml-3">
+
+         <%= render 'appartements/card_content',appartement:selection.appartement %>
+        </div>
+      </div>
+      <div class="container-appartement-show collapse" id="card-details">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a href="#synthese" class="nav-link active" data-toggle="tab">Synthèse</a>
+          </li>
+          <li class="nav-item">
+            <a href="#scoring" class="nav-link" data-toggle="tab">Scoring</a>
+          </li>
+          <li class="nav-item">
+            <a href="#data" class="nav-link" data-toggle="tab">Data</a>
+          </li>
+          <li class="nav-item">
+            <a href="#documents" class="nav-link" data-toggle="tab">Documents</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="synthese">
+            <div class="synthese d-flex">
+              <img src="https://res.cloudinary.com/agazielly/image/upload/v1566994755/synthese-globale-definitive-lot_ed2e96.png" id="img-synthese-globale">
+            </div>
+          </div>
+          <div class="tab-pane fade" id="scoring">
+            <div class="synthese d-flex">
+              <img src="https://res.cloudinary.com/agazielly/image/upload/v1567002742/scoring_financier_zcghc1.png" id="img-scoring-financier">
+            </div>
+             <div class="synthese d-flex">
+              <img src="https://res.cloudinary.com/agazielly/image/upload/v1567002745/scoring-immobilier_ddacsg.png" id="img-scoring-immobilier">
+            </div>
+            <div class="synthese d-flex">
+              <img src="https://res.cloudinary.com/agazielly/image/upload/v1567002744/scoring-emplacement_fp3xkc.png" id="img-scoring-emplacement">
+            </div>
+          </div>
+          <div class="tab-pane fade" id="data">
+          </div>
+          <div class="tab-pane fade" id="documents">
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="next-step d-flex">
+    <div class="next-step-retour mr-5"><%= link_to "Retour à la recherche", appartements_path, :class => "next-step-retour-link" %></div>
+    <div class="next-step-comparaison mr-5"><%= link_to "Comparaison", :class => "next-step-comparaison-link"%></div>
+    <div class="btn btn-ghost">Simulation</div>
+  </div>
+</div>
