@@ -1,5 +1,5 @@
 import "bootstrap";
-import { initFullpage } from "../plugins/fullpage";
+import fullpage from "fullpage.js";
 
 
 // Javascript dropdown tabs for cards index
@@ -32,10 +32,22 @@ initMapbox();
 
 //Scroll down arrow
 $(function() {
-  $('a[href*=#]').on('click', function(e) {
+  $('section02').on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });
 });
 
-initFullpage();
+
+new fullpage('#fullpage', {
+     //options here
+    autoScrolling: true,
+    navigation: true,
+    navigationTooltips: ['Home'],
+    showActiveTooltip:true,
+    scrollingSpeed:1000,
+    
+});
+
+
+
