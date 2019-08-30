@@ -108,8 +108,17 @@ color: white !important;
 background-color: #00C29A;
 color:white;
 border: none;
+padding: 8px !important;
 }
 
+li.select2-selection__choice {
+margin-top: 0px !important;
+}
+
+
+.select2-search__field {
+margin-top: 0px !important;
+}
 
 .left-side {
   width: 60%;

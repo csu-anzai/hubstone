@@ -1,5 +1,5 @@
 import "bootstrap";
-
+import { initAutocomplete } from '../plugins/init_autocomplete';
 // Select2
 
 import 'select2/dist/css/select2.css';
@@ -7,7 +7,7 @@ import 'select2/dist/css/select2.css';
 import { initSelect2 } from '../plugins/init_select2';
 
 initSelect2();
-
+initAutocomplete();
 
 
 // Javascript dropdown tabs for cards index
