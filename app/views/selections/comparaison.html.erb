@@ -1,22 +1,16 @@
-<%= render 'shared/banner' %>
-<div class="container-basket mt-5">
-  <div>
-    <% @selections.each do |selection| %>
-      <div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
-         <div class='jose pr-3 ml-3'>
-          <% if selection.comparaison %>
-          <%= link_to "✅", selection_path(selection.appartement_id), method: :patch %>
-          <% else %>
-          <%= link_to "❏", selection_path(selection.appartement_id), method: :patch %>
-          <% end %>
-        </div>
+<div class="container">
+<div class="row">
+<% @selections.each do |selection| %>
+      <div class="card-product col-6 " data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
+         <div class='jose pr-3'>
+          </div>
         <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
         <div class="card-product-infos d-flex ml-3">
          <%= render 'appartements/card_content',appartement:selection.appartement %>
         </div>
-
       </div>
-      <div class="container-appartement-show collapse" id="card-details">
+
+<div class="container-appartement-show collapse" id="card-details">
         <ul class="nav nav-tabs">
           <li class="nav-item">
             <a href="#synthese" class="nav-link active" data-toggle="tab">Synthèse</a>
@@ -55,11 +49,6 @@
           </div>
         </div>
       </div>
-    <% end %>
+  <% end %>
   </div>
-  <div class="next-step d-flex">
-    <div class="next-step-retour mr-5"><%= link_to "Retour à la recherche", appartements_path, :class => "next-step-retour-link" %></div>
-    <div class="next-step-comparaison mr-5"><%= link_to "Comparaison", selections_comparaison_path, :class => "next-step-comparaison-link"%></div>
-    <div class="btn btn-ghost">Simulation</div>
   </div>
-</div>

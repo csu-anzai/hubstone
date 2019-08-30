@@ -20,9 +20,24 @@ class SelectionsController < ApplicationController
     redirect_to(request.referer)
   end
 
+  def update
+    @selection = Selection.find(params[:id])
+    if @selection.comparaison
+      @selection.comparaison = false
+    else
+      @selection.comparaison = true
+    end
+    @selection.save
+    redirect_to(request.referer)
+  end
+
+  def comparaison
+    @selections = Selection.where(user: current_user, comparaison: true)
+  end
+
   private
 
   def selection_params
-    params.require(:selection).permit(:user_id, :appartement_id)
+    params.require(:selection).permit(:user_id, :appartement_id, :comparaison)
   end
 end

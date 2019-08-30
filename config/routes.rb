@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   resources :appartements, only: [:index, :show, :new, :create] do
     resources :selections, only: 'create'
   end
-  resources :selections, only: [:index, :destroy]
+  resources :selections, only: [:index, :destroy, :update]
+
+  get 'selections/comparaison', to: 'selections#comparaison'
+
 end
