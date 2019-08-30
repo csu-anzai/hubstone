@@ -19,7 +19,7 @@ height: 55px;
 // }
 
 .container-search-bar {
-width: 80%;
+width: 100%;
 margin: auto;
 position: absolute !important;
 top: 173px;
@@ -44,6 +44,7 @@ margin-left: 7px;
 .location {
 border-radius: 7px 0px 0px 7px;
 border-right: 0;
+color: #495057;
 }
 
 
@@ -55,6 +56,7 @@ align-items: center;
 border-radius: 0;
 border-right: 0;
 border-color:#ced4da;
+color: #495057;
 }
 
 select.select2.select2-livraison {
@@ -64,6 +66,7 @@ display: flex;
 align-items: center;
 border-right: 0;
 border-color:#ced4da;
+color: #495057;
 }
 
 span.select2-selection__arrow {
@@ -79,6 +82,7 @@ display: flex;
 align-items: center;
 border-radius: 0px 7px 7px 0px;
 border-color:#ced4da;
+color: #495057;
 }
 
 ul.select2-selection__rendered {
