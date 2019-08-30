@@ -1,72 +1,64 @@
+<div class="navbar-container" style="position: relative">
+<%= render 'shared/banner' %>
 
-<div class="search-bar d-flex" >
-  <!-- <div>
-    "localisation"- autocomplete
-  </div>
-  <div>
-    "budget max" - auto complete
-  </div>
-  <div>
-    "renta min" - auto complete
-  </div> -->
+  <div class="container-search-bar" style="position: absolute">
+    <%= form_tag appartements_path, class: "form-total d-flex justify-content-center align-item", method: :get do %>
 
+      <div >
+        <%= text_field_tag :location,
+        params[:location],
+        class: "form-control location",
+        placeholder: "Select a location..."
+          %>
+      </div>
 
-
-
-
-<div class="container-search-bar d-flex">
-  <%= form_tag appartements_path, method: :get do %>
-
-    <div class=" mb-2">
-      <%= text_field_tag :location,
-      params[:location],
-      class: "form-control",
-      placeholder: "Select a location..."
+      <div>
+        <%= text_field_tag :budget,
+        params[:budget],
+        class: "form-control budget",
+        placeholder: "Budget maximum..."
         %>
+      </div>
+
+      <div>
+       <select class="select2 select2-actabilite" name="actabilite" style="width: 100%" style="height: 20px">
+        <% Appartement::ACTABILITE.each do |actabilite| %>
+          <option></option>
+          <option value=<%= actabilite %> <%= "selected" if params[:actabilite] == actabilite %>>
+            <%= actabilite %>
+          </option>
+        <% end %>
+      </select>
+      </div>
+
+      <div>
+       <select class="select2 select2-livraison" name="livraison" style="width: 100%">
+        <% Appartement::LIVRAISON.each do |livraison| %>
+          <option></option>
+          <option value=<%=livraison.gsub(" ","-")%> <%= "selected" if params[:livraison] == livraison.gsub(" ", "-") %>>
+            <%= livraison %>
+          </option>
+        <% end %>
+      </select>
+      </div>
+
+      <div>
+       <select class="select2 select2-typologie" name="piece[]" multiple style="width: 100%">
+        <% Appartement::PIECES.each do |piece| %>
+          <option></option>
+          <option value=<%=piece%> <%= "selected" if params[:piece] && params[:piece].include?(piece) %>>
+            <%= piece %>
+          </option>
+        <% end %>
+      </select>
+      </div>
+
+      <div>
+      <%= submit_tag "Filtrer", class: "btn-search-bar" %>
+      <% end %>
     </div>
-
-    <div class=" mb-2">
-      <%= text_field_tag :budget,
-      params[:budget],
-      class: "form-control",
-      placeholder: "Budget maximum..."
-      %>
-    </div>
-
-
-     <select class="select2" name="actabilite" style="width: 100%" style="height: 20px">
-      <% Appartement::ACTABILITE.each do |actabilite| %>
-        <option></option>
-        <option value=<%= actabilite %> <%= "selected" if params[:actabilite] == actabilite %>>
-          <%= actabilite %>
-        </option>
-      <% end %>
-    </select>
-
-     <select class="select2" name="livraison" style="width: 100%">
-      <% Appartement::LIVRAISON.each do |livraison| %>
-        <option></option>
-        <option value=<%=livraison.gsub(" ","-")%> <%= "selected" if params[:livraison] == livraison.gsub(" ", "-") %>>
-          <%= livraison %>
-        </option>
-      <% end %>
-    </select>
-
-     <select class="select2" name="piece[]" multiple style="width: 100%">
-      <% Appartement::PIECES.each do |piece| %>
-        <option></option>
-        <option value=<%=piece%> <%= "selected" if params[:piece] && params[:piece].include?(piece) %>>
-          <%= piece %>
-        </option>
-      <% end %>
-    </select>
-
-
-    <%= submit_tag "Filtrer", class: "btn btn-primary" %>
-    <% end %>
   </div>
 </div>
-
 
 
 <div class="container-index">
@@ -144,4 +136,4 @@
         data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
     </div>
-  </div>
+
