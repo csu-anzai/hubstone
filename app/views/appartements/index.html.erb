@@ -1,11 +1,77 @@
+<div class="navbar-container">
+<%= render 'shared/banner' %>
+
+  <div class="container-search-bar" style="position: absolute">
+    <%= form_tag appartements_path, class: "form-total d-flex justify-content-center align-item", method: :get do %>
+
+      <div >
+        <%= text_field_tag :location,
+        params[:location],
+        class: "form-control location",
+        placeholder: "Select a location..."
+          %>
+      </div>
+
+      <div>
+        <%= text_field_tag :budget,
+        params[:budget],
+        class: "form-control budget",
+        placeholder: "Budget maximum..."
+        %>
+      </div>
+
+      <div>
+       <select class="select2 select2-actabilite" name="actabilite" style="width: 100%" style="height: 20px">
+        <% Appartement::ACTABILITE.each do |actabilite| %>
+          <option></option>
+          <option value=<%= actabilite %> <%= "selected" if params[:actabilite] == actabilite %>>
+            <%= actabilite %>
+          </option>
+        <% end %>
+      </select>
+      </div>
+
+      <div>
+       <select class="select2 select2-livraison" name="livraison" style="width: 100%">
+        <% Appartement::LIVRAISON.each do |livraison| %>
+          <option></option>
+          <option value=<%=livraison.gsub(" ","-")%> <%= "selected" if params[:livraison] == livraison.gsub(" ", "-") %>>
+            <%= livraison %>
+          </option>
+        <% end %>
+      </select>
+      </div>
+
+      <div>
+       <select class="select2 select2-typologie" name="piece[]" multiple style="width: 100%">
+        <% Appartement::PIECES.each do |piece| %>
+          <option></option>
+          <option value=<%=piece%> <%= "selected" if params[:piece] && params[:piece].include?(piece) %>>
+            <%= piece %>
+          </option>
+        <% end %>
+      </select>
+      </div>
+
+      <div>
+      <%= submit_tag "Filtrer", class: "btn-search-bar" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
 <div class="container-index">
   <div class="d-flex">
 
     <div class="left-side">
+      <div class="btn btn-ghost"><%= link_to "Voir la sélection", selections_path %></div>
       <div class="container-card">
 
       <% @appartements.each do |appartement|%>
-        <div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details" data-appartement-id=<%= appartement.id %>>
+
+        <div class="card-product" data-toggle="collapse" href="#card-details-<%=appartement.id%>" role="button" aria-expanded="false" aria-controls="card-details-<%=appartement.id%>" data-appartement-id=<%= appartement.id %>>
+
           <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
           <div class="card-product-infos d-flex ml-3">
 
@@ -14,7 +80,7 @@
           </div>
         </div>
 
-        <div class="container-appartement-show collapse" id="card-details">
+        <div class="container-appartement-show collapse" id="card-details-<%=appartement.id%>">
           <ul class="nav nav-tabs">
             <li class="nav-item">
               <a href="#synthese" class="nav-link active" data-toggle="tab">Synthèse</a>
@@ -48,6 +114,10 @@
               </div>
             </div>
             <div class="tab-pane fade" id="data">
+              <div>
+
+              </div>
+
             </div>
             <div class="tab-pane fade" id="documents">
             </div>
@@ -66,4 +136,4 @@
         data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
     </div>
-  </div>
+

@@ -1,4 +1,4 @@
-<div class="flex mr-4">
+<div class="flex mr-3">
   <div>
     <h2>
       <%= appartement.nom_programme %>
@@ -11,7 +11,7 @@
     <%= image_tag "nexity-logo.png", class:"img-card" %>
   </div>
 </div>
-<div class="flex1 mr-4">
+<div class="flex1 mr-3">
   <div class=" d-flex justify-content-between" id="orange">
     <div class="">
       <h2>
@@ -28,12 +28,12 @@
     <%= link_to "Voir les plans", "#", class: "btn btn-ghost" %>
   </div>
 </div>
-<div class="flex2 ml-2">
+<div class="flex2 mr-3">
   <h2>
     <%= appartement.typologie %>
   </h2>
 </div>
-<div class="flex3 ml-4">
+<div class="flex3 mr-4">
   <div class="col align-self-center">
     <h2>
       <%= appartement.livraison %>
@@ -43,7 +43,7 @@
     <p>Actable</p>
   </div>
 </div>
-<div class="flex4 ml-4">
+<div class="flex4 mr-3">
   <div class="col align-self-center">
     <h2>
       <%= appartement.prix %> €</h2>
@@ -52,5 +52,10 @@
     <p>
       <%= appartement.disponibilite %>
     </p>
+  </div>
+</div>
+<div class="flex5">
+  <div class="selectionable">
+    <p><%= render 'shared/custom_switch', appartement: appartement %></p>
   </div>
 </div>
