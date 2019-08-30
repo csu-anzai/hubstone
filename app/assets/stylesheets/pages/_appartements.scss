@@ -6,7 +6,6 @@ width: 800px;
 
 
 .left-side {
-  background-color: yellow;
   width: 60%;
   padding:20px;
 }
@@ -16,7 +15,6 @@ width: 800px;
 }
 
 .right-side {
-  background-color: blue;
   width: 40%;
 }
 
@@ -68,11 +66,13 @@ width: 90%;
 color: #495057;
 }
 
-//--------------------
-
+// MAP
 
 #map {
+  height: 100vh;
   position: sticky;
+  margin-top: 60px;
+  top: 5px;
 }
 
 // CARD CONTENT
