@@ -1,4 +1,5 @@
 import "bootstrap";
+
 import { initAutocomplete } from '../plugins/init_autocomplete';
 // Select2
 
@@ -37,3 +38,26 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import { initMapbox } from '../plugins/init_mapbox';
 initMapbox();
+
+//Scroll down arrow
+$(function() {
+  $('section02').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
+
+// full page
+import fullpage from "fullpage.js";
+new fullpage('#fullpage', {
+     //options here
+    autoScrolling: true,
+    navigation: true,
+    navigationTooltips: ['Home'],
+    showActiveTooltip:true,
+    scrollingSpeed:1000,
+    
+});
+
+
+
