@@ -20,7 +20,6 @@
     padding-right: 20px;
     font-size: 16px;
     font-weight: normal;
-    font-family: roboto;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -34,5 +33,9 @@
   padding-bottom: 0px;
   font-size: 16px;
   font-weight: normal;
-  font-family: roboto;
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar-nav .nav-item a:hover {
+  color: $jungle;
 }
