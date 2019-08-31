@@ -1,5 +1,10 @@
 <div class="navbar-container">
 <%= render 'shared/banner' %>
+  <div class="selection-appartement">
+    <div class="btn btn-flat">
+      <%= link_to "Voir la sélection", selections_path %> <i class="fas fa-star"></i>
+    </div>
+  </div>
 
   <div class="container-search-bar" style="position: absolute">
     <%= form_tag appartements_path, class: "form-total d-flex justify-content-center align-item", method: :get do %>
@@ -42,6 +47,7 @@
       </select>
       </div>
 
+
       <div>
        <select class="select2 select2-typologie" name="piece[]" multiple style="width: 100%">
         <% Appartement::PIECES.each do |piece| %>
@@ -65,7 +71,6 @@
   <div class="d-flex">
 
     <div class="left-side">
-      <div class="btn btn-ghost"><%= link_to "Voir la sélection", selections_path %></div>
       <div class="container-card">
 
       <% @appartements.each do |appartement|%>
