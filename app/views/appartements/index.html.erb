@@ -2,7 +2,7 @@
 <%= render 'shared/banner' %>
   <div class="selection-appartement">
     <div class="btn btn-flat">
-      <%= link_to "Voir la sélection", selections_path %> <i class="fas fa-star"></i>
+      <%= link_to "Voir la sélection", selections_path %> - <%= current_user.selections.count %> <i class="fas fa-star"></i>
     </div>
   </div>
 
