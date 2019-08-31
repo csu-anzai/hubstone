@@ -6,6 +6,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 9px;
+  transition: transform .2s;
+}
+
+.card-product:hover {
+  transform: scale(1.02);
 }
 
 .card-product img {
