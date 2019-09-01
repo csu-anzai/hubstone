@@ -3,11 +3,11 @@
   <div>
     <% @selections.each do |selection| %>
       <div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
-         <div class='jose pr-3 ml-3'>
+        <div class='comparer pr-3 ml-3'>
           <% if selection.comparaison %>
-          <%= link_to "✅", selection_path(selection), method: :patch %>
+            <%= link_to "Ne plus comparer", selection_path(selection), class: "btn btn-danger", method: :patch %>
           <% else %>
-          <%= link_to "❏", selection_path(selection), method: :patch %>
+            <%= link_to "Comparer", selection_path(selection), class: "btn btn-success", method: :patch %>
           <% end %>
         </div>
         <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>

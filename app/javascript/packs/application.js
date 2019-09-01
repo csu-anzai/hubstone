@@ -5,11 +5,12 @@ import { initAutocomplete } from '../plugins/init_autocomplete';
 
 import 'select2/dist/css/select2.css';
 
+import { changeComparaison } from '../components/button-on-off';
 import { initSelect2 } from '../plugins/init_select2';
 
 initSelect2();
 initAutocomplete();
-
+changeComparaison();
 
 // Javascript dropdown tabs for cards index
 function openCity(evt, cityName) {
@@ -56,7 +57,7 @@ new fullpage('#fullpage', {
     navigationTooltips: ['Home'],
     showActiveTooltip:true,
     scrollingSpeed:1000,
-    
+
 });
 
 
