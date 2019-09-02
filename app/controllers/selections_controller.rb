@@ -7,6 +7,7 @@ class SelectionsController < ApplicationController
     @selection = Selection.new
     @selection.user = current_user
     @selection.appartement = Appartement.find(params[:appartement_id])
+    @selection.client = Client.find(params[:appartement_id])
     if @selection.save
       redirect_to appartements_path
     else
