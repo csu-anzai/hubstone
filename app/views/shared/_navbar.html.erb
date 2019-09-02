@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-hubstone">
+<div class="navbar navbar-expand-sm navbar-light navbar-hubstone <%= "navbar-home" if params[:action] == "home" %>">
   <%= link_to "/", class: "navbar-brand" do %>
     <%= image_tag "https://res.cloudinary.com/agazielly/image/upload/c_crop,h_150,w_500/v1566903122/Hubstone_ogfubl.png" %>
   <% end %>
