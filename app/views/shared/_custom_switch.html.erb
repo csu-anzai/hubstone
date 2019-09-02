@@ -1,7 +1,7 @@
 <div>
   <% if current_user.selections.where(appartement_id: appartement.id) == []%>
-    <%= link_to "✅", appartement_selections_path(appartement), method: :post %>
+    <%= link_to "", appartement_selections_path(appartement), method: :post, class: "far fa-star" %>
     <% else %>
-    <%= link_to "❌", selection_path(current_user.selections.where(appartement_id: appartement.id)[0]), method: :delete %>
+    <%= link_to "", selection_path(current_user.selections.where(appartement_id: appartement.id)[0]), method: :delete, class: "fas fa-star"  %>
     <% end %>
   </div>

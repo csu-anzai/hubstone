@@ -130,7 +130,6 @@ margin-top: 0px !important;
 }
 
 .right-side {
-  background-color: blue;
   width: 40%;
 }
 
@@ -182,11 +181,13 @@ width: 90%;
 color: #495057;
 }
 
-//--------------------
-
+// MAP
 
 #map {
+  height: 100vh;
   position: sticky;
+  margin-top: 20px;
+  top: 5px;
 }
 
 // CARD CONTENT
@@ -197,6 +198,19 @@ color: #495057;
 
 }
 
+// SELECTION BUTTON
 
+.selection-appartement .btn-flat {
+  position: absolute;
+  right: 180px;
+  top: 50px;
+  border: 1px solid $jungle;
+  color: $jungle;
+  text-decoration: none;
+}
+
+.selection-appartement .btn-flat a {
+  color: $jungle;
+}
 
 

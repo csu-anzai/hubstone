@@ -6,5 +6,8 @@ Rails.application.routes.draw do
     resources :selections, only: 'create'
     resources :simulations, only: 'create'
   end
-  resources :selections, only: [:index, :destroy]
+  resources :selections, only: [:index, :destroy, :update]
+
+  get 'selections/comparaison', to: 'selections#comparaison'
+
 end

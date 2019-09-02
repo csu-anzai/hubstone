@@ -1,0 +1,42 @@
+.btn-on-off {
+  height:50px;
+  width:100px;
+  border-radius:20px;
+  background-color:black;
+  position:relative;
+
+  .on-off {
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top:10px;
+    left:10px;
+    transition: left .4s ease !important;
+  }
+}
+
+
+.btn-on-off-after-click {
+  height:50px;
+  width:100px;
+  border-radius:20px;
+  background-color:black;
+  position:relative;
+
+  .on-off {
+    height:35px;
+    width:35px;
+    border-radius:50%;
+    background-color: white;
+    position: absolute;
+    top:10px;
+    left:55px;
+    transition: left .4s ease !important;
+  }
+}
+
+.after-click {
+  left: 55px;
+}

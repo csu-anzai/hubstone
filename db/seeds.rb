@@ -40,7 +40,7 @@ Appartement.create!(
     prix: '350000',
     lot: 'N°209',
     etage: 'R+3',
-    typologie: '4P',
+    typologie: '3P',
     ville: 'Honfleur',
     adresse: '178 Chemin du Mont Bouis',
     nom_programme: 'Le Clos Saint-Germain',
@@ -108,7 +108,7 @@ Appartement.create!(
     prix: '290000',
     lot: 'N°27',
     etage: 'R+2',
-    typologie: '4P',
+    typologie: '3P',
     ville: 'Nice',
     adresse: '380 Avenue de Rimiez',
     nom_programme: 'Le Domaine de Gairaut',
@@ -227,7 +227,7 @@ Appartement.create!(
     prix: '185000',
     lot: 'N°9',
     etage: 'R+2',
-    typologie: 'T0',
+    typologie: '1P',
     ville: 'Mougins',
     adresse: '489 Avenue de Tournamy',
     nom_programme: 'Coeur Mougins',
@@ -278,7 +278,7 @@ Appartement.create!(
     prix: '685000',
     lot: 'N°11',
     etage: 'R+3',
-    typologie: '4P',
+    typologie: '3P',
     ville: 'Nantes',
     adresse: '25 rue de la Cour Bastille',
     nom_programme: 'Cour Bastille',
@@ -306,7 +306,7 @@ Appartement.create!(
     )
 
 Appartement.create!(
-    livraison: 'T4 2010',
+    livraison: 'T4 2020',
     actabilite: 'non-actable',
     disponibilite: 'disponible',
     prix: '273000',
@@ -323,13 +323,13 @@ Appartement.create!(
     )
 
 Appartement.create!(
-    livraison: 'T4 2010',
+    livraison: 'T4 2020',
     actabilite: 'actable',
     disponibilite: 'disponible',
     prix: '357000',
     lot: 'N°10',
     etage: 'R+4',
-    typologie: '5P',
+    typologie: '3P',
     ville: 'Lyon',
     adresse: '28 rue Pierre Valdo',
     nom_programme: 'Factory Link',

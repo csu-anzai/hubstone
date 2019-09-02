@@ -1,12 +1,9 @@
 class AppartementsController < ApplicationController
   def index
-    # raise
-
-
 
     geocoded_appartements = Appartement.geocoded
     if params[:location].present? && params[:actabilite].present? && params[:livraison].present? && params[:piece].present?
-      @appartements = geocoded_appartements.where("ville = ? AND actabilite = ? AND livraison = ?", params[:location], params[:actabilite], params[:livraison].gsub("-"," "))
+      @appartements = geocoded_appartements.where("actabilite = ? AND livraison = ?", params[:actabilite], params[:livraison].gsub("-"," ")).near(params[:location])
       @appartements = typologie_fiter(params[:piece], @appartements)
     elsif params[:actabilite].present? && params[:livraison].present? && params[:piece].present?
       @appartements = geocoded_appartements.where("actabilite = ? AND livraison = ?", params[:location], params[:actabilite], params[:livraison].gsub("-"," "))

@@ -1,7 +1,15 @@
+.container-button-selection {
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10px;
+}
+
 .container-basket {
   width: 900px;
   margin: 0 auto;
   position: relative;
+  margin-top: 70px;
 }
 
 .container-basket .card-product-infos {
@@ -37,4 +45,21 @@
 
 .next-step-retour-link {
  text-decoration: none;
+}
+
+.comparer {
+  width: 200px;
+}
+
+.comparer .btn-success {
+  background-color: $jungle;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid $jungle;
+  width: 170px;
+}
+
+.comparer .btn-danger {
+  border-radius: 3px;
+  width: 170px;
 }
