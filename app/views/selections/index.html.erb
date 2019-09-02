@@ -1,5 +1,14 @@
 <%= render 'shared/banner' %>
-<div class="container-basket mt-5">
+
+<div class="container-button-selection">
+  <div class="next-step d-flex">
+    <div class="next-step-retour mr-5"><%= link_to "Retour à la recherche", appartements_path, :class => "next-step-retour-link" %></div>
+    <div class="next-step-comparaison mr-5"><%= link_to "Comparaison", selections_comparaison_path, :class => "next-step-comparaison-link"%></div>
+    <div class="btn btn-ghost">Simulation</div>
+  </div>
+</div>
+
+<div class="container-basket">
   <div>
     <% @selections.each do |selection| %>
       <div class="card-product" data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
@@ -56,10 +65,5 @@
         </div>
       </div>
     <% end %>
-  </div>
-  <div class="next-step d-flex">
-    <div class="next-step-retour mr-5"><%= link_to "Retour à la recherche", appartements_path, :class => "next-step-retour-link" %></div>
-    <div class="next-step-comparaison mr-5"><%= link_to "Comparaison", selections_comparaison_path, :class => "next-step-comparaison-link"%></div>
-    <div class="btn btn-ghost">Simulation</div>
   </div>
 </div>
