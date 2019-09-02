@@ -7,11 +7,10 @@ import 'select2/dist/css/select2.css';
 
 
 import { initSelect2 } from '../plugins/init_select2';
-import { dashboard_tabs } from '../components/dashboard';
+import { dashboardTabs } from '../components/dashboard';
 
 initSelect2();
 initAutocomplete();
-dashboardTabs();
 
 
 // Javascript dropdown tabs for cards index
@@ -43,12 +42,12 @@ import { initMapbox } from '../plugins/init_mapbox';
 initMapbox();
 
 //Scroll down arrow
-$(function() {
-  $('section02').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-});
+// $(function() {
+//   $('section02').on('click', function(e) {
+//     e.preventDefault();
+//     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+//   });
+// });
 
 // full page
 import fullpage from "fullpage.js";
@@ -62,5 +61,6 @@ new fullpage('#fullpage', {
 
 });
 
+dashboardTabs();
 
 
