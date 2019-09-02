@@ -2,18 +2,19 @@ class SimulationsController < ApplicationController
 
 
 def new
+  @appartement = Appartement.find(params[:appartement_id])
   @simulation = Simulation.new
   end
 
   def create
+    duree_pret = params[:duree_pret]
+    raise
     @simulation = Simulation.new(simulation_params)
     @simulation.user = current_user
     @simulation.appartement = Appartement.find(params[:appartement_id])
-    raise
     @simulation.save
-
-
-end
+    # @simulation.save
+  end
 
   def show
     @simulation = Simulation.find(params[:id])
