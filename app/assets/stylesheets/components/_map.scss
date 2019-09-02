@@ -47,5 +47,6 @@
   padding: 16px;
 }
 .card-product.highlight {
-  box-shadow: 1px 1px 10px $jungle;
+  // box-shadow: 1px 1px 10px $jungle;
+  transform: scale(1.02);
 }
