@@ -7,9 +7,11 @@ import 'select2/dist/css/select2.css';
 
 
 import { initSelect2 } from '../plugins/init_select2';
+import { dashboard_tabs } from '../components/dashboard';
 
 initSelect2();
 initAutocomplete();
+dashboardTabs();
 
 
 // Javascript dropdown tabs for cards index
