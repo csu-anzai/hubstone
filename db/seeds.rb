@@ -104,7 +104,7 @@ Appartement.create!(
     promoteur: 'Bouygues Immmobilier',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '75'
+    departement: '75',
     loyer: '510',
     charges: '680',
     )
@@ -294,7 +294,7 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
     loyer: '1140',
     charges: '1700',
     )
@@ -332,7 +332,7 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '44';
+    departement: '44',
     loyer: '530',
     charges: '750',
     )
@@ -407,7 +407,7 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
    loyer: '3800',
     charges: '5620',
    )
@@ -908,7 +908,7 @@ Client.create!(
     prenom: 'Xavier',
     nom: 'Niel',
     civilite: 'Monsieur',
-    tmi: '30%',
+    tmi: '0.3',
     user_id: 1,
     image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439284/Xavier_Niel004_snvlvz.jpg'
     )
@@ -917,7 +917,7 @@ Client.create!(
     prenom: 'françois-henri',
     nom: 'Pinault',
     civilite: 'Monsieur',
-    tmi: '14%',
+    tmi: '0.14',
     user_id: 1,
     image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439283/francois-henri-pinault_fnzkww.jpg'
     )

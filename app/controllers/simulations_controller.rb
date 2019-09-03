@@ -7,15 +7,21 @@ def new
   end
 
   def create
-    #raise params.inspect
-    duree_pret = params[:duree_pret]
     @simulation = Simulation.new(simulation_params)
     @simulation.user = current_user
     @simulation.appartement = Appartement.find(params[:appartement_id])
-    @simulation.client = params [:client_id]
+    # @simulation.client = Client.find(params[:client_id])
+#    @simulation.save
     @simulation.details_simulations = calculs_simulation(@simulation)
-    @simulation.save
+    # @simulation.save
 
+    # @simulation.effort_treso_tot = @simulation.details_simulations.sum {|h| JSON.parse(h.gsub('=>',':'))["effort_treso"] }
+
+    if @simulation.save
+      redirect_to simulation_path(@simulation)
+    else
+      render :new
+    end
   end
 
   def show
@@ -33,39 +39,49 @@ private
   def simulation_params
     # *Strong params*: You need to *whitelist* what can be updated by the user
     # Never trust user data!
-    params.require(:simulation).permit(:name, :address)
+    params.require(:simulation).permit(:client_id, :emprunt, :duree, :taux_credit, :adi, :revalo_prix, :revalo_loyers)
   end
-end
 
 def calculs_simulation(simulation)
-  taux_interet = simulation.taux_credit + simulation.adi
+  taux_interet = simulation.taux_credit.to_f + simulation.adi.to_f
   loan = FinanceMath::Loan.new(nominal_rate: taux_interet, duration: simulation.duree, amount: simulation.emprunt)
   capital_restant_du = simulation.emprunt
   prix = simulation.appartement.prix
   mensualite = loan.pmt
-  interets = (capital_restant_du * taux_interet) / 12
-  loyers = simulation.appartement.loyer
-  charges = simulation.appartement.charges
-  tmi = simulation.client.tmi
-  fiscalite = (tmi + 17.2 / 100) * (loyers - charges - interets)
+  tmi = simulation.client.tmi.to_f
   array = []
+  counter = 1
   simulation.duree.times do |s|
+    charges = simulation.appartement.charges
+    loyers = simulation.appartement.loyer
+    interets = (capital_restant_du.to_f * taux_interet.to_f) / 1200
+    fiscalite = (tmi.to_f + 17.2 / 100) * (loyers.to_f - charges.to_f - interets.to_f)
+    if (counter / 12) < 9
+      eco_impots = prix * 2 / 1200
+    elsif (counter / 12) < 12
+      eco_impots = prix * 1 / 1200
+    else
+      eco_impots = 0
+    end
     s = {
-      mensualite: mensualite,
-      interets: interets,
-      principal: mesnualite - interets,
-      capital_restant_du: capital_restant_du - mensualite,
-      loyers_bruts: loyers,
-      charges: charges,
-      RF_nets: loyers - (charges + interets),
-      fiscalite: fiscalite,
-      economie_impot: prix * ((s / 12) < 9 ? 2 : 1),
-      effort_treso: (loyers + (prix * ((s / 12) < 9 ? 2 : 1))) - (mensualite + charges + fiscalite),
-      prix_revalo: simulation.appartement.prix * simulation.revalo_prix,
-      loyer_revalo: simulation.appartement.loyer * simulation.revalo_loyer,
+      "mensualite" => mensualite,
+      "interets" => interets,
+      "principal" => mensualite - interets,
+      "capital_restant_du" => capital_restant_du - mensualite,
+      "loyers_bruts" => loyers,
+      "charges" => charges,
+      "RF_nets" => loyers - (charges + interets),
+      "fiscalite" => fiscalite,
+      "economie_impot" => eco_impots,
+      "effort_treso" => (mensualite + charges + fiscalite) - (loyers + eco_impots),
+      "prix_revalo" => simulation.appartement.prix * simulation.revalo_prix,
+      "loyer_revalo" => simulation.appartement.loyer * simulation.revalo_loyers,
+      "capital_net" => prix - capital_restant_du
     }
   array << s
-  capital_restant_du = capital_restant_du - s[:principal]
+  capital_restant_du = capital_restant_du - s["principal"]
+  counter += 1
   end
   return array
+  end
 end

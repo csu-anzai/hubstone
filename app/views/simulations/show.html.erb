@@ -1,0 +1,5 @@
+coucou
+<%= @simulation.details_simulations.first %><br>
+<%= JSON.parse(@simulation.details_simulations.first.gsub('=>', ':')).class %>
+<%= @simulation.details_simulations.sum {|h| JSON.parse(h.gsub('=>',':'))["effort_treso"] } %>
+
