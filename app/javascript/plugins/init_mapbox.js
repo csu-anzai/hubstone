@@ -71,7 +71,7 @@ const openInfoWindow = (markers, map) => {
       const latitude = (markers[index]['_lngLat']['lat']);
       map.flyTo({
         center: [longitude, latitude],
-        zoom: 9});
+        zoom: 13});
     });
     card.addEventListener('mouseleave', () => {
       markers[index].togglePopup();
