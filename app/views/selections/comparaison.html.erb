@@ -7,7 +7,7 @@
       <h2>
         <%= selection.appartement.nom_programme %>
       </h2>
-      <a href="">Déplier</a>
+      <a href="" data-toggle="collapse" data-target="#scoring-financier,#scoring-immobilier,#scoring-emplacement" aria-expanded="false" aria-controls="multiCollapseExample2">Déplier</a>
     </div>
 
     <div class="row-comparaison collapsed" data-toggle="collapse" data-target="#scoring-financier" aria-expanded="false" aria-controls="multiCollapseExample2">
@@ -44,7 +44,7 @@
     </div>
 
     <%# Scoring immobilier  %>
-    <div class="row-comparaison collapsed" data-toggle="collapse" data-target="#scoring-financier" aria-expanded="false" aria-controls="multiCollapseExample2">
+    <div class="row-comparaison collapsed" data-toggle="collapse" data-target="#scoring-immobilier" aria-expanded="false" aria-controls="multiCollapseExample2">
       <div class="card-h3">
         <h3>Scoring immobilier</h3>
       </div>
@@ -62,7 +62,7 @@
       <%= image_tag "chevron-right.svg", alt: "chevron", class: "chevron" %>
     </div>
 
-    <div class="collapse" id="scoring-financier">
+    <div class="collapse" id="scoring-immobilier">
       <div class="scoring">
         <div class="scoring-text">
           <p>Perf Energétique</p>
@@ -71,7 +71,7 @@
         </div>
         <div class="real-stars">
           <p id="text-card">
-            <%= selection.appartement.scoring_prix %><span>/5</span></%>
+            <%= selection.appartement.scoring_prix %><span class="bg-white">/5</span></%>
           </p>
         </div>
       </div>
@@ -79,7 +79,7 @@
     <%# Fin Scoring immobilier  %>
 
     <%# Scoring emplacement  %>
-    <div class="row-comparaison collapsed" data-toggle="collapse" data-target="#scoring-financier" aria-expanded="false" aria-controls="multiCollapseExample2">
+    <div class="row-comparaison collapsed" data-toggle="collapse" data-target="#scoring-emplacement" aria-expanded="false" aria-controls="multiCollapseExample2">
       <div class="card-h3">
         <h3>Scoring emplacement</h3>
       </div>
@@ -97,7 +97,7 @@
       <%= image_tag "chevron-right.svg", alt: "chevron", class: "chevron" %>
     </div>
 
-    <div class="collapse" id="scoring-financier">
+    <div class="collapse" id="scoring-emplacement">
       <div class="scoring">
         <div class="scoring-text">
           <p>Dynamisme local</p>
@@ -119,7 +119,7 @@
     
   <% end %>
 </div>
-</div>
+
 
 
 

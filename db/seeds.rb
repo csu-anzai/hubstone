@@ -48,7 +48,16 @@ Appartement.create!(
     logo_promoteur: 'http:',
     image: 'http:',
     departement: '75',
-    scoring_prix: 4
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 # Appartement.create!(
@@ -725,7 +734,6 @@ Appartement.create!(
 
 Appartement.create!(
     livraison: 'T4 2019',
-    scoring_prix: 3,
     actabilite: 'actable',
     disponibilite: 'disponible',
     prix: '301000',
@@ -738,12 +746,21 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:4,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:5,
+    scoring_accessibilite:4,
+    scoring_equipements:3
     )
 
 Appartement.create!(
     livraison: 'T4 2019',
-    scoring_prix: 5,
     actabilite: 'actable',
     disponibilite: 'disponible',
     prix: '685000',
@@ -756,12 +773,21 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:5,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
     )
 
 Appartement.create!(
     livraison: 'T4 2019',
-    scoring_prix: 3,
     actabilite: 'actable',
     disponibilite: 'disponible',
     prix: '106000',
@@ -774,12 +800,21 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    scoring_prix: 5,
+    scoring_rendement:4,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:4,
+    scoring_amenagement:5,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
     livraison: 'T4 2019',
-    scoring_prix: 1,
     actabilite: 'non-actable',
     disponibilite: 'disponible',
     prix: '273000',
@@ -792,12 +827,21 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:4,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:2,
+    scoring_accessibilite:3,
+    scoring_equipements:3
     )
 
 Appartement.create!(
     livraison: 'T4 2019',
-    scoring_prix: 4,
     actabilite: 'actable',
     disponibilite: 'disponible',
     prix: '357000',
@@ -810,7 +854,17 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    scoring_prix: 4,
+    scoring_rendement:5,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:4,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:1,
+    scoring_accessibilite:4,
+    scoring_equipements:2
     )
 
 

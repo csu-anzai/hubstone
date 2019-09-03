@@ -10,6 +10,7 @@
 .row-comparaison {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 20px;
   margin-bottom: 10px;
   background-color: white;
@@ -21,13 +22,22 @@
 
 }
 
-.row-comparaison.collapsed {
+.row-comparaison {
   background-color: transparent;
 }
 
-.chevron {
-  width: 5px;
+.row-comparaison.collapsed {
+  background-color: transparent;
+
+  .chevron {
+    transform: rotate(-90deg);
+  }
 }
+
+.chevron {
+  width: 10px;
+}
+
 
 .row-comparaison:hover {
   background-color: white;
@@ -47,6 +57,9 @@
 
 .card-text a {
   padding: 24px;
+  font-size: 13px;
+  text-decoration: none;
+  color:black;
 }
 
 .card-category-comparaison h2 {
@@ -78,23 +91,32 @@
 .real-stars {
   margin-left: 10px;
 
+  span {
+    background-color: transparent !important;
+    font-size: 10px;
+    margin-left: 4px;
+  }
+}
+
+.bg-white {
+  font-size: 9px;
+  padding-left: 2px;
+  background-color: transparent !important;
 }
 
 .stars {
   margin-left: 40px;
 
-  span {
-    font-size: 9px;
-    padding-left: 2px;
-    background-color: transparent !important;
-  }
 }
-#first-stars{
-  margin-left:50px;
+
+#first-stars {
+  margin-left: 50px;
 }
-#last-stars{
-  margin-left:20px;
+
+#last-stars {
+  margin-left: 20px;
 }
+
 .card-category-comparaison {
   background-size: cover;
   background-position: center;
