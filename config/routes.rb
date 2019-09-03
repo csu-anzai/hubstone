@@ -6,9 +6,10 @@ Rails.application.routes.draw do
     resources :selections, only: 'create'
   end
   resources :selections, only: [:index, :destroy, :update]
-  resources :pdf_simulations, only: [:show]
+
 
   get 'selections/comparaison', to: 'selections#comparaison'
   get 'dashboard', to: 'users#dashboard'
+  get 'pdf_simulations/show', to: 'pdf_simulations#show'
 
 end
