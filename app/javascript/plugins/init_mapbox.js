@@ -75,11 +75,11 @@ const openInfoWindow = (markers, map) => {
     });
     card.addEventListener('mouseleave', () => {
       markers[index].togglePopup();
-      const longitude = (markers[index]['_lngLat']['lng']);
-      const latitude = (markers[index]['_lngLat']['lat']);
-      map.flyTo({
-        center: [longitude, latitude],
-        zoom: 3});
+      // const longitude = (markers[index]['_lngLat']['lng']);
+      // const latitude = (markers[index]['_lngLat']['lat']);
+      // map.flyTo({
+      //   center: [longitude, latitude],
+      //   zoom: 3});
     });
   });
 }
