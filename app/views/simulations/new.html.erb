@@ -1,8 +1,12 @@
 <div class="container-simulation-form">
 <%= simple_form_for [@appartement, @simulation] do |f| %>
   <%= f.input :client, placeholder: 'Choisissez un client' %>
-  <%= text_field_tag :duree_pret, placeholder: 'Choisissez un client' %><br>
+  <%= f.input :emprunt %><br>
+  <%= f.input :taux_credit%><br>
+  <%= f.input :duree%><br>
+  <%= f.input :adi%><br>
+  <%= f.input :revalo_prix%><br>
+  <%= f.input :revalo_loyers%><br>
   <%= f.submit %>
 <% end %>
 </div>
-

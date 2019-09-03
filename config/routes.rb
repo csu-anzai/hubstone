@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   resources :selections, only: [:index, :destroy, :update]
 
   get 'selections/comparaison', to: 'selections#comparaison'
+  get 'dashboard', to: 'users#dashboard'
 
 end

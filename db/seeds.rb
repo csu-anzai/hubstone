@@ -807,5 +807,29 @@ Appartement.create!(
     departement: '06'
     )
 
-
+puts 'Love you mum'
 puts 'Finished creating apartments...'
+
+puts 'Creating clients...'
+
+Client.create!(
+    prenom: 'Xavier',
+    nom: 'Niel',
+    civilite: 'Monsieur',
+    tmi: '3350000',
+    user_id: 1,
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439284/Xavier_Niel004_snvlvz.jpg'
+    )
+
+Client.create!(
+    prenom: 'françois-henri',
+    nom: 'Pinault',
+    civilite: 'Monsieur',
+    tmi: '1350000',
+    user_id: 1,
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439283/francois-henri-pinault_fnzkww.jpg'
+    )
+
+puts 'Finished creating clients...'
+sleep 2
+puts 'Success is not final, failure is not fatal: it is the courage to continue that counts.'
