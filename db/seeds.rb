@@ -42,698 +42,23 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '3P',
     ville: 'Honfleur',
-    adresse: '178 Chemin du Mont Bouis, La Riviere-Saint-Sauveur
-',
+    adresse: '178 Chemin du Mont Bouis, La Riviere-Saint-Sauveur',
     nom_programme: 'Le Clos Saint-Germain',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
     departement: '75',
-    scoring_prix: 4,
+    scoring_prix: 2,
     scoring_rendement:3,
     scoring_potentiel:4,
     scoring_energie:4,
     scoring_qualite:3,
-    scoring_amenagement:5,
+    scoring_amenagement:3,
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
     scoring_equipements:5
     )
-
-# Appartement.create!(
-#     livraison: 'T1 2020',
-#     actabilite: 'actable',
-#     disponibilite: 'Indisponible',
-#     prix: '230000',
-#     lot: 'N°62',
-#     etage: 'R+5',
-#     typologie: '3P',
-#     ville: 'Paris',
-#     adresse: 'Porte de la Villette',
-#     nom_programme: 'Les ilots de Chaumont',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '75'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T2 2020',
-#     actabilite: 'non-actable',
-#     disponibilite: 'disponible',
-#     prix: '150000',
-#     lot: 'N°12',
-#     etage: 'R+2',
-#     typologie: '1P',
-#     ville: 'Pont-du-Casse',
-#     adresse: '519 Avenue de Cahors',
-#     nom_programme: "Fontaine d'Auteuil",
-#     promoteur: 'Kaufman & Broad',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '75'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'Non-disponible',
-#     prix: '270000',
-#     lot: 'N°27',
-#     etage: 'R+2',
-#     typologie: '2P',
-#     ville: 'Boulogne',
-#     adresse: '86 Rue Gallieni',
-#     nom_programme: 'Carre Seine',
-#     promoteur: 'Bouygues Immmobilier',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '75'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T3 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '290000',
-#     lot: 'N°27',
-#     etage: 'R+2',
-#     typologie: '3P',
-#     ville: 'Nice',
-#     adresse: '380 Avenue de Rimiez',
-#     nom_programme: 'Le Domaine de Gairaut',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T2 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '370000',
-#     lot: 'N°11',
-#     etage: 'R+3',
-#     typologie: '3P',
-#     ville: 'Nice',
-#     adresse: '88 Avenue Raoul Dufy',
-#     nom_programme: 'Corniche Marine',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T2 2021',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '350000',
-#     lot: 'N°11',
-#     etage: 'R+3',
-#     typologie: '3P',
-#     ville: 'Nice',
-#     adresse: '3 ruelle Saint Roch',
-#     nom_programme: 'Carré Sérénice',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T1 2022',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '262000',
-#     lot: 'N°13',
-#     etage: 'R+3',
-#     typologie: '2P',
-#     ville: 'Nice',
-#     adresse: '34 avenue des Diables Bleus',
-#     nom_programme: 'Nice Way',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T1 2022',
-#     actabilite: 'actable',
-#     disponibilite: 'non-disponible',
-#     prix: '281000',
-#     lot: 'N°7',
-#     etage: 'R+2',
-#     typologie: '3P',
-#     ville: 'Grasse',
-#     adresse: '15 chemin du Bois Fleuri',
-#     nom_programme: 'Secret Park',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '286000',
-#     lot: 'N°5',
-#     etage: 'R+1',
-#     typologie: '3P',
-#     ville: 'Cannes',
-#     adresse: '152/154 Avenue Francis Tonner',
-#     nom_programme: 'Villa Alice',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2022',
-#     actabilite: 'non-actable',
-#     disponibilite: 'non-disponible',
-#     prix: '286000',
-#     lot: 'N°5',
-#     etage: 'R+1',
-#     typologie: '3P',
-#     ville: 'Mougins',
-#     adresse: '539 avenue de Tournamy',
-#     nom_programme: 'Cours des Arts',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2022',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '185000',
-#     lot: 'N°9',
-#     etage: 'R+2',
-#     typologie: '1P',
-#     ville: 'Mougins',
-#     adresse: '489 Avenue de Tournamy',
-#     nom_programme: 'Coeur Mougins',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2022',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '216000',
-#     lot: 'N°13',
-#     etage: 'R+3',
-#     typologie: '2P',
-#     ville: 'Mougins',
-#     adresse: '489 Avenue de Tournamy',
-#     nom_programme: 'Coeur Mougins',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2022',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '301000',
-#     lot: 'N°14',
-#     etage: 'R+4',
-#     typologie: '3P',
-#     ville: 'Mougins',
-#     adresse: '489 Avenue de Tournamy',
-#     nom_programme: 'Coeur Mougins',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2020',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '685000',
-#     lot: 'N°11',
-#     etage: 'R+3',
-#     typologie: '3P',
-#     ville: 'Nantes',
-#     adresse: '25 rue de la Cour Bastille',
-#     nom_programme: 'Cour Bastille',
-#     promoteur: 'Nexity',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '44'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2020',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '175000',
-#     lot: 'N°17',
-#     etage: 'R+1',
-#     typologie: '2P',
-#     ville: 'Coueron',
-#     adresse: '35 rue Jean Jaures',
-#     nom_programme: 'Les Allees de la Bretèche',
-#     promoteur: 'Nexity',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '44'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2020',
-#     actabilite: 'non-actable',
-#     disponibilite: 'disponible',
-#     prix: '273000',
-#     lot: 'N°7',
-#     etage: 'R+3',
-#     typologie: '2P',
-#     ville: 'Lyon',
-#     adresse: '8 rue Pierre Valdo',
-#     nom_programme: 'Ivory Park',
-#     promoteur: 'Nexity',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '69'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2020',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '357000',
-#     lot: 'N°10',
-#     etage: 'R+4',
-#     typologie: '3P',
-#     ville: 'Lyon',
-#     adresse: '28 rue Pierre Valdo',
-#     nom_programme: 'Factory Link',
-#     promoteur: 'Nexity',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '69'
-#     )
-
-# Appartement.create!(
-#    livraison: 'T4 2019',
-#    actabilite: 'actable',
-#    disponibilite: 'disponible',
-#    prix: '4200000',
-#    lot: 'N°10',
-#    etage: 'R+4',
-#    typologie: '2P',
-#    ville: 'Cannes',
-#    adresse: 'rue d\'Antibes',
-#    nom_programme: 'Factory Link',
-#    promoteur: 'Nexity',
-#    logo_promoteur: 'http:',
-#    image: 'http:',
-#    departement: '06'
-#    )
-# Appartement.create!(
-#    livraison: 'T4 2019',
-#    actabilite: 'actable',
-#    disponibilite: 'disponible',
-#    prix: '10200000',
-#    lot: 'N°10',
-#    etage: 'R+4',
-#    typologie: '3P',
-#    ville: 'Cannes',
-#    adresse: 'la Croisette',
-#    nom_programme: 'Factory Link',
-#    promoteur: 'Nexity',
-#    logo_promoteur: 'http:',
-#    image: 'http:',
-#    departement: '06'
-#    )
-# Appartement.create!(
-#    livraison: 'T4 2019',
-#    actabilite: 'actable',
-#    disponibilite: 'disponible',
-#    prix: '9200000',
-#    lot: 'N°10',
-#    etage: 'R+4',
-#    typologie: '3P',
-#    ville: 'Cannes',
-#    adresse: 'la Croisette',
-#    nom_programme: 'Factory Link',
-#    promoteur: 'Nexity',
-#    logo_promoteur: 'http:',
-#    image: 'http:',
-#    departement: '06'
-#    )
-# Appartement.create!(
-#    livraison: 'T4 2019',
-#    actabilite: 'actable',
-#    disponibilite: 'disponible',
-#    prix: '3200000',
-#    lot: 'N°10',
-#    etage: 'R+4',
-#    typologie: '3P',
-#    ville: 'Cannes',
-#    adresse: '78 Avenue Francis Tonner',
-#    nom_programme: 'Factory Link',
-#    promoteur: 'Nexity',
-#    logo_promoteur: 'http:',
-#    image: 'http:',
-#    departement: '06'
-#    )
-# Appartement.create!(
-#    livraison: 'T4 2019',
-#    actabilite: 'actable',
-#    disponibilite: 'disponible',
-#    prix: '3200000',
-#    lot: 'N°10',
-#    etage: 'R+4',
-#    typologie: '3P',
-#    ville: 'Cannes',
-#    adresse: '26 Avenue de Lattre de Tassigny',
-#    nom_programme: 'Factory Link',
-#    promoteur: 'Nexity',
-#    logo_promoteur: 'http:',
-#    image: 'http:',
-#    departement: '06'
-#    )
-# Appartement.create!(
-#    livraison: 'T4 2019',
-#    actabilite: 'actable',
-#    disponibilite: 'disponible',
-#    prix: '505094',
-#    lot: 'N°10',
-#    etage: 'R+4',
-#    typologie: '2P',
-#    ville: 'Cannes',
-#    adresse: '2 Boulevard Delaup',
-#    nom_programme: 'Factory Link',
-#    promoteur: 'Nexity',
-#    logo_promoteur: 'http:',
-#    image: 'http:',
-#    departement: '06'
-#    )
-# Appartement.create!(
-#    livraison: 'T4 2019',
-#    actabilite: 'actable',
-#    disponibilite: 'disponible',
-#    prix: '395093',
-#    lot: 'N°10',
-#    etage: 'R+4',
-#    typologie: '3P',
-#    ville: 'Cannes',
-#    adresse: '7 Avenue Pierre Semard',
-#    nom_programme: 'Factory Link',
-#    promoteur: 'Nexity',
-#    logo_promoteur: 'http:',
-#    image: 'http:',
-#    departement: '06'
-#    )
-# Appartement.create!(
-#    livraison: 'T4 2019',
-#    actabilite: 'actable',
-#    disponibilite: 'disponible',
-#    prix: '723393',
-#    lot: 'N°10',
-#    etage: 'R+4',
-#    typologie: '3P',
-#    ville: 'Cannes',
-#    adresse: '4 Avenue Andre Capron',
-#    nom_programme: 'Factory Link',
-#    promoteur: 'Nexity',
-#    logo_promoteur: 'http:',
-#    image: 'http:',
-#    departement: '06'
-#    )
-# Appartement.create!(
-#    livraison: 'T4 2019',
-#    actabilite: 'actable',
-#    disponibilite: 'disponible',
-#    prix: '602393',
-#    lot: 'N°10',
-#    etage: 'R+4',
-#    typologie: '3P',
-#    ville: 'Cannes',
-#    adresse: '111 Rue Antibes',
-#    nom_programme: 'Factory Link',
-#    promoteur: 'Nexity',
-#    logo_promoteur: 'http:',
-#    image: 'http:',
-#    departement: '06'
-#    )
-# Appartement.create!(
-#    livraison: 'T4 2019',
-#    actabilite: 'actable',
-#    disponibilite: 'disponible',
-#    prix: '302393',
-#    lot: 'N°10',
-#    etage: 'R+4',
-#    typologie: '2P',
-#    ville: 'Cannes',
-#    adresse: '18 Rue des Freres Pradignac',
-#    nom_programme: 'Factory Link',
-#    promoteur: 'Nexity',
-#    logo_promoteur: 'http:',
-#    image: 'http:',
-#    departement: '06'
-#    )
-
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'Disponible',
-#     prix: '350000',
-#     lot: 'N°209',
-#     etage: 'R+3',
-#     typologie: '2P',
-#     ville: 'Nice',
-#     adresse: '2 Avenue Auguste Verola',
-#     nom_programme: 'Maison Neuve',
-#     promoteur: 'Nexity',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T1 2020',
-#     actabilite: 'actable',
-#     disponibilite: 'Indisponible',
-#     prix: '220000',
-#     lot: 'N°62',
-#     etage: 'R+5',
-#     typologie: '3P',
-#     ville: 'Paris',
-#     adresse: 'Porte de Saint Honore',
-#     nom_programme: 'Les ilots du Pont de Seine',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'non-actable',
-#     disponibilite: 'disponible',
-#     prix: '150000',
-#     lot: 'N°12',
-#     etage: 'R+2',
-#     typologie: '1P',
-#     ville: 'Pont-du-Casse',
-#     adresse: '519 Avenue de Cahors',
-#     nom_programme: "Fontaine d'Auteuil",
-#     promoteur: 'Kaufman & Broad',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'Non-disponible',
-#     prix: '270000',
-#     lot: 'N°27',
-#     etage: 'R+2',
-#     typologie: '2P',
-#     ville: 'Boulogne',
-#     adresse: '86 Rue Gallieni',
-#     nom_programme: 'Carre Seine',
-#     promoteur: 'Bouygues Immmobilier',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '290000',
-#     lot: 'N°27',
-#     etage: 'R+2',
-#     typologie: '3P',
-#     ville: 'Nice',
-#     adresse: '43 Rue de France',
-#     nom_programme: 'Le Domaine de Gairaut',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '370000',
-#     lot: 'N°11',
-#     etage: 'R+3',
-#     typologie: '3P',
-#     ville: 'Nice',
-#     adresse: '88 Avenue Raoul Dufy',
-#     nom_programme: 'Corniche Marine',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '350000',
-#     lot: 'N°11',
-#     etage: 'R+3',
-#     typologie: '3P',
-#     ville: 'Nice',
-#     adresse: '3 ruelle Saint Roch',
-#     nom_programme: 'Carre Serenice',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '262000',
-#     lot: 'N°13',
-#     etage: 'R+3',
-#     typologie: '2P',
-#     ville: 'Nice',
-#     adresse: '125 Prom. des Anglais',
-#     nom_programme: 'Nice Way',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'non-disponible',
-#     prix: '281000',
-#     lot: 'N°7',
-#     etage: 'R+2',
-#     typologie: '3P',
-#     ville: 'Nice',
-#     adresse: '4 Rue Bonaparte',
-#     nom_programme: 'Secret Park',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '286000',
-#     lot: 'N°5',
-#     etage: 'R+1',
-#     typologie: '3P',
-#     ville: 'Nice',
-#     adresse: '152/154 Avenue Francis Tonner',
-#     nom_programme: 'Villa Alice',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'non-actable',
-#     disponibilite: 'non-disponible',
-#     prix: '286000',
-#     lot: 'N°5',
-#     etage: 'R+1',
-#     typologie: '3P',
-#     ville: 'Nice',
-#     adresse: '26 Avenue Malaussena',
-#     nom_programme: 'Cours des Arts',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '185000',
-#     lot: 'N°9',
-#     etage: 'R+2',
-#     typologie: '3P',
-#     ville: 'Nice',
-#     adresse: '8 Rue Rossini',
-#     nom_programme: 'Coeur Mougins',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06'
-#     )
-
-# Appartement.create!(
-#     livraison: 'T4 2019',
-#     actabilite: 'actable',
-#     disponibilite: 'disponible',
-#     prix: '216000',
-#     lot: 'N°13',
-#     etage: 'R+3',
-#     typologie: '2P',
-#     ville: 'Nice',
-#     adresse: '81, Rue de France',
-#     nom_programme: 'Coeur Mougins',
-#     promoteur: 'Cogedim',
-#     logo_promoteur: 'http:',
-#     image: 'http:',
-#     departement: '06',
-#     loyer: '840',
-#     charges: '1200'
-#   )
 
 Appartement.create!(
     livraison: 'T1 2020',
@@ -752,6 +77,16 @@ Appartement.create!(
     departement: '75',
     loyer: '680',
     charges: '810',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -771,6 +106,16 @@ Appartement.create!(
     departement: '75',
     loyer: '450',
     charges: '630',
+    scoring_prix: 1,
+    scoring_rendement:4,
+    scoring_potentiel:2,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -790,6 +135,16 @@ Appartement.create!(
     departement: '75',
     loyer: '510',
     charges: '680',
+    scoring_prix: 4,
+    scoring_rendement:5,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:2,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -809,6 +164,16 @@ Appartement.create!(
     departement: '06',
     loyer: '930',
     charges: '1460',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -828,6 +193,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1100',
     charges: '1600',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:3
     )
 
 Appartement.create!(
@@ -847,6 +222,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1050',
     charges: '1490',
+    scoring_prix: 2,
+    scoring_rendement:2,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:4,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
     )
 
 Appartement.create!(
@@ -866,6 +251,16 @@ Appartement.create!(
     departement: '06',
     loyer: '880',
     charges: '1110',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -885,6 +280,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1000',
     charges: '1420',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:1
     )
 
 Appartement.create!(
@@ -904,6 +309,16 @@ Appartement.create!(
     departement: '06',
     loyer: '985',
     charges: '1310',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -923,6 +338,16 @@ Appartement.create!(
     departement: '06',
     loyer: '880',
     charges: '1230',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -942,6 +367,16 @@ Appartement.create!(
     departement: '06',
     loyer: '680',
     charges: '810',
+    scoring_prix: 5,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:2,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -961,6 +396,16 @@ Appartement.create!(
     departement: '06',
     loyer: '760',
     charges: '1050',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -980,6 +425,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1140',
     charges: '1700',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -999,6 +454,16 @@ Appartement.create!(
     departement: '44',
     loyer: '2400',
     charges: '3600',
+    scoring_prix: 1,
+    scoring_rendement:2,
+    scoring_potentiel:2,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -1018,6 +483,16 @@ Appartement.create!(
     departement: '44',
     loyer: '530',
     charges: '750',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:2
     )
 
 Appartement.create!(
@@ -1037,6 +512,16 @@ Appartement.create!(
     departement: '69',
     loyer: '1300',
     charges: '1740',
+    scoring_prix: 5,
+    scoring_rendement:3,
+    scoring_potentiel:5,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -1056,6 +541,16 @@ Appartement.create!(
     departement: '69',
     loyer: '1600',
     charges: '2800',
+    scoring_prix: 2,
+    scoring_rendement:2,
+    scoring_potentiel:2,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:2
     )
 
 Appartement.create!(
@@ -1075,6 +570,16 @@ Appartement.create!(
    departement: '06',
    loyer: '1820',
     charges: '2680',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -1093,6 +598,16 @@ Appartement.create!(
    departement: '06',
    loyer: '3800',
     charges: '5620',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -1111,6 +626,16 @@ Appartement.create!(
    departement: '06',
    loyer: '3500',
     charges: '4700',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -1129,6 +654,16 @@ Appartement.create!(
    departement: '06',
    loyer: '1200',
     charges: '1620',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -1147,6 +682,16 @@ Appartement.create!(
    departement: '06',
    loyer: '1500',
     charges: '2240',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:2,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:2
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -1165,6 +710,16 @@ Appartement.create!(
    departement: '06',
    loyer: '2000',
     charges: '3000',
+    scoring_prix: 5,
+    scoring_rendement:4,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:5,
+    scoring_amenagement:5,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -1183,6 +738,16 @@ Appartement.create!(
    departement: '06',
    loyer: '1800',
     charges: '2800',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:4,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -1200,7 +765,17 @@ Appartement.create!(
    image: 'http:',
    departement: '06',
    loyer: '2600',
-  charges: '3840',
+   charges: '3840',
+   scoring_prix: 4,
+   scoring_rendement:3,
+   scoring_potentiel:4,
+   scoring_energie:4,
+   scoring_qualite:3,
+   scoring_amenagement:4,
+   scoring_dynamisme:3,
+   scoring_amenites:4,
+   scoring_accessibilite:4,
+   scoring_equipements:5
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -1218,7 +793,17 @@ Appartement.create!(
    image: 'http:',
    departement: '06',
    loyer: '2500',
-    charges: '3700',
+   charges: '3700',
+   scoring_prix: 4,
+   scoring_rendement:3,
+   scoring_potentiel:4,
+   scoring_energie:4,
+   scoring_qualite:2,
+   scoring_amenagement:3,
+   scoring_dynamisme:3,
+   scoring_amenites:4,
+   scoring_accessibilite:2,
+   scoring_equipements:5
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -1236,7 +821,17 @@ Appartement.create!(
    image: 'http:',
    departement: '06',
    loyer: '1120',
-    charges: '1830',
+   charges: '1830',
+   scoring_prix: 4,
+   scoring_rendement:4,
+   scoring_potentiel:4,
+   scoring_energie:4,
+   scoring_qualite:3,
+   scoring_amenagement:3,
+   scoring_dynamisme:3,
+   scoring_amenites:4,
+   scoring_accessibilite:4,
+   scoring_equipements:5
    )
 
 
@@ -1257,6 +852,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1130',
     charges: '1740',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -1276,6 +881,16 @@ Appartement.create!(
     departement: '06',
     loyer: '820',
     charges: '1230',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:2,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:4,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:3
     )
 
 Appartement.create!(
@@ -1295,6 +910,16 @@ Appartement.create!(
     departement: '06',
     loyer: '480',
     charges: '780',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -1314,6 +939,16 @@ Appartement.create!(
     departement: '06',
     loyer: '980',
     charges: '1430',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:4,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -1333,6 +968,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1170',
     charges: '1640',
+    scoring_prix: 5,
+    scoring_rendement:4,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -1352,6 +997,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1460',
     charges: '2230',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -1371,6 +1026,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1150',
     charges: '1760',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:4,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:3
     )
 
 Appartement.create!(
@@ -1390,6 +1055,16 @@ Appartement.create!(
     departement: '06',
     loyer: '880',
     charges: '1220',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -1409,6 +1084,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1120',
     charges: '2000',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -1428,6 +1113,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1120',
     charges: '1920',
+    scoring_prix: 4,
+    scoring_rendement:5,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:2,
+    scoring_accessibilite:4,
+    scoring_equipements:4
     )
 
 Appartement.create!(
@@ -1447,6 +1142,16 @@ Appartement.create!(
     departement: '06',
     loyer: '1120',
     charges: '1920',
+    scoring_prix: 4,
+    scoring_rendement:2,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
     )
 
 Appartement.create!(
@@ -1466,6 +1171,16 @@ Appartement.create!(
     departement: '06',
     loyer: '820',
     charges: '1300',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:2,
+    scoring_energie:3,
+    scoring_qualite:4,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:3,
+    scoring_equipements:4
     )
 
 Appartement.create!(
@@ -1484,7 +1199,17 @@ Appartement.create!(
     image: 'http:',
     departement: '06',
     loyer: '920',
-    charges: '1200'
+    charges: '1200',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 
