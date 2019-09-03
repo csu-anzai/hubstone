@@ -816,7 +816,7 @@ Client.create!(
     prenom: 'Xavier',
     nom: 'Niel',
     civilite: 'Monsieur',
-    tmi: '3350000',
+    tmi: '30%',
     user_id: 1,
     image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439284/Xavier_Niel004_snvlvz.jpg'
     )
@@ -825,7 +825,7 @@ Client.create!(
     prenom: 'françois-henri',
     nom: 'Pinault',
     civilite: 'Monsieur',
-    tmi: '1350000',
+    tmi: '14%',
     user_id: 1,
     image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439283/francois-henri-pinault_fnzkww.jpg'
     )

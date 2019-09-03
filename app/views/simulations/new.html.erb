@@ -1,6 +1,10 @@
+
+<!-- COMMENT FAIRE POUR N'APPELER QUE LES CLIENTS DU CURRENT USER ? -->
+<!-- COMMENT FAIRE POUR APPELER LE PRENOM ET NOM D'UN CLIENT DANS LA LISTE DES CHOIX AU LIEU DE L'ID ? -->
+
 <div class="container-simulation-form">
 <%= simple_form_for [@appartement, @simulation] do |f| %>
-  <%= f.input :client, placeholder: 'Choisissez un client' %>
+  <%= f.association :client, value_method: :nom, include_blank: false, placeholder: "choisissez un client" %>
   <%= f.input :emprunt %><br>
   <%= f.input :taux_credit%><br>
   <%= f.input :duree%><br>

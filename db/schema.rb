@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_02_154231) do
+ActiveRecord::Schema.define(version: 2019_09_03_060027) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(version: 2019_09_02_154231) do
     t.float "adi"
     t.float "revalo_prix"
     t.float "revalo_loyers"
+    t.string "details_simulations", default: [], array: true
     t.index ["appartement_id"], name: "index_simulations_on_appartement_id"
     t.index ["client_id"], name: "index_simulations_on_client_id"
     t.index ["user_id"], name: "index_simulations_on_user_id"
