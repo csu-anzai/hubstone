@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="welcome-dashboard">
+    <h3>Bienvenue sur votre tableau de bord <span><%= current_user.prenom %></span></h3>
+  </div>
+  <ul class="list-inline tabs-underlined">
+    <li>
+      <a href="#" class="tab-underlined active" data-target="clients">Clientèle</a>
+    </li>
+    <li>
+      <a href="#" class="tab-underlined" data-target="simulations">Simulations en cours</a>
+    </li>
+    <li>
+      <a href="#" class="tab-underlined" data-target="options">Options en cours</a>
+    </li>
+    <li>
+      <a href="#" class="tab-underlined" data-target="sales">Ventes</a>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="clients">
+    <container>
+      <div class="row">
+        <div class="col-8 offset-2 mt-3">
+          <% @clients.each do |client| %>
+          <ul><%= render 'shared/card-client', client: client %></ul>
+          <% end %>
+        </div>
+      </div>
+    </container>
+  </div>
+
+  <div class="d-none tab-content" id="simulations">
+    <container>
+      <div class="row">
+        <div class="col-8 offset-2 mt-3">
+          <h2>test 2</h2>
+        </div>
+      </div>
+    </container>
+  </div>
+
+  <div class="d-none tab-content" id="options">
+    <container>
+      <div class="row">
+        <div class="col-8 offset-2 mt-3">
+          <h2>test 3</h2>
+        </div>
+      </div>
+    </container>
+  </div>
+
+  <div class="d-none tab-content" id="sales">
+    <container>
+      <div class="row">
+        <div class="col-8 offset-2 mt-3">
+          <h2>test 4</h2>
+        </div>
+      </div>
+    </container>
+  </div>
+
+</div>
+

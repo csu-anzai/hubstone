@@ -1,0 +1,11 @@
+<div class="card-client">
+  <%= image_tag client.image %>
+  <h2>
+    <% client_array = client.prenom.split('-') %>
+    <% client_array.each do |f| %>
+      <% f.capitalize! %>
+    <% end %>
+    <%= prenom_ok = client_array.join('-') %>
+    <%= client.nom.capitalize %></h2>
+</div>
+

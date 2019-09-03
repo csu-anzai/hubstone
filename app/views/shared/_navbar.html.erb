@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-hubstone">
+<div class="navbar navbar-expand-sm navbar-light navbar-hubstone <%= "navbar-home" if params[:action] == "home" %>">
   <%= link_to "/", class: "navbar-brand" do %>
     <%= image_tag "https://res.cloudinary.com/agazielly/image/upload/c_crop,h_150,w_500/v1566903122/Hubstone_ogfubl.png" %>
   <% end %>
@@ -23,7 +23,7 @@
         <li class="nav-item dropdown">
           <%= image_tag "https://res.cloudinary.com/agazielly/image/upload/v1566378875/jack-finnigan-rriAI0nhcbc-unsplash_vpmxjo.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Mon dashboard", "#", class: "dropdown-item" %>
+            <%= link_to "Mon tableau de bord", dashboard_path, class: "dropdown-item" %>
             <%= link_to "Mon compte", edit_user_registration_path, class: "dropdown-item" %>
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
           </div>

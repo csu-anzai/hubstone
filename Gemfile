@@ -19,6 +19,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'geocoder'
 gem 'cloudinary', '~> 1.9.1'
+gem 'finance_math'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
