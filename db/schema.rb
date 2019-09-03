@@ -10,7 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_03_132607) do
+
+ActiveRecord::Schema.define(version: 2019_09_02_142216) do
+
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +36,16 @@ ActiveRecord::Schema.define(version: 2019_09_03_132607) do
     t.string "nom_programme"
     t.string "image"
     t.string "adresse"
+    t.integer "scoring_prix"
+    t.integer "scoring_rendement"
+    t.integer "scoring_potentiel"
+    t.integer "scoring_energie"
+    t.integer "scoring_qualite"
+    t.integer "scoring_amenagement"
+    t.integer "scoring_dynamisme"
+    t.integer "scoring_amenites"
+    t.integer "scoring_accessibilite"
+    t.integer "scoring_equipements"
     t.float "loyer"
     t.float "charges"
   end
@@ -48,6 +60,11 @@ ActiveRecord::Schema.define(version: 2019_09_03_132607) do
     t.float "tmi"
     t.string "image"
     t.index ["user_id"], name: "index_clients_on_user_id"
+  end
+
+  create_table "comparaisons", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "selections", force: :cascade do |t|

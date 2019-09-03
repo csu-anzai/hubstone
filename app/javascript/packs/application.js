@@ -44,27 +44,28 @@ initMapbox();
 initChart();
 
 
-// CHARTKICK
 
 
 //Scroll down arrow
-// $(function() {
-//   $('section02').on('click', function(e) {
-//     e.preventDefault();
-//     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-//   });
-// });
+$(function() {
+$('section02').on('click', function(e) {
+    e.preventDefault();
+   $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+});
 
-// full page
-// import fullpage from "fullpage.js";
-// new fullpage('#fullpage', {
-//      //options here
-//     autoScrolling: true,
-//     navigation: true,
-//     navigationTooltips: ['Home'],
-//     showActiveTooltip:true,
-//     scrollingSpeed:1000,
+full page
+import fullpage from "fullpage.js";
+new fullpage('#fullpage', {
+    //options here
+     autoScrolling: true,
+     navigation: true,
+     navigationTooltips: ['Home'],
+     showActiveTooltip:true,
+     scrollingSpeed:1000,
 
-// });
+});
 
-// dashboardTabs();
+// Dashboard change tabs effect
+dashboardTabs();
+
