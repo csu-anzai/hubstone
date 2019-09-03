@@ -70,10 +70,16 @@ const openInfoWindow = (markers, map) => {
       const longitude = (markers[index]['_lngLat']['lng']);
       const latitude = (markers[index]['_lngLat']['lat']);
       map.flyTo({
-        center: [longitude, latitude]});
+        center: [longitude, latitude],
+        zoom: 9});
     });
     card.addEventListener('mouseleave', () => {
       markers[index].togglePopup();
+      const longitude = (markers[index]['_lngLat']['lng']);
+      const latitude = (markers[index]['_lngLat']['lat']);
+      map.flyTo({
+        center: [longitude, latitude],
+        zoom: 3});
     });
   });
 }
