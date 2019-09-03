@@ -13,9 +13,14 @@ def new
     # @simulation.client = Client.find(params[:client_id])
 #    @simulation.save
     @simulation.details_simulations = calculs_simulation(@simulation)
-    # @simulation.save
 
-    # @simulation.effort_treso_tot = @simulation.details_simulations.sum {|h| JSON.parse(h.gsub('=>',':'))["effort_treso"] }
+    @simulation.effort_treso_tot = @simulation.details_simulations.sum {|h| JSON.parse(h.gsub('=>',':'))["effort_treso"] }
+    @simulation.effort_treso_moyen = @simulation.effort_treso_tot / @simulation.duree
+    @simulation.economie_impot_tot = @simulation.details_simulations.sum {|h| JSON.parse(h.gsub('=>',':'))["economie_impot"] }
+    @simulation.economie_impot_tot = @simulation.details_simulations.sum {|h| JSON.parse(h.gsub('=>',':'))["loyer_revalo"] }
+    @simulation.benefice_net = @simulation.revalo_prix - @simulation.effort_treso_tot
+    @simulation.save
+
 
     if @simulation.save
       redirect_to simulation_path(@simulation)
@@ -26,6 +31,7 @@ def new
 
   def show
     @simulation = Simulation.find(params[:id])
+    @capital_net = @simulation.details_simulations.map { |h| JSON.parse(h.gsub('=>', ':'))["capital_net"]}
   end
 
   def destroy
@@ -52,12 +58,12 @@ def calculs_simulation(simulation)
   array = []
   counter = 1
   simulation.duree.times do |s|
-    charges = simulation.appartement.charges
+    charges = simulation.appartement.charges / 12
     loyers = simulation.appartement.loyer
     interets = (capital_restant_du.to_f * taux_interet.to_f) / 1200
     fiscalite = (tmi.to_f + 17.2 / 100) * (loyers.to_f - charges.to_f - interets.to_f)
     if (counter / 12) < 9
-      eco_impots = prix * 2 / 1200
+      eco_impots = (prix * 2 / 100) / 12
     elsif (counter / 12) < 12
       eco_impots = prix * 1 / 1200
     else

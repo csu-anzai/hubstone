@@ -39,7 +39,13 @@ function openCity(evt, cityName) {
 import 'mapbox-gl/dist/mapbox-gl.css';
 import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import { initMapbox } from '../plugins/init_mapbox';
+import { initChart } from '../components/init_chart';
 initMapbox();
+initChart();
+
+
+// CHARTKICK
+
 
 //Scroll down arrow
 // $(function() {
@@ -50,17 +56,15 @@ initMapbox();
 // });
 
 // full page
-import fullpage from "fullpage.js";
-new fullpage('#fullpage', {
-     //options here
-    autoScrolling: true,
-    navigation: true,
-    navigationTooltips: ['Home'],
-    showActiveTooltip:true,
-    scrollingSpeed:1000,
+// import fullpage from "fullpage.js";
+// new fullpage('#fullpage', {
+//      //options here
+//     autoScrolling: true,
+//     navigation: true,
+//     navigationTooltips: ['Home'],
+//     showActiveTooltip:true,
+//     scrollingSpeed:1000,
 
-});
+// });
 
-dashboardTabs();
-
-
+// dashboardTabs();
