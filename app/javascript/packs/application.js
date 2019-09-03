@@ -60,5 +60,3 @@ new fullpage('#fullpage', {
 
 });
 
-
-

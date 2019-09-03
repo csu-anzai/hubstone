@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+.container-comparaison {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-comparaison {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  background-color: white;
+
+  p {
+    margin-bottom: 0px;
+    letter-spacing: -1.7px;
+  }
+
+}
+
+.row-comparaison.collapsed {
+  background-color: transparent;
+}
+
+.chevron {
+  width: 5px;
+}
+
+.row-comparaison:hover {
+  background-color: white;
+}
+
+.row-comparaison h3 {
+  font-size: 15px;
+  margin-bottom: 0px;
+
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-text a {
+  padding: 24px;
+}
+
+.card-category-comparaison h2 {
+  font-size: 15px;
+  padding: 25px 15px;
+  /*border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
+  font-weight: bold;
+}
+
+.scoring {
+  display: flex;
+}
+
+.scoring p {
+  font-size: 14px !important;
+  margin: 0;
+  margin-left: 35px;
+}
+
+.scoring-text {
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.scoring-text p {
+  font-family: 'Nunito', sans-serif;
+}
+
+.real-stars {
+  margin-left: 10px;
+
+}
+
+.stars {
+  margin-left: 40px;
+
+  span {
+    font-size: 9px;
+    padding-left: 2px;
+    background-color: transparent !important;
+  }
+}
+#first-stars{
+  margin-left:50px;
+}
+#last-stars{
+  margin-left:20px;
+}
+.card-category-comparaison {
+  background-size: cover;
+  background-position: center;
+  color: black;
+  border-radius: 7px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 330px;
+  margin-top: 60px;
+}
