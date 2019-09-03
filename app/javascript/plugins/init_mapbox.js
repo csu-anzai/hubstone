@@ -43,8 +43,8 @@ const initMapbox = () => {
       .addTo(map);
     mapMarkers.push(newMarker)
     newMarker.getElement().dataset.markerId = marker.id;
-    // newMarker.getElement().addEventListener('mouseenter', (e) => toggleCardHighLighting(e) );
-    // newMarker.getElement().addEventListener('mouseleave', (e) => toggleCardHighLighting(e) );
+    newMarker.getElement().addEventListener('mouseenter', (e) => toggleCardHighLighting(e) );
+    newMarker.getElement().addEventListener('mouseleave', (e) => toggleCardHighLighting(e) );
   });
 
   // addMarkersToMap(map, markers);
@@ -84,9 +84,10 @@ const openInfoWindow = (markers, map) => {
   });
 }
 
-// const toggleCardHighLighting = (event) => {
-//   const card = document.querySelector(`[data-appartement-id="${event.currentTarget.dataset.markerId}"]`);
-//   card.classList.toggle('highlight');
-// }
+const toggleCardHighLighting = (event) => {
+  const card = document.querySelector(`[data-appartement-id="${event.currentTarget.dataset.markerId}"]`);
+  card.classList.toggle('highlight');
+  card.scrollIntoView();
+}
 
 export { initMapbox };
