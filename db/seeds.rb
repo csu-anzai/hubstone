@@ -48,7 +48,9 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '75'
+    departement: '75',
+    loyer: '840',
+    charges: '1200',
     )
 
 Appartement.create!(
@@ -65,7 +67,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '75'
+    departement: '75',
+    loyer: '680',
+    charges: '810',
     )
 
 Appartement.create!(
@@ -82,7 +86,9 @@ Appartement.create!(
     promoteur: 'Kaufman & Broad',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '75'
+    departement: '75',
+    loyer: '450',
+    charges: '630',
     )
 
 Appartement.create!(
@@ -99,7 +105,9 @@ Appartement.create!(
     promoteur: 'Bouygues Immmobilier',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '75'
+    departement: '75',
+    loyer: '510',
+    charges: '680',
     )
 
 Appartement.create!(
@@ -116,7 +124,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '930',
+    charges: '1460',
     )
 
 Appartement.create!(
@@ -133,7 +143,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1100',
+    charges: '1600',
     )
 
 Appartement.create!(
@@ -150,7 +162,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1050',
+    charges: '1490',
     )
 
 Appartement.create!(
@@ -167,7 +181,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '880',
+    charges: '1110',
     )
 
 Appartement.create!(
@@ -184,7 +200,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1000',
+    charges: '1420',
     )
 
 Appartement.create!(
@@ -201,7 +219,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '985',
+    charges: '1310',
     )
 
 Appartement.create!(
@@ -218,7 +238,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '880',
+    charges: '1230',
     )
 
 Appartement.create!(
@@ -235,7 +257,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '680',
+    charges: '810',
     )
 
 Appartement.create!(
@@ -252,7 +276,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '760',
+    charges: '1050',
     )
 
 Appartement.create!(
@@ -269,7 +295,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1140',
+    charges: '1700',
     )
 
 Appartement.create!(
@@ -286,7 +314,9 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '44'
+    departement: '44',
+    loyer: '2400',
+    charges: '3600',
     )
 
 Appartement.create!(
@@ -303,7 +333,9 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '44'
+    departement: '44',
+    loyer: '530',
+    charges: '750',
     )
 
 Appartement.create!(
@@ -320,7 +352,9 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '69'
+    departement: '69',
+    loyer: '1300',
+    charges: '1740',
     )
 
 Appartement.create!(
@@ -337,7 +371,9 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '69'
+    departement: '69',
+    loyer: '1600',
+    charges: '2800',
     )
 
 Appartement.create!(
@@ -354,7 +390,9 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '1820',
+    charges: '2680',
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -370,7 +408,9 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '3800',
+    charges: '5620',
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -386,7 +426,9 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '3500',
+    charges: '4700',
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -402,7 +444,9 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '1200',
+    charges: '1620',
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -418,7 +462,9 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '1500',
+    charges: '2240',
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -434,7 +480,9 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '2000',
+    charges: '3000',
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -450,7 +498,9 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '1800',
+    charges: '2800',
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -466,7 +516,9 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '2600',
+  charges: '3840',
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -482,7 +534,9 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '2500',
+    charges: '3700',
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -498,7 +552,9 @@ Appartement.create!(
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '1120',
+    charges: '1830',
    )
 
 
@@ -516,7 +572,9 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1130',
+    charges: '1740',
     )
 
 Appartement.create!(
@@ -533,7 +591,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '820',
+    charges: '1230',
     )
 
 Appartement.create!(
@@ -550,7 +610,9 @@ Appartement.create!(
     promoteur: 'Kaufman & Broad',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '480',
+    charges: '780',
     )
 
 Appartement.create!(
@@ -567,7 +629,9 @@ Appartement.create!(
     promoteur: 'Bouygues Immmobilier',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '980',
+    charges: '1430',
     )
 
 Appartement.create!(
@@ -584,7 +648,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1170',
+    charges: '1640',
     )
 
 Appartement.create!(
@@ -601,7 +667,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1460',
+    charges: '2230',
     )
 
 Appartement.create!(
@@ -618,7 +686,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1150',
+    charges: '1760',
     )
 
 Appartement.create!(
@@ -635,7 +705,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '880',
+    charges: '1220',
     )
 
 Appartement.create!(
@@ -652,7 +724,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1120',
+    charges: '2000',
     )
 
 Appartement.create!(
@@ -669,7 +743,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1120',
+    charges: '1920',
     )
 
 Appartement.create!(
@@ -686,7 +762,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1120',
+    charges: '1920',
     )
 
 Appartement.create!(
@@ -703,7 +781,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '820',
+    charges: '1300',
     )
 
 Appartement.create!(
@@ -720,7 +800,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '920',
+    charges: '1200',
     )
 
 Appartement.create!(
@@ -737,7 +819,9 @@ Appartement.create!(
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1400',
+    charges: '2300',
     )
 
 Appartement.create!(
@@ -754,7 +838,9 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '2710',
+    charges: '4000',
     )
 
 Appartement.create!(
@@ -771,7 +857,9 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '380',
+    charges: '640',
     )
 
 Appartement.create!(
@@ -788,7 +876,9 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '820',
+    charges: '1530',
     )
 
 Appartement.create!(
@@ -805,7 +895,9 @@ Appartement.create!(
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1240',
+    charges: '1930',
     )
 
 puts 'Love you mum'
@@ -817,7 +909,7 @@ Client.create!(
     prenom: 'Xavier',
     nom: 'Niel',
     civilite: 'Monsieur',
-    tmi: '3350000',
+    tmi: '0.3',
     user_id: User.all[0].id,
     image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439284/Xavier_Niel004_snvlvz.jpg'
     )
@@ -826,7 +918,7 @@ Client.create!(
     prenom: 'françois-henri',
     nom: 'Pinault',
     civilite: 'Monsieur',
-    tmi: '1350000',
+    tmi: '0.14',
     user_id: User.all[0].id,
     image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439283/francois-henri-pinault_fnzkww.jpg'
     )

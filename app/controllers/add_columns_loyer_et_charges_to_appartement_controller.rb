@@ -1,0 +1,2 @@
+class AddColumnsLoyerEtChargesToAppartementController < ApplicationController
+end

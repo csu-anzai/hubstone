@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_02_154231) do
+ActiveRecord::Schema.define(version: 2019_09_03_132607) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(version: 2019_09_02_154231) do
     t.string "nom_programme"
     t.string "image"
     t.string "adresse"
+    t.float "loyer"
+    t.float "charges"
   end
 
   create_table "clients", force: :cascade do |t|
@@ -70,6 +72,14 @@ ActiveRecord::Schema.define(version: 2019_09_02_154231) do
     t.float "adi"
     t.float "revalo_prix"
     t.float "revalo_loyers"
+    t.string "details_simulations", default: [], array: true
+    t.float "apport"
+    t.float "effort_treso_tot"
+    t.float "effort_treso_moyen"
+    t.float "benefice_net"
+    t.float "economie_impot_tot"
+    t.float "loyers_tot"
+    t.float "capital_net"
     t.index ["appartement_id"], name: "index_simulations_on_appartement_id"
     t.index ["client_id"], name: "index_simulations_on_client_id"
     t.index ["user_id"], name: "index_simulations_on_user_id"
