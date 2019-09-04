@@ -10,4 +10,6 @@ class Appartement < ApplicationRecord
   ACTABILITE = ["actable", "non-actable"]
   DISPONIBILITE = ["Disponible", "Indisponible"]
 
+  validates :scoring_prix, :inclusion => {:in => (1..5)}
+
 end

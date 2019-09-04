@@ -42,12 +42,22 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '3P',
     ville: 'Honfleur',
-    adresse: '178 Chemin du Mont Bouis',
+    adresse: '178 Chemin du Mont Bouis, La Riviere-Saint-Sauveur',
     nom_programme: 'Le Clos Saint-Germain',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '75'
+    departement: '75',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -59,12 +69,24 @@ Appartement.create!(
     etage: 'R+5',
     typologie: '3P',
     ville: 'Paris',
-    adresse: 'Porte de la Villette',
+    adresse: 'Porte de la Villette, Paris',
     nom_programme: 'Les ilots de Chaumont',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '75'
+    departement: '75',
+    loyer: '680',
+    charges: '810',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -76,12 +98,24 @@ Appartement.create!(
     etage: 'R+2',
     typologie: '1P',
     ville: 'Pont-du-Casse',
-    adresse: '519 Avenue de Cahors',
+    adresse: '519 Avenue de Cahors, Pont-du-Casse',
     nom_programme: "Fontaine d'Auteuil",
     promoteur: 'Kaufman & Broad',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '75'
+    departement: '75',
+    loyer: '450',
+    charges: '630',
+    scoring_prix: 1,
+    scoring_rendement:4,
+    scoring_potentiel:2,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -93,12 +127,24 @@ Appartement.create!(
     etage: 'R+2',
     typologie: '2P',
     ville: 'Boulogne',
-    adresse: '86 Rue Gallieni',
+    adresse: '86 Rue Gallieni, Boulogne',
     nom_programme: 'Carre Seine',
     promoteur: 'Bouygues Immmobilier',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '75'
+    departement: '75',
+    loyer: '510',
+    charges: '680',
+    scoring_prix: 4,
+    scoring_rendement:5,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:2,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -110,12 +156,24 @@ Appartement.create!(
     etage: 'R+2',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '380 Avenue de Rimiez',
+    adresse: '85 Avenue Raoul Dufy, Nice',
     nom_programme: 'Le Domaine de Gairaut',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '930',
+    charges: '1460',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -127,12 +185,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '88 Avenue Raoul Dufy',
+    adresse: '88 Avenue Raoul Dufy, Nice',
     nom_programme: 'Corniche Marine',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1100',
+    charges: '1600',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:3
     )
 
 Appartement.create!(
@@ -144,12 +214,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '3 ruelle Saint Roch',
+    adresse: '3 ruelle Saint Roch, Nice',
     nom_programme: 'Carré Sérénice',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1050',
+    charges: '1490',
+    scoring_prix: 2,
+    scoring_rendement:2,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:4,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
     )
 
 Appartement.create!(
@@ -161,12 +243,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '2P',
     ville: 'Nice',
-    adresse: '34 avenue des Diables Bleus',
+    adresse: '34 avenue des Diables Bleus, Nice',
     nom_programme: 'Nice Way',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '880',
+    charges: '1110',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -178,12 +272,24 @@ Appartement.create!(
     etage: 'R+2',
     typologie: '3P',
     ville: 'Grasse',
-    adresse: '15 chemin du Bois Fleuri',
+    adresse: '15 chemin du Bois Fleuri, Grasse',
     nom_programme: 'Secret Park',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1000',
+    charges: '1420',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:1
     )
 
 Appartement.create!(
@@ -195,12 +301,24 @@ Appartement.create!(
     etage: 'R+1',
     typologie: '3P',
     ville: 'Cannes',
-    adresse: '152/154 Avenue Francis Tonner',
+    adresse: '152/154 Avenue Francis Tonner, Cannes',
     nom_programme: 'Villa Alice',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '985',
+    charges: '1310',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -212,12 +330,24 @@ Appartement.create!(
     etage: 'R+1',
     typologie: '3P',
     ville: 'Mougins',
-    adresse: '539 avenue de Tournamy',
+    adresse: '539 avenue de Tournamy, Mougins',
     nom_programme: 'Cours des Arts',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '880',
+    charges: '1230',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -229,12 +359,24 @@ Appartement.create!(
     etage: 'R+2',
     typologie: '1P',
     ville: 'Mougins',
-    adresse: '489 Avenue de Tournamy',
+    adresse: '489 Avenue de Tournamy, Mougins',
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '680',
+    charges: '810',
+    scoring_prix: 5,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:2,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -246,12 +388,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '2P',
     ville: 'Mougins',
-    adresse: '489 Avenue de Tournamy',
+    adresse: '489 Avenue de Tournamy, Mougins',
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '760',
+    charges: '1050',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -263,12 +417,24 @@ Appartement.create!(
     etage: 'R+4',
     typologie: '3P',
     ville: 'Mougins',
-    adresse: '489 Avenue de Tournamy',
+    adresse: '489 Avenue de Tournamy, Mougins',
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1140',
+    charges: '1700',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -280,12 +446,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '3P',
     ville: 'Nantes',
-    adresse: '25 rue de la Cour Bastille',
+    adresse: '25 rue de la Cour Bastille, Nantes',
     nom_programme: 'Cour Bastille',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '44'
+    departement: '44',
+    loyer: '2400',
+    charges: '3600',
+    scoring_prix: 1,
+    scoring_rendement:2,
+    scoring_potentiel:2,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -297,12 +475,24 @@ Appartement.create!(
     etage: 'R+1',
     typologie: '2P',
     ville: 'Coueron',
-    adresse: '35 rue Jean Jaures',
+    adresse: '35 rue Jean Jaures, Coueron',
     nom_programme: 'Les Allees de la Bretèche',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '44'
+    departement: '44',
+    loyer: '530',
+    charges: '750',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:2
     )
 
 Appartement.create!(
@@ -314,12 +504,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '2P',
     ville: 'Lyon',
-    adresse: '8 rue Pierre Valdo',
+    adresse: '8 rue Pierre Valdo, Lyon',
     nom_programme: 'Ivory Park',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '69'
+    departement: '69',
+    loyer: '1300',
+    charges: '1740',
+    scoring_prix: 5,
+    scoring_rendement:3,
+    scoring_potentiel:5,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -331,12 +533,24 @@ Appartement.create!(
     etage: 'R+4',
     typologie: '3P',
     ville: 'Lyon',
-    adresse: '28 rue Pierre Valdo',
+    adresse: '28 rue Pierre Valdo, Lyon',
     nom_programme: 'Factory Link',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '69'
+    departement: '69',
+    loyer: '1600',
+    charges: '2800',
+    scoring_prix: 2,
+    scoring_rendement:2,
+    scoring_potentiel:2,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:2
     )
 
 Appartement.create!(
@@ -348,12 +562,24 @@ Appartement.create!(
    etage: 'R+4',
    typologie: '2P',
    ville: 'Cannes',
-   adresse: 'rue d\'Antibes',
+   adresse: 'rue d\'Antibes, Cannes',
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '1820',
+    charges: '2680',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -364,12 +590,24 @@ Appartement.create!(
    etage: 'R+4',
    typologie: '3P',
    ville: 'Cannes',
-   adresse: 'la Croisette',
+   adresse: 'la Croisette, Cannes',
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '3800',
+    charges: '5620',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -380,12 +618,24 @@ Appartement.create!(
    etage: 'R+4',
    typologie: '3P',
    ville: 'Cannes',
-   adresse: 'la Croisette',
+   adresse: 'la Croisette, Cannes',
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '3500',
+    charges: '4700',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -396,12 +646,24 @@ Appartement.create!(
    etage: 'R+4',
    typologie: '3P',
    ville: 'Cannes',
-   adresse: '78 Avenue Francis Tonner',
+   adresse: '78 Avenue Francis Tonner, Cannes',
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '1200',
+    charges: '1620',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -412,12 +674,24 @@ Appartement.create!(
    etage: 'R+4',
    typologie: '3P',
    ville: 'Cannes',
-   adresse: '26 Avenue de Lattre de Tassigny',
+   adresse: '26 Avenue de Lattre de Tassigny, Cannes',
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '1500',
+    charges: '2240',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:2,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:2
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -428,12 +702,24 @@ Appartement.create!(
    etage: 'R+4',
    typologie: '2P',
    ville: 'Cannes',
-   adresse: '2 Boulevard Delaup',
+   adresse: '2 Boulevard Delaup, Cannes',
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '2000',
+    charges: '3000',
+    scoring_prix: 5,
+    scoring_rendement:4,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:5,
+    scoring_amenagement:5,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -444,12 +730,24 @@ Appartement.create!(
    etage: 'R+4',
    typologie: '3P',
    ville: 'Cannes',
-   adresse: '7 Avenue Pierre Semard',
+   adresse: '7 Avenue Pierre Semard, Cannes',
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '1800',
+    charges: '2800',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:4,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -460,12 +758,24 @@ Appartement.create!(
    etage: 'R+4',
    typologie: '3P',
    ville: 'Cannes',
-   adresse: '4 Avenue Andre Capron',
+   adresse: '4 Avenue Andre Capron, Cannes',
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '2600',
+   charges: '3840',
+   scoring_prix: 4,
+   scoring_rendement:3,
+   scoring_potentiel:4,
+   scoring_energie:4,
+   scoring_qualite:3,
+   scoring_amenagement:4,
+   scoring_dynamisme:3,
+   scoring_amenites:4,
+   scoring_accessibilite:4,
+   scoring_equipements:5
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -476,12 +786,24 @@ Appartement.create!(
    etage: 'R+4',
    typologie: '3P',
    ville: 'Cannes',
-   adresse: '111 Rue Antibes',
+   adresse: '111 Rue Antibes, Cannes',
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '2500',
+   charges: '3700',
+   scoring_prix: 4,
+   scoring_rendement:3,
+   scoring_potentiel:4,
+   scoring_energie:4,
+   scoring_qualite:2,
+   scoring_amenagement:3,
+   scoring_dynamisme:3,
+   scoring_amenites:4,
+   scoring_accessibilite:2,
+   scoring_equipements:5
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -492,12 +814,24 @@ Appartement.create!(
    etage: 'R+4',
    typologie: '2P',
    ville: 'Cannes',
-   adresse: '18 Rue des Freres Pradignac',
+   adresse: '18 Rue des Freres Pradignac, Cannes',
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
    image: 'http:',
-   departement: '06'
+   departement: '06',
+   loyer: '1120',
+   charges: '1830',
+   scoring_prix: 4,
+   scoring_rendement:4,
+   scoring_potentiel:4,
+   scoring_energie:4,
+   scoring_qualite:3,
+   scoring_amenagement:3,
+   scoring_dynamisme:3,
+   scoring_amenites:4,
+   scoring_accessibilite:4,
+   scoring_equipements:5
    )
 
 
@@ -510,12 +844,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '2P',
     ville: 'Nice',
-    adresse: '2 Avenue Auguste Verola',
+    adresse: '2 Avenue Auguste Verola, Nice',
     nom_programme: 'Maison Neuve',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1130',
+    charges: '1740',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -527,12 +873,24 @@ Appartement.create!(
     etage: 'R+5',
     typologie: '3P',
     ville: 'Paris',
-    adresse: 'Porte de Saint Honore',
+    adresse: 'Porte de Saint Honore, Paris',
     nom_programme: 'Les ilots du Pont de Seine',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '820',
+    charges: '1230',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:2,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:4,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:3
     )
 
 Appartement.create!(
@@ -544,12 +902,24 @@ Appartement.create!(
     etage: 'R+2',
     typologie: '1P',
     ville: 'Pont-du-Casse',
-    adresse: '519 Avenue de Cahors',
+    adresse: '519 Avenue de Cahors, Pont-du-Casse',
     nom_programme: "Fontaine d'Auteuil",
     promoteur: 'Kaufman & Broad',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '480',
+    charges: '780',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -561,12 +931,24 @@ Appartement.create!(
     etage: 'R+2',
     typologie: '2P',
     ville: 'Boulogne',
-    adresse: '86 Rue Gallieni',
+    adresse: '86 Rue Gallieni, Boulogne',
     nom_programme: 'Carre Seine',
     promoteur: 'Bouygues Immmobilier',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '980',
+    charges: '1430',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:4,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -578,12 +960,24 @@ Appartement.create!(
     etage: 'R+2',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '43 Rue de France',
+    adresse: '9 ruelle Saint Roch, Nice',
     nom_programme: 'Le Domaine de Gairaut',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1170',
+    charges: '1640',
+    scoring_prix: 5,
+    scoring_rendement:4,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -595,12 +989,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '88 Avenue Raoul Dufy',
+    adresse: '88 Avenue Raoul Dufy, Nice',
     nom_programme: 'Corniche Marine',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1460',
+    charges: '2230',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -612,12 +1018,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '3 ruelle Saint Roch',
+    adresse: '3 ruelle Saint Roch, Nice',
     nom_programme: 'Carre Serenice',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1150',
+    charges: '1760',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:4,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:3
     )
 
 Appartement.create!(
@@ -629,12 +1047,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '2P',
     ville: 'Nice',
-    adresse: '125 Prom. des Anglais',
+    adresse: '125 Prom. des Anglais, Nice',
     nom_programme: 'Nice Way',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '880',
+    charges: '1220',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -646,12 +1076,24 @@ Appartement.create!(
     etage: 'R+2',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '4 Rue Bonaparte',
+    adresse: '4 Rue Bonaparte, Nice',
     nom_programme: 'Secret Park',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1120',
+    charges: '2000',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
 
 Appartement.create!(
@@ -663,12 +1105,24 @@ Appartement.create!(
     etage: 'R+1',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '152/154 Avenue Francis Tonner',
+    adresse: '152/154 Avenue Francis Tonner, Nice',
     nom_programme: 'Villa Alice',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1120',
+    charges: '1920',
+    scoring_prix: 4,
+    scoring_rendement:5,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:2,
+    scoring_accessibilite:4,
+    scoring_equipements:4
     )
 
 Appartement.create!(
@@ -680,12 +1134,24 @@ Appartement.create!(
     etage: 'R+1',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '26 Avenue Malaussena',
+    adresse: '26 Avenue Malaussena, Nice',
     nom_programme: 'Cours des Arts',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '1120',
+    charges: '1920',
+    scoring_prix: 4,
+    scoring_rendement:2,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4
     )
 
 Appartement.create!(
@@ -697,12 +1163,24 @@ Appartement.create!(
     etage: 'R+2',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '8 Rue Rossini',
+    adresse: '8 Rue Rossini, Nice',
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '820',
+    charges: '1300',
+    scoring_prix: 3,
+    scoring_rendement:3,
+    scoring_potentiel:2,
+    scoring_energie:3,
+    scoring_qualite:4,
+    scoring_amenagement:3,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:3,
+    scoring_equipements:4
     )
 
 Appartement.create!(
@@ -714,13 +1192,26 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '2P',
     ville: 'Nice',
-    adresse: '81, Rue de France',
+    adresse: '81, Rue de France, Nice',
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    loyer: '920',
+    charges: '1200',
+    scoring_prix: 4,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5
     )
+
 
 Appartement.create!(
     livraison: 'T4 2019',
@@ -731,12 +1222,24 @@ Appartement.create!(
     etage: 'R+4',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '4 Rue Bonaparte',
+    adresse: '4 Rue Bonaparte, Nice',
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:4,
+    scoring_amenagement:2,
+    scoring_dynamisme:3,
+    scoring_amenites:5,
+    scoring_accessibilite:4,
+    scoring_equipements:3,
+    loyer: '1400',
+    charges: '2300'
     )
 
 Appartement.create!(
@@ -748,12 +1251,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '3P',
     ville: 'Nice',
-    adresse: '25 rue de la Cour Bastille',
+    adresse: '25 rue de la Cour Bastille, Nice',
     nom_programme: 'Cour Bastille',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:3,
+    scoring_amenagement:2,
+    scoring_dynamisme:5,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:4,
+    loyer: '2710',
+    charges: '4000'
     )
 
 Appartement.create!(
@@ -765,12 +1280,24 @@ Appartement.create!(
     etage: 'R+1',
     typologie: '2P',
     ville: 'Nice',
-    adresse: '7 Prom. des Anglais',
+    adresse: '7 Prom. des Anglais, Nice',
     nom_programme: 'Les Allees de la Bretèche',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    scoring_prix: 5,
+    scoring_rendement:4,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:4,
+    scoring_amenagement:5,
+    scoring_dynamisme:4,
+    scoring_amenites:4,
+    scoring_accessibilite:4,
+    scoring_equipements:5,
+    loyer: '380',
+    charges: '640'
     )
 
 Appartement.create!(
@@ -782,12 +1309,24 @@ Appartement.create!(
     etage: 'R+3',
     typologie: '2P',
     ville: 'Nice',
-    adresse: '8 Rue Alphonse Karr',
+    adresse: '8 Rue Alphonse Karr, Nice',
     nom_programme: 'Ivory Park',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    scoring_prix: 2,
+    scoring_rendement:3,
+    scoring_potentiel:3,
+    scoring_energie:4,
+    scoring_qualite:4,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:2,
+    scoring_accessibilite:3,
+    scoring_equipements:3,
+    loyer: '820',
+    charges: '1530'
     )
 
 Appartement.create!(
@@ -799,13 +1338,49 @@ Appartement.create!(
     etage: 'R+4',
     typologie: '5P',
     ville: 'Nice',
-    adresse: '27 av Georges Clemenceau',
+    adresse: '27 av Georges Clemenceau, Nice',
     nom_programme: 'Factory Link',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
     image: 'http:',
-    departement: '06'
+    departement: '06',
+    scoring_prix: 4,
+    scoring_rendement:5,
+    scoring_potentiel:4,
+    scoring_energie:4,
+    scoring_qualite:4,
+    scoring_amenagement:5,
+    scoring_dynamisme:3,
+    scoring_amenites:1,
+    scoring_accessibilite:4,
+    scoring_equipements:2,
+    loyer: '1240',
+    charges: '1930'
     )
 
-
+puts 'Love you mum'
 puts 'Finished creating apartments...'
+
+puts 'Creating clients...'
+
+Client.create!(
+    prenom: 'Xavier',
+    nom: 'Niel',
+    civilite: 'Monsieur',
+    tmi: '0.3',
+    user_id: User.all[0].id,
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439284/Xavier_Niel004_snvlvz.jpg'
+    )
+
+Client.create!(
+    prenom: 'françois-henri',
+    nom: 'Pinault',
+    civilite: 'Monsieur',
+    tmi: '0.14',
+    user_id: User.all[0].id,
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439283/francois-henri-pinault_fnzkww.jpg'
+    )
+
+puts 'Finished creating clients...'
+sleep 2
+puts 'Success is not final, failure is not fatal: it is the courage to continue that counts.'
