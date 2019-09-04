@@ -1,54 +1,125 @@
-<div class="container">
-<div class="row">
-<% @selections.each do |selection| %>
-      <div class="card-product col-6 " data-toggle="collapse" href="#card-details" role="button" aria-expanded="false" aria-controls="card-details">
-         <div class='jose pr-3'>
-          </div>
-        <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
-        <div class="card-product-infos d-flex ml-3">
-         <%= render 'appartements/card_content',appartement:selection.appartement %>
+<div class="container-comparaison">
+  <% @selections.each do |selection| %>
+
+  <%# Début de la card  %>
+  <div class="card-category-comparaison">
+    <div class=card-text>
+      <h2>
+        <%= selection.appartement.nom_programme %>
+      </h2>
+      <a href="" data-toggle="collapse" data-target="#scoring-financier,#scoring-immobilier,#scoring-emplacement" aria-expanded="false" aria-controls="multiCollapseExample2">Déplier</a>
+    </div>
+
+    <div class="row-comparaison collapsed" data-toggle="collapse" data-target="#scoring-financier" aria-expanded="false" aria-controls="multiCollapseExample2">
+      <div class="card-h3">
+        <h3>Scoring financier</h3>
+      </div>
+      <div class="stars" id="first-stars">
+        <p>
+          <% selection.appartement.scoring_prix.times do |i| %>
+          <i class="fas fa-star"></i>
+          <% end %>
+          <% (5 - selection.appartement.scoring_prix).times do |i| %>
+          <i class="far fa-star"></i>
+          <% end %>
+        </p>
+        <!-- <i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <%= image_tag "chevron-right.svg", alt: "chevron", class: "chevron" %>
+    </div>
+
+    <div class="collapse" id="scoring-financier">
+      <div class="scoring">
+        <div class="scoring-text">
+          <p>Prix au m2</p>
+          <p>Rendement locatif</p>
+          <p>Potentiel de plus-value</p>
+        </div>
+        <div class="real-stars">
+          <p id="text-card">
+            <%= selection.appartement.scoring_prix %><span>/5</span></%>
+          </p>
         </div>
       </div>
+    </div>
 
-<div class="container-appartement-show collapse" id="card-details">
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a href="#synthese" class="nav-link active" data-toggle="tab">Synthèse</a>
-          </li>
-          <li class="nav-item">
-            <a href="#scoring" class="nav-link" data-toggle="tab">Scoring</a>
-          </li>
-          <li class="nav-item">
-            <a href="#data" class="nav-link" data-toggle="tab">Data</a>
-          </li>
-          <li class="nav-item">
-            <a href="#documents" class="nav-link" data-toggle="tab">Documents</a>
-          </li>
-        </ul>
+    <%# Scoring immobilier  %>
+    <div class="row-comparaison collapsed" data-toggle="collapse" data-target="#scoring-immobilier" aria-expanded="false" aria-controls="multiCollapseExample2">
+      <div class="card-h3">
+        <h3>Scoring immobilier</h3>
+      </div>
+      <div class="stars">
+        <p>
+          <% selection.appartement.scoring_prix.times do |i| %>
+          <i class="fas fa-star"></i>
+          <% end %>
+          <% (5 - selection.appartement.scoring_prix).times do |i| %>
+          <i class="far fa-star"></i>
+          <% end %>
+        </p>
+        <!-- <i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <%= image_tag "chevron-right.svg", alt: "chevron", class: "chevron" %>
+    </div>
 
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="synthese">
-            <div class="synthese d-flex">
-              <img src="https://res.cloudinary.com/agazielly/image/upload/v1566994755/synthese-globale-definitive-lot_ed2e96.png" id="img-synthese-globale">
-            </div>
-          </div>
-          <div class="tab-pane fade" id="scoring">
-            <div class="synthese d-flex">
-              <img src="https://res.cloudinary.com/agazielly/image/upload/v1567002742/scoring_financier_zcghc1.png" id="img-scoring-financier">
-            </div>
-             <div class="synthese d-flex">
-              <img src="https://res.cloudinary.com/agazielly/image/upload/v1567002745/scoring-immobilier_ddacsg.png" id="img-scoring-immobilier">
-            </div>
-            <div class="synthese d-flex">
-              <img src="https://res.cloudinary.com/agazielly/image/upload/v1567002744/scoring-emplacement_fp3xkc.png" id="img-scoring-emplacement">
-            </div>
-          </div>
-          <div class="tab-pane fade" id="data">
-          </div>
-          <div class="tab-pane fade" id="documents">
-          </div>
+    <div class="collapse" id="scoring-immobilier">
+      <div class="scoring">
+        <div class="scoring-text">
+          <p>Perf Energétique</p>
+          <p>Qualité du bâti</p>
+          <p>Aménagement intérieur</p>
+        </div>
+        <div class="real-stars">
+          <p id="text-card">
+            <%= selection.appartement.scoring_prix %><span class="bg-white">/5</span></%>
+          </p>
         </div>
       </div>
+    </div>
+    <%# Fin Scoring immobilier  %>
+
+    <%# Scoring emplacement  %>
+    <div class="row-comparaison collapsed" data-toggle="collapse" data-target="#scoring-emplacement" aria-expanded="false" aria-controls="multiCollapseExample2">
+      <div class="card-h3">
+        <h3>Scoring emplacement</h3>
+      </div>
+      <div class="stars" id="last-stars">
+        <p>
+          <% selection.appartement.scoring_prix.times do |i| %>
+          <i class="fas fa-star"></i>
+          <% end %>
+          <% (5 - selection.appartement.scoring_prix).times do |i| %>
+          <i class="far fa-star"></i>
+          <% end %>
+        </p>
+        <!-- <i class="fas fa-star-half-alt"></i> -->
+      </div>
+      <%= image_tag "chevron-right.svg", alt: "chevron", class: "chevron" %>
+    </div>
+
+    <div class="collapse" id="scoring-emplacement">
+      <div class="scoring">
+        <div class="scoring-text">
+          <p>Dynamisme local</p>
+          <p>Aménités</p>
+          <p>Accessibilité</p>
+          <p>Equipements collectifs</p>
+        </div>
+        <div class="real-stars">
+          <p id="text-card">
+            <%= selection.appartement.scoring_prix %><span>/5</span></%>
+          </p>
+        </div>
+      </div>
+    </div>
+    <%# Fin Scoring emplacement  %>
+
+
+</div> <%#fin de la card  %>
+    
   <% end %>
-  </div>
-  </div>
+</div>
+
+
+
+

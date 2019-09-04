@@ -21,6 +21,7 @@ gem 'geocoder'
 gem 'cloudinary', '~> 1.9.1'
 gem 'wicked_pdf'
 gem 'wkhtmltopdf-binary'
+gem 'finance_math'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
