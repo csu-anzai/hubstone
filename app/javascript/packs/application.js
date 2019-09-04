@@ -41,7 +41,6 @@ import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css';
 import { initMapbox } from '../plugins/init_mapbox';
 import { initChart } from '../components/init_chart';
 initMapbox();
-initChart();
 
 
 
@@ -54,7 +53,7 @@ $('section02').on('click', function(e) {
   });
 });
 
-full page
+// full page
 import fullpage from "fullpage.js";
 new fullpage('#fullpage', {
     //options here
@@ -68,4 +67,5 @@ new fullpage('#fullpage', {
 
 // Dashboard change tabs effect
 dashboardTabs();
+initChart();
 
