@@ -1,9 +1,7 @@
 <div class="navbar-container">
 <%= render 'shared/banner' %>
   <div class="selection-appartement">
-    <div class="btn btn-flat">
-      <%= link_to "Voir la sélection", selections_path %> - <%= current_user.selections.count %> <i class="fas fa-star"></i>
-    </div>
+  <%= render 'selections_count' %>
   </div>
 
   <div class="container-search-bar" style="position: absolute">
@@ -78,9 +76,12 @@
         <div class="card-product" data-toggle="collapse" href="#card-details-<%=appartement.id%>" role="button" aria-expanded="false" aria-controls="card-details-<%=appartement.id%>" data-appartement-id=<%= appartement.id %>>
 
           <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
-          <div class="card-product-infos d-flex ml-3">
+          <div class="card-product-infos">
 
-           <%= render 'appartements/card_content',appartement:appartement %>
+            <%= render 'appartements/card_content', appartement:appartement %>
+            <div class="selectionable" id= "card-autrement-<%=appartement.id%>">
+              <%= render 'shared/custom_switch_deux', appartement: appartement %>
+            </div>
 
           </div>
         </div>

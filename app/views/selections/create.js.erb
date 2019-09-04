@@ -1,0 +1,27 @@
+// $('.card-product').append();
+
+function refreshSelection(innerHTML, starId) {
+  const newSelection = document.getElementById(`card-autrement-${starId}`);
+  newSelection.innerHTML = innerHTML;
+}
+
+function refreshCount(innerHTML) {
+  const newCounter = document.getElementById('counter');
+  newCounter.outerHTML = innerHTML;
+}
+
+
+// function addReview(reviewHTML) {
+//   const reviews = document.getElementById('reviews');
+//   reviews.insertAdjacentHTML('beforeend', reviewHTML);
+// }
+
+  <%# if @review.errors.any? %>
+  //   refreshForm('<%#= j render "reviews/form", restaurant: @restaurant, review: @review %>');
+  // <%# else %>
+  //   addReview('<%#= j render "reviews/show", review: @review %>');
+  //   refreshForm('<%#= j render "reviews/form", restaurant: @restaurant, review: Review.new %>');
+  // <%# end %>
+
+refreshSelection('<%= j render "shared/custom_switch_deux", appartement: @selection.appartement %>', '<%= @selection.appartement.id%>')
+refreshCount('<%= j render "appartements/selections_count", selections: @selections %>')

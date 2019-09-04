@@ -1,0 +1,13 @@
+function refreshSelection(innerHTML, starId) {
+  const newSelection = document.getElementById(`card-autrement-${starId}`);
+  newSelection.innerHTML = innerHTML;
+}
+
+function refreshCount(innerHTML) {
+  const newCounter = document.getElementById('counter');
+  newCounter.outerHTML = innerHTML;
+}
+
+refreshSelection('<%= j render "shared/custom_switch_deux", appartement: @selection.appartement %>', '<%= @selection.appartement.id%>')
+
+refreshCount('<%= j render "appartements/selections_count", selections: @selections %>')
