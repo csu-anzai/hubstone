@@ -1,5 +1,8 @@
 class PdfSimulationsController < ApplicationController
   def show
+    @simulation = Simulation.find(params[:simulation_id])
+    @client = @simulation.client
+    @appartement = @simulation.appartement
     respond_to do |format|
       format.html
       format.pdf do

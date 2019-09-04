@@ -7,7 +7,7 @@
   <br>
 
   <div>
-    <p>Etude personnalisée de ...</p>
+    <p>Etude personnalisée de <%= @client.civilite %> <%= @client.prenom %> <%= @client.nom %>
     <p>Conseiller : <%= current_user.prenom %> <%= current_user.nom %></p>
   </div>
 
@@ -27,16 +27,16 @@
       </thead>
       <tbody>
         <tr>
-          <td><strong>Programme : </strong></td>
+          <td><strong>Programme : </strong><%= @appartement.nom_programme %></td>
           <td><strong>Statut marital : </strong></td>
         </tr>
         <tr>
-          <td><strong>Durée de simulation :</strong></td>
+          <td><strong>Durée de simulation : </strong><%= @simulation.duree %> mois</td>
           <td><strong>Nombres de parts fiscales : </strong></td>
         </tr>
         <tr>
-          <td><strong>Numéro de lot : </strong></td>
-          <td><strong>Tranche marginale d'imposition : </strong></td>
+          <td><strong>Numéro de lot : </strong><%= @appartement.lot %></td>
+          <td><strong>Tranche marginale d'imposition : </strong><%= @client.tmi %> %</td>
         </tr>
         <tr>
           <td><strong>Régime fiscale : </strong></td>
@@ -72,28 +72,28 @@
           <td><strong>Type d'emprunt : </strong></td>
         </tr>
         <tr>
-          <td><strong>Montant de l'acquisition : </strong></td>
-          <td><strong>Durée d'amortissement : </strong></td>
+          <td><strong>Montant de l'acquisition : </strong><%= @appartement.prix %> Euro</td>
+          <td><strong>Durée d'amortissement : </strong><%= @simulation.duree %> mois</td>
         </tr>
         <tr>
-          <td><strong>Loyer annuel : </strong></td>
+          <td><strong>Loyer mensuel : </strong><%= @appartement.loyer %> Euro</td>
           <td><strong>Date initiale : </strong></td>
         </tr>
         <tr>
-          <td><strong>Charges annuelles : </strong></td>
-          <td><strong>Montant emprunté : </strong></td>
+          <td><strong>Charges annuelles : </strong><%= @appartement.charges %> Euro</td>
+          <td><strong>Montant emprunté : </strong><%= @simulation.emprunt %> Euro</td>
         </tr>
         <tr>
           <td><strong>Taxe foncière annuelle : </strong></td>
           <td><strong>Apport : </strong></td>
         </tr>
         <tr>
-          <td><strong>Revalorisation locative : </strong></td>
+          <td><strong>Revalorisation locative : </strong><%= @simulation.apport %> Euro</td>
           <td><strong>Différé d'amortissement : </strong></td>
         </tr>
         <tr>
           <td></td>
-          <td><strong>Taux d'emprunt : </strong></td>
+          <td><strong>Taux d'emprunt : </strong><%= @simulation.taux_credit %> %</td>
         </tr>
         <tr>
           <td></td>
@@ -112,8 +112,8 @@
     <br>
 
     <div>
-      <p>Etude personnalisée de ...</p>
-      <p>Conseiller : </p>
+       <p>Etude personnalisée de <%= @client.civilite %> <%= @client.prenom %> <%= @client.nom %>
+    <p>Conseiller : <%= current_user.prenom %> <%= current_user.nom %></p>
     </div>
 
     <br>
@@ -131,11 +131,11 @@
         </thead>
         <tbody>
           <tr>
-            <td><strong>Apport personnel : </strong></td>
+            <td><strong>Apport personnel : </strong><%= @simulation.apport %> Euro</td>
           </tr><tr>
-            <td><strong>Effort d'epargne mensuel : </strong></td>
+            <td><strong>Effort d'epargne mensuel : </strong><%= @simulation.effort_treso_moyen %> Euro</td>
           </tr><tr>
-            <td><strong>Epargne investie sur la période : </strong></td>
+            <td><strong>Epargne investie sur la période : </strong><%= @simulation.effort_treso_tot %> Euro</td>
           </tr><tr>
             <td><strong>Valeur patrimoniale à terme : </strong></td>
           </tr>
