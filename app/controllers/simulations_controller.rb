@@ -4,7 +4,7 @@ class SimulationsController < ApplicationController
 def new
   @appartement = Appartement.find(params[:appartement_id])
   @simulation = Simulation.new
-  end
+end
 
   def create
     @simulation = Simulation.new(simulation_params)
