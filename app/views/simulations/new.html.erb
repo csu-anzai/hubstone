@@ -1,19 +1,27 @@
-
 <!-- COMMENT FAIRE POUR N'APPELER QUE LES CLIENTS DU CURRENT USER ? -->
 <!-- COMMENT FAIRE POUR APPELER LE PRENOM ET NOM D'UN CLIENT DANS LA LISTE DES CHOIX AU LIEU DE L'ID ? -->
-
 <div class="container-simulation-form">
-<%= simple_form_for [@appartement, @simulation] do |f| %>
-  <%= f.association :client, include_blank: false, placeholder: "choisissez un client" %>
-  <%= f.input :emprunt %><br>
-  <%= f.input :taux_credit%><br>
-  <%= f.input :duree%><br>
-  <%= f.input :adi%><br>
-  <%= f.input :revalo_prix%><br>
-  <%= f.input :revalo_loyers%><br>
-  <%= f.submit  %>
-<% end %>
+  <div class="card-form">
+  	<div class="client-form">
+    <%= simple_form_for [@appartement, @simulation] do |f| %>
+    <%= f.association :client, include_blank: false, placeholder: "choisissez un client" %>
+    </div>
+    <div class="flex-form">
+    <%= f.input :emprunt, wrapper_html: { class: "marge-form" }, label_html: { class: "label-form" },input_html: {style: 'height:40px;border-radius:4px;'} %>
+    <%= f.input :taux_credit, label_html: { class: "label-form" },input_html: {style: 'height:40px;border-radius:4px;'}%>
+	</div>
+    <div class="flex-form">
+    <%= f.input :duree, wrapper_html: { class: "marge-form" }, label_html: { class: "label-form" },input_html: {style: 'height:40px;border-radius:4px;'} %>
+    <%= f.input :adi, label_html: { class: "label-form" },input_html: {style: 'height:40px;border-radius:4px;'}%>
+	</div>
+    <div class="flex-form">
+    <%= f.input :revalo_prix, wrapper_html: { class: "marge-form" }, label_html: { class: "label-form" },input_html: {style: 'height:40px;border-radius:4px;'}%>
+    <%= f.input :revalo_loyers ,label_html: { class: "label-form" },input_html: {style: 'height:40px;border-radius:4px;'}%>
+    </div>
+    <div class="submit-form">
+    <%= f.submit class:"btn-actable"  %>
+	</div>
+    <% end %>
+
+  </div>
 </div>
-
-
-

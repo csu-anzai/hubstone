@@ -1,0 +1,39 @@
+.container-simulation-form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-form {
+  background-size: cover;
+  background-position: center;
+  color: black;
+  border-radius: 7px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 330px;
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px 30px 20px 30px;
+}
+
+.client-form,
+.submit-form {
+  margin: 0 auto;
+}
+
+.flex-form {
+  display: flex;
+
+}
+
+.marge-form {
+  margin-right: 20px;
+}
+
+.label-form {
+  margin-bottom: 0px !important;
+  height:10px;
+}
+
+.card-form .btn-actable{
+	margin-top:0px;
+}
