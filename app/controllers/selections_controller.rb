@@ -1,6 +1,10 @@
 class SelectionsController < ApplicationController
   def index
     @selections = Selection.where(user: current_user)
+    respond_to do |format|
+        format.html { render 'selections/index' }
+        format.js
+      end
   end
 
   def create
@@ -8,16 +12,37 @@ class SelectionsController < ApplicationController
     @selection.user = current_user
     @selection.appartement = Appartement.find(params[:appartement_id])
     if @selection.save
-      redirect_to appartements_path
+      respond_to do |format|
+        format.html { redirect_to appartements_path }
+        format.js
+      end
     else
-      render 'pages/home'
+      respond_to do |format|
+        format.html { render 'pages/home' }
+        format.js
+      end
     end
   end
 
+  # def create
+  #   @selection = Selection.new
+  #   @selection.user = current_user
+  #   @selection.appartement = Appartement.find(params[:appartement_id])
+  #   if @selection.save
+  #       redirect_to appartements_path
+  #   else
+  #     render 'pages/home'
+  #   end
+  # end
+
   def destroy
     @selection = Selection.find(params[:id])
-    @selection.destroy
-    redirect_to(request.referer)
+    if @selection.destroy
+      respond_to do |format|
+        format.html { redirect_to(request.referer) }
+        format.js
+      end
+    end
   end
 
   def update

@@ -9,6 +9,9 @@ class PdfSimulationsController < ApplicationController
         render pdf: "simulation", # Excluding ".pdf" extension.
                template: "pdf_simulations/show.pdf.erb",
                layout: "pdf.html.erb",
+               page_size: "A4",
+               dpi: 300,
+               disposition: "inline",
                margin: {
                  top: 20, # default 10 (mm)
                  bottom: 20,
