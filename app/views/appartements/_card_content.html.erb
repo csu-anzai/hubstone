@@ -1,61 +1,50 @@
-<div class="flex mr-3">
-  <div>
-    <h2>
-      <%= appartement.nom_programme %>
-    </h2>
-  </div>
-  <div>
-    <p id="ville">
-      <%= appartement.ville %> (
-      <%= appartement.departement %>)</p>
-    <%= image_tag "nexity-logo.png", class:"img-card" %>
-  </div>
-</div>
-<div class="flex1 mr-3">
-  <div class=" d-flex justify-content-between" id="orange">
-    <div class="">
-      <h2>
-        <%= appartement.lot %>
-      </h2>
+<div class="card-product-main-infos">
+  <div class='card-content'>
+    <%#= image_tag "nexity-logo.png", class:"img-card" %>
+    <div class="d-flex mb-1">
+      <h1><%= appartement.nom_programme %></h1>
+      <div class="tag actable">Actable</div>
     </div>
-    <div class="">
-      <h2>
-        <%= appartement.etage %>
-      </h2>
+    <h2><i class="fas fa-map-marker-alt"></i> <%= appartement.ville %>(<%= appartement.departement %>)</h2>
+    <h2><strong><%= appartement.prix/1000 %>K€</strong></h2>
+    <div class="card-product-details-info">
+      <table class="table-card" width='100%'>
+        <thead>
+          <tr>
+            <th>Lot</th>
+            <th>Etage</th>
+            <th>Piece(s)</th>
+            <th>Livraison</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           <td><%= appartement.lot %></td>
+           <td><%= appartement.etage %></td>
+           <td><%= appartement.typologie %></td>
+           <td><%= appartement.livraison %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="map-card">
+      <%= link_to "" do %>
+        <i class="fas fa-map">Voir les plans</i>
+      <% end %>
     </div>
   </div>
-  <div class="btn-plans">
-    <%= link_to "Voir les plans", "#", class: "btn btn-ghost" %>
-  </div>
 </div>
-<div class="flex2 mr-3">
-  <h2>
-    <%= appartement.typologie %>
-  </h2>
+
+<!-- <div class="row title">
+  <div class="col-3">Lot</div>
+  <div class="col-3">Etage</div>
+  <div class="col-3">Pièce(s)</div>
+  <div class="col-3">Livraison</div>
 </div>
-<div class="flex3 mr-4">
-  <div class="col align-self-center">
-    <h2>
-      <%= appartement.livraison %>
-    </h2>
-  </div>
-  <div class="btn-actable">
-    <p>Actable</p>
-  </div>
-</div>
-<div class="flex4 mr-3">
-  <div class="col align-self-center">
-    <h2>
-      <%= appartement.prix %> €</h2>
-  </div>
-  <div class="btn-disponible">
-    <p>
-      <%= appartement.disponibilite %>
-    </p>
-  </div>
-</div>
-<div class="flex5">
-  <div class="selectionable">
-    <p><%= render 'shared/custom_switch', appartement: appartement %></p>
-  </div>
-</div>
+<div class="row content">
+  <div class="col-3"><%= appartement.lot %></div>
+  <div class="col-3"><%= appartement.etage %></div>
+  <div class="col-3"><%= appartement.typologie %></div>
+  <div class="col-3"><%= appartement.livraison %></div>
+</div> -->

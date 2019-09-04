@@ -22,6 +22,9 @@
         <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
         <div class="card-product-infos d-flex ml-3">
          <%= render 'appartements/card_content',appartement:selection.appartement %>
+          <div class="selectionable">
+          <%= link_to "╳", selection_path(selection), method: :delete %>
+          </div>
         </div>
 
       </div>

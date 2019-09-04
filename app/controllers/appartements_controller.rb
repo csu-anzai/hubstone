@@ -27,10 +27,6 @@ class AppartementsController < ApplicationController
     end
   end
 
-  def show
-
-  end
-
   private
 
   def typologie_fiter(params, prefiltered_appart)
