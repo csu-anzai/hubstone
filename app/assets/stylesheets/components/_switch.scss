@@ -24,7 +24,8 @@
 }
 
 .checkbox:checked + .switch {
-  background-color: #7983ff;
+  background-color: $jungle;
+  // #7983ff
 }
 
 .checkbox {
