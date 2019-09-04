@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_03_132607) do
+ActiveRecord::Schema.define(version: 2019_09_04_092440) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -90,6 +90,7 @@ ActiveRecord::Schema.define(version: 2019_09_03_132607) do
     t.float "economie_impot_tot"
     t.float "loyers_tot"
     t.float "capital_net"
+    t.string "contribution_financement", default: [], array: true
     t.index ["appartement_id"], name: "index_simulations_on_appartement_id"
     t.index ["client_id"], name: "index_simulations_on_client_id"
     t.index ["user_id"], name: "index_simulations_on_user_id"

@@ -7,8 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts 'Cleaning database...'
-User.destroy_all
 Client.destroy_all
+User.destroy_all
 Appartement.destroy_all
 Simulation.destroy_all
 
@@ -48,6 +48,8 @@ Appartement.create!(
     logo_promoteur: 'http:',
     image: 'http:',
     departement: '75',
+    loyer: '680',
+    charges: '810',
     scoring_prix: 2,
     scoring_rendement:3,
     scoring_potentiel:4,

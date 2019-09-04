@@ -13,15 +13,13 @@ def new
     # @simulation.client = Client.find(params[:client_id])
 #    @simulation.save
     @simulation.details_simulations = calculs_simulation(@simulation)
-
     @simulation.effort_treso_tot = @simulation.details_simulations.sum {|h| JSON.parse(h.gsub('=>',':'))["effort_treso"] }
     @simulation.effort_treso_moyen = @simulation.effort_treso_tot / @simulation.duree
     @simulation.economie_impot_tot = @simulation.details_simulations.sum {|h| JSON.parse(h.gsub('=>',':'))["economie_impot"] }
-    @simulation.economie_impot_tot = @simulation.details_simulations.sum {|h| JSON.parse(h.gsub('=>',':'))["loyer_revalo"] }
+    @simulation.loyers_tot = @simulation.details_simulations.sum {|h| JSON.parse(h.gsub('=>',':'))["loyer_revalo"] }
     @simulation.benefice_net = @simulation.revalo_prix - @simulation.effort_treso_tot
-    @simulation.save
-
-
+    @simulation.apport = @simulation.appartement.prix - @simulation.emprunt
+    @simulation.contribution_financement = calculs_contribution_au_financement(@simulation)
     if @simulation.save
       redirect_to simulation_path(@simulation)
     else
@@ -32,6 +30,7 @@ def new
   def show
     @simulation = Simulation.find(params[:id])
     @capital_net = @simulation.details_simulations.map { |h| JSON.parse(h.gsub('=>', ':'))["capital_net"]}
+    @contribution_financement = @simulation.contribution_financement.map { |h| JSON.parse(h.gsub('=>', ':'))}[0]
   end
 
   def destroy
@@ -82,7 +81,7 @@ def calculs_simulation(simulation)
       "effort_treso" => (mensualite + charges + fiscalite) - (loyers + eco_impots),
       "prix_revalo" => simulation.appartement.prix * simulation.revalo_prix,
       "loyer_revalo" => simulation.appartement.loyer * simulation.revalo_loyers,
-      "capital_net" => prix - capital_restant_du
+      "capital_net" => simulation.emprunt - capital_restant_du
     }
   array << s
   capital_restant_du = capital_restant_du - s["principal"]
@@ -90,4 +89,14 @@ def calculs_simulation(simulation)
   end
   return array
   end
+
+
+def calculs_contribution_au_financement(simulation)
+  [{
+    "economie_impots" => simulation[:economie_impot_tot],
+    "loyers" => simulation[:loyers_tot],
+    "effort_epargne" => simulation[:effort_treso_tot]
+   }]
+end
+
 end

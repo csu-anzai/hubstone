@@ -55,15 +55,16 @@ $('section02').on('click', function(e) {
 
 // full page
 import fullpage from "fullpage.js";
-new fullpage('#fullpage', {
-    //options here
+if (document.getElementById('fullpage')) {
+  new fullpage('#fullpage', {
+      //options here
      autoScrolling: true,
      navigation: true,
      navigationTooltips: ['Home'],
      showActiveTooltip:true,
      scrollingSpeed:1000,
-
-});
+  });
+}
 
 // Dashboard change tabs effect
 dashboardTabs();

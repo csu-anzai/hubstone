@@ -1,2 +1,44 @@
+<div class=" general mt-20px">
+  <div class="bloc-haut d-flex">
+    <div class ="text-haut col-6" style= "background-color: blue">
+      <h1>Synthèse période d'épargne</h1>
+      <table border="0" cellpadding="10" cellspacing="5" width="40%">
+       <thead>
+         <tr>
+           <th width="700px" align="left">Synthèse pèriode d'épargne</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td><strong>Apport personnel : </strong><%= @simulation.apport %> Euro</td>
+         </tr><tr>
+           <td><strong>Effort d'epargne mensuel : </strong><%= @simulation.effort_treso_moyen.round %> Euro</td>
+         </tr><tr>
+           <td><strong>Epargne investie sur la période : </strong><%= @simulation.effort_treso_tot.round %> Euro</td>
+         </tr><tr>
+           <td><strong>Valeur patrimoniale à terme : </strong></td>
+         </tr>
+       </tbody>
+     </table>
+    </div>
+    <div class ="graphique-pie" style=>
+      <canvas class="chart-contribution" width="600" height="400"></canvas>
+    </div>
+    </div>
+
+  <div class="bloc-bas d-flex">
+    <div class="text-bas col-6" style= "background-color: green">
+      <h1>Bénéfices de l'opération</h1>
+    </div>
+    <div>
+        <h1>Somme disponible en cas de revente</h1>
+      </div>
+    <div class="graphique-bar" >
+      <canvas class="chart-capital-net" width="600" height="400"></canvas>
+    </div>
+  </div>
+</div>
+
+
 <div class="capital-net" data-capital-net="<%= @capital_net.to_json %>"></div>
-<canvas class="chart" width="400" height="400"></canvas>
+<div class="contribution-financement" data-contribution-financement="<%= @contribution_financement.to_json %>"></div>
