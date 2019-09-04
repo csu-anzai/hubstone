@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 2019_08_30_110902) do
-
+ActiveRecord::Schema.define(version: 2019_09_02_142216) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +34,16 @@ ActiveRecord::Schema.define(version: 2019_08_30_110902) do
     t.string "nom_programme"
     t.string "image"
     t.string "adresse"
+    t.integer "scoring_prix"
+    t.integer "scoring_rendement"
+    t.integer "scoring_potentiel"
+    t.integer "scoring_energie"
+    t.integer "scoring_qualite"
+    t.integer "scoring_amenagement"
+    t.integer "scoring_dynamisme"
+    t.integer "scoring_amenites"
+    t.integer "scoring_accessibilite"
+    t.integer "scoring_equipements"
   end
 
   create_table "clients", force: :cascade do |t|
@@ -47,6 +55,8 @@ ActiveRecord::Schema.define(version: 2019_08_30_110902) do
     t.bigint "user_id"
     t.index ["user_id"], name: "index_clients_on_user_id"
   end
+
+  
 
   create_table "selections", force: :cascade do |t|
     t.bigint "user_id"
