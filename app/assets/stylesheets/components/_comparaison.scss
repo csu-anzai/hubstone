@@ -1,10 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+.container-bouton {
+  margin: 0 auto;
+  width: 90%;
+}
+
 .container-comparaison {
   width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+.flex-titre {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.img-card-compare {
+  background: url("https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
 }
 
 .row-comparaison {
@@ -40,7 +59,7 @@
 
 
 .row-comparaison:hover {
-  background-color: white;
+  background-color: #e8f7f4;
 }
 
 .row-comparaison h3 {
@@ -52,21 +71,30 @@
 .card-text {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
-.card-text a {
+.card-category-comparaison a {
   padding: 24px;
   font-size: 13px;
   text-decoration: none;
-  color:black;
+  color: black;
 }
 
-.card-category-comparaison h2 {
-  font-size: 15px;
-  padding: 25px 15px;
-  /*border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
-  font-weight: bold;
+.card-category-top-infos {
+  padding: 10px 15px;
+  flex: 1;
+
+  h2 {
+    font-size: 12px;
+    margin-bottom: 0px !important;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
 }
 
 .scoring {
@@ -124,5 +152,6 @@
   border-radius: 7px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   width: 330px;
-  margin-top: 60px;
+  margin-top: 30px;
+  background-color: white;
 }
