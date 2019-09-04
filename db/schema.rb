@@ -60,6 +60,11 @@ ActiveRecord::Schema.define(version: 2019_09_03_132607) do
     t.index ["user_id"], name: "index_clients_on_user_id"
   end
 
+  create_table "comparaisons", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "selections", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "appartement_id"

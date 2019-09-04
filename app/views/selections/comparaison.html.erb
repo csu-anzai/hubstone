@@ -1,13 +1,20 @@
+<div class="container-bouton">
+  <%= link_to "Retour", "selections_path", class: "btn btn-actable" %>
+</div>
 <div class="container-comparaison">
+  
   <% @selections.each do |selection| %>
 
   <%# Début de la card  %>
   <div class="card-category-comparaison">
-    <div class=card-text>
-      <h2>
-        <%= selection.appartement.nom_programme %>
-      </h2>
+    <div class="flex-titre">
+      <div class="img-card-compare"></div>
+      <div class="card-category-top-infos">
+        <h2><%= selection.appartement.nom_programme %></h2>
+        <p>Location</p>
+      </div>
       <a href="" data-toggle="collapse" data-target="#scoring-financier,#scoring-immobilier,#scoring-emplacement" aria-expanded="false" aria-controls="multiCollapseExample2">Déplier</a>
+    
     </div>
 
     <div class="row-comparaison collapsed" data-toggle="collapse" data-target="#scoring-financier" aria-expanded="false" aria-controls="multiCollapseExample2">
@@ -38,6 +45,12 @@
         <div class="real-stars">
           <p id="text-card">
             <%= selection.appartement.scoring_prix %><span>/5</span></%>
+          </p>
+          <p id="text-card">
+            <%= selection.appartement.scoring_rendement %><span>/5</span></%>
+          </p>
+          <p id="text-card">
+            <%= selection.appartement.scoring_potentiel %><span>/5</span></%>
           </p>
         </div>
       </div>
@@ -71,7 +84,13 @@
         </div>
         <div class="real-stars">
           <p id="text-card">
-            <%= selection.appartement.scoring_prix %><span class="bg-white">/5</span></%>
+            <%= selection.appartement.scoring_energie %><span class="bg-white">/5</span></%>
+          </p>
+          <p id="text-card">
+            <%= selection.appartement.scoring_qualite %><span>/5</span></%>
+          </p>
+          <p id="text-card">
+            <%= selection.appartement.scoring_amenagement %><span>/5</span></%>
           </p>
         </div>
       </div>
@@ -107,7 +126,16 @@
         </div>
         <div class="real-stars">
           <p id="text-card">
-            <%= selection.appartement.scoring_prix %><span>/5</span></%>
+            <%= selection.appartement.scoring_dynamisme %><span>/5</span></%>
+          </p>
+          <p id="text-card">
+            <%= selection.appartement.scoring_amenites %><span>/5</span></%>
+          </p>
+          <p id="text-card">
+            <%= selection.appartement.scoring_accessibilite %><span>/5</span></%>
+          </p>
+          <p id="text-card">
+            <%= selection.appartement.scoring_equipements %><span>/5</span></%>
           </p>
         </div>
       </div>
