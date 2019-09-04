@@ -6,6 +6,7 @@
 }
 
 .actable {
-  background-color: $jungle;
-  color: white;
+  border: 1px solid $jungle;
+  //background-color: $jungle;
+  color: $jungle;
 }
