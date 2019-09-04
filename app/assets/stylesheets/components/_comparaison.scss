@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
-.container-bouton {
-  margin: 0 auto;
-  width: 90%;
-}
-
 .container-comparaison {
   width: 90%;
   margin: 0 auto;
@@ -16,6 +11,12 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.flex-titre:hover {
+  .noshow {
+    opacity: 1;
+  }
 }
 
 .img-card-compare {
@@ -75,7 +76,7 @@
 }
 
 .card-category-comparaison a {
-  padding: 24px;
+  // padding: 24px;
   font-size: 13px;
   text-decoration: none;
   color: black;
@@ -152,6 +153,22 @@
   border-radius: 7px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   width: 330px;
-  margin-top: 30px;
+  margin-top: 45px;
   background-color: white;
+}
+
+.card-category-links {
+  text-align: center;
+  margin-right: 16px;
+
+  a {
+    display: block;
+  }
+}
+
+.noshow{
+  opacity: 0;
+  color: white !important;
+  margin-bottom: 4px;
+  // padding: 0px !important;
 }

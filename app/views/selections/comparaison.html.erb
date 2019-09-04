@@ -1,6 +1,3 @@
-<div class="container-bouton">
-  <%= link_to "Retour", selections_path, class: "btn btn-actable" %>
-</div>
 <div class="container-comparaison">
 
   <% @selections.each do |selection| %>
@@ -13,8 +10,10 @@
         <h2><%= selection.appartement.nom_programme %></h2>
         <p>Location</p>
       </div>
-      <a href="" data-toggle="collapse" data-target="#scoring-financier,#scoring-immobilier,#scoring-emplacement" aria-expanded="false" aria-controls="multiCollapseExample2">Déplier</a>
-
+      <div class="card-category-links">
+      <%= link_to "Simuler", "", class: "btn btn-actable noshow" %>
+        <a href="" data-toggle="collapse" data-target="#scoring-financier,#scoring-immobilier,#scoring-emplacement" aria-expanded="false" aria-controls="multiCollapseExample2">Déplier</a>
+      </div>
     </div>
 
     <div class="row-comparaison collapsed" data-toggle="collapse" data-target="#scoring-financier" aria-expanded="false" aria-controls="multiCollapseExample2">
