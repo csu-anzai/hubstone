@@ -4,7 +4,8 @@
   <div class="card-form">
   	<div class="client-form">
     <%= simple_form_for [@appartement, @simulation] do |f| %>
-    <%= f.association :client, include_blank: false, placeholder: "choisissez un client" %>
+        <%# @clients.each do |client| %>
+    <%= f.association :client, label_method: lambda { |client| "#{client.prenom} #{client.nom}" } %>
     </div>
     <div class="flex-form">
     <%= f.input :emprunt, wrapper_html: { class: "marge-form" }, label_html: { class: "label-form" },input_html: {style: 'height:40px;border-radius:4px;'} %>
