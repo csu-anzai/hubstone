@@ -20,11 +20,16 @@
 }
 
 .img-card-compare {
-  background: url("https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg");
+  // background: url("https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg");
   background-size: cover;
   width: 80px;
   height: 80px;
   border-radius: 4px;
+}
+
+.img-card-compare img {
+  width: 70px;
+  height: 70%;
 }
 
 .row-comparaison {
@@ -157,6 +162,7 @@
   background-color: white;
 }
 
+
 .card-category-links {
   text-align: center;
   margin-right: 16px;
@@ -172,3 +178,4 @@
   margin-bottom: 4px;
   // padding: 0px !important;
 }
+

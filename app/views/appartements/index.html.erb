@@ -75,7 +75,7 @@
 
         <div class="card-product" data-toggle="collapse" href="#card-details-<%=appartement.id%>" role="button" aria-expanded="false" aria-controls="card-details-<%=appartement.id%>" data-appartement-id=<%= appartement.id %>>
 
-          <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
+          <img src="<%= appartement.image %>"/>
           <div class="card-product-infos">
 
             <%= render 'appartements/card_content', appartement:appartement %>
@@ -85,7 +85,6 @@
 
           </div>
         </div>
-
         <div class="container-appartement-show collapse" id="card-details-<%=appartement.id%>">
           <ul class="nav nav-tabs">
             <li class="nav-item">

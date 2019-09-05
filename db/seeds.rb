@@ -21,14 +21,16 @@ User.create!(
   nom: 'Durand',
   email: 'michel.durand@cgp.com',
   password: 'password',
-  carte_t: 'T01012019')
+  carte_t: 'T01012019',
+  image: 'https://res.cloudinary.com/agazielly/image/upload/v1567635152/William_Parry_zgpjfi.jpg')
 
 User.create!(
   prenom: 'Jean',
   nom: 'Dupont',
   email: 'jean@dupont.com',
   password: 'password',
-  carte_t: 'T12345678')
+  carte_t: 'T12345678',
+  image: 'https://res.cloudinary.com/agazielly/image/upload/v1567632683/Mamadou_Sylla_k9wvvq.jpg')
 
 puts 'Finished creating users...'
 
@@ -47,8 +49,10 @@ Appartement.create!(
     nom_programme: 'Le Clos Saint-Germain',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638893/Paris_appartement7_myex7l.jpg',
     departement: '75',
+    loyer: '750',
+    charges: '1010',
     scoring_prix: 2,
     scoring_rendement:3,
     scoring_potentiel:4,
@@ -58,7 +62,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -74,7 +79,7 @@ Appartement.create!(
     nom_programme: 'Les ilots de Chaumont',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638890/Paris_appartement6_paudki.jpg',
     departement: '75',
     loyer: '680',
     charges: '810',
@@ -87,7 +92,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '880'
     )
 
 Appartement.create!(
@@ -103,7 +109,7 @@ Appartement.create!(
     nom_programme: "Fontaine d'Auteuil",
     promoteur: 'Kaufman & Broad',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638898/Paris_appartement8_gwjhnu.jpg',
     departement: '75',
     loyer: '450',
     charges: '630',
@@ -116,7 +122,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -132,7 +139,7 @@ Appartement.create!(
     nom_programme: 'Carre Seine',
     promoteur: 'Bouygues Immmobilier',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638898/Paris_appartement5_fmkcio.jpg',
     departement: '75',
     loyer: '510',
     charges: '680',
@@ -145,7 +152,8 @@ Appartement.create!(
     scoring_dynamisme:2,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '900'
     )
 
 Appartement.create!(
@@ -161,7 +169,7 @@ Appartement.create!(
     nom_programme: 'Le Domaine de Gairaut',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567636290/Cogedim_Nice_Gairault_cspia8.jpg',
     departement: '06',
     loyer: '930',
     charges: '1460',
@@ -174,7 +182,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -190,7 +199,7 @@ Appartement.create!(
     nom_programme: 'Corniche Marine',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567636281/Corniche_Marine_kxk9yr.jpg',
     departement: '06',
     loyer: '1100',
     charges: '1600',
@@ -203,7 +212,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:3
+    scoring_equipements:3,
+    taxe_fonciere: '700'
     )
 
 Appartement.create!(
@@ -219,7 +229,7 @@ Appartement.create!(
     nom_programme: 'Carré Sérénice',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637184/Nice_Appartement_ndejds.jpg',
     departement: '06',
     loyer: '1050',
     charges: '1490',
@@ -232,7 +242,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:4
+    scoring_equipements:4,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -248,7 +259,7 @@ Appartement.create!(
     nom_programme: 'Nice Way',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567636281/Cogedim_Nice_Way_emiji0.jpg',
     departement: '06',
     loyer: '880',
     charges: '1110',
@@ -261,7 +272,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '580'
     )
 
 Appartement.create!(
@@ -277,7 +289,7 @@ Appartement.create!(
     nom_programme: 'Secret Park',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637183/Nice_Appartement3_v1xqop.jpg',
     departement: '06',
     loyer: '1000',
     charges: '1420',
@@ -290,7 +302,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:1
+    scoring_equipements:1,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -306,7 +319,7 @@ Appartement.create!(
     nom_programme: 'Villa Alice',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637180/Nice_Appartement2_n8yj7h.jpg',
     departement: '06',
     loyer: '985',
     charges: '1310',
@@ -319,7 +332,8 @@ Appartement.create!(
     scoring_dynamisme:4,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '790'
     )
 
 Appartement.create!(
@@ -335,7 +349,7 @@ Appartement.create!(
     nom_programme: 'Cours des Arts',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637175/Nice_Appartement4_mtynxz.jpg',
     departement: '06',
     loyer: '880',
     charges: '1230',
@@ -348,7 +362,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '480'
     )
 
 Appartement.create!(
@@ -364,7 +379,7 @@ Appartement.create!(
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637652/Mougins_Appartement1_a5ughn.jpg',
     departement: '06',
     loyer: '680',
     charges: '810',
@@ -377,7 +392,8 @@ Appartement.create!(
     scoring_dynamisme:2,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -393,7 +409,7 @@ Appartement.create!(
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637640/Mougins_Appartement5_fagftt.jpg',
     departement: '06',
     loyer: '760',
     charges: '1050',
@@ -406,7 +422,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '950'
     )
 
 Appartement.create!(
@@ -422,7 +439,7 @@ Appartement.create!(
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637625/Mougins_Appartement2_fmurhm.jpg',
     departement: '06',
     loyer: '1140',
     charges: '1700',
@@ -435,7 +452,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -451,7 +469,7 @@ Appartement.create!(
     nom_programme: 'Cour Bastille',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637184/Nice_Appartement_ndejds.jpg',
     departement: '44',
     loyer: '2400',
     charges: '3600',
@@ -464,7 +482,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '1010'
     )
 
 Appartement.create!(
@@ -480,7 +499,7 @@ Appartement.create!(
     nom_programme: 'Les Allees de la Bretèche',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567636290/Cogedim_Nice_Gairault_cspia8.jpg',
     departement: '44',
     loyer: '530',
     charges: '750',
@@ -493,7 +512,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:2
+    scoring_equipements:2,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -509,7 +529,7 @@ Appartement.create!(
     nom_programme: 'Ivory Park',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567636281/Cogedim_Nice_Way_emiji0.jpg',
     departement: '69',
     loyer: '1300',
     charges: '1740',
@@ -522,7 +542,8 @@ Appartement.create!(
     scoring_dynamisme:4,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '730'
     )
 
 Appartement.create!(
@@ -538,7 +559,7 @@ Appartement.create!(
     nom_programme: 'Factory Link',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567636281/Corniche_Marine_kxk9yr.jpg',
     departement: '69',
     loyer: '1600',
     charges: '2800',
@@ -551,14 +572,15 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:2
+    scoring_equipements:2,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
    livraison: 'T4 2019',
    actabilite: 'actable',
    disponibilite: 'disponible',
-   prix: '4200000',
+   prix: '420000',
    lot: 'N°10',
    etage: 'R+4',
    typologie: '2P',
@@ -567,7 +589,7 @@ Appartement.create!(
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
-   image: 'http:',
+   image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638395/Cannes_Appartement2_t4ku9i.jpg',
    departement: '06',
    loyer: '1820',
     charges: '2680',
@@ -580,13 +602,14 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '380'
    )
 Appartement.create!(
    livraison: 'T4 2019',
    actabilite: 'actable',
    disponibilite: 'disponible',
-   prix: '10200000',
+   prix: '1200000',
    lot: 'N°10',
    etage: 'R+4',
    typologie: '3P',
@@ -595,7 +618,7 @@ Appartement.create!(
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
-   image: 'http:',
+   image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638395/Cannes_Maison1_br1esa.jpg',
    departement: '06',
    loyer: '3800',
     charges: '5620',
@@ -608,13 +631,14 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:4
+    scoring_equipements:4,
+    taxe_fonciere: '780'
    )
 Appartement.create!(
    livraison: 'T4 2019',
    actabilite: 'actable',
    disponibilite: 'disponible',
-   prix: '9200000',
+   prix: '192000',
    lot: 'N°10',
    etage: 'R+4',
    typologie: '3P',
@@ -623,7 +647,7 @@ Appartement.create!(
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
-   image: 'http:',
+   image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638395/Cannes_Appartement3_azg3ag.jpg',
    departement: '06',
    loyer: '3500',
     charges: '4700',
@@ -636,7 +660,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '610'
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -651,7 +676,7 @@ Appartement.create!(
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
-   image: 'http:',
+   image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638394/Cannes_Appartement1_iqm3jt.jpg',
    departement: '06',
    loyer: '1200',
     charges: '1620',
@@ -664,7 +689,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:4
+    scoring_equipements:4,
+    taxe_fonciere: '780'
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -679,7 +705,7 @@ Appartement.create!(
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
-   image: 'http:',
+   image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637183/Nice_Appartement3_v1xqop.jpg',
    departement: '06',
    loyer: '1500',
     charges: '2240',
@@ -692,7 +718,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:2
+    scoring_equipements:2,
+    taxe_fonciere: '800'
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -707,7 +734,7 @@ Appartement.create!(
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
-   image: 'http:',
+   image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638394/Cannes_Appartement1_iqm3jt.jpg',
    departement: '06',
    loyer: '2000',
     charges: '3000',
@@ -720,7 +747,8 @@ Appartement.create!(
     scoring_dynamisme:4,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:4
+    scoring_equipements:4,
+    taxe_fonciere: '780'
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -735,7 +763,7 @@ Appartement.create!(
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
-   image: 'http:',
+   image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638897/Paris_appartement3_dxm0fo.jpg',
    departement: '06',
    loyer: '1800',
     charges: '2800',
@@ -748,7 +776,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:4
+    scoring_equipements:4,
+    taxe_fonciere: '1280'
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -763,7 +792,7 @@ Appartement.create!(
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
-   image: 'http:',
+   image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638896/Paris_appartement1_gupjyx.jpg',
    departement: '06',
    loyer: '2600',
    charges: '3840',
@@ -776,7 +805,8 @@ Appartement.create!(
    scoring_dynamisme:3,
    scoring_amenites:4,
    scoring_accessibilite:4,
-   scoring_equipements:5
+   scoring_equipements:5,
+    taxe_fonciere: '780'
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -791,7 +821,7 @@ Appartement.create!(
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
-   image: 'http:',
+   image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638896/Paris_appartement2_onx0uu.jpg',
    departement: '06',
    loyer: '2500',
    charges: '3700',
@@ -804,7 +834,8 @@ Appartement.create!(
    scoring_dynamisme:3,
    scoring_amenites:4,
    scoring_accessibilite:2,
-   scoring_equipements:5
+   scoring_equipements:5,
+    taxe_fonciere: '480'
    )
 Appartement.create!(
    livraison: 'T4 2019',
@@ -819,7 +850,7 @@ Appartement.create!(
    nom_programme: 'Factory Link',
    promoteur: 'Nexity',
    logo_promoteur: 'http:',
-   image: 'http:',
+   image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638894/Paris_appartement4_avvbj7.jpg',
    departement: '06',
    loyer: '1120',
    charges: '1830',
@@ -832,7 +863,8 @@ Appartement.create!(
    scoring_dynamisme:3,
    scoring_amenites:4,
    scoring_accessibilite:4,
-   scoring_equipements:5
+   scoring_equipements:5,
+    taxe_fonciere: '780'
    )
 
 
@@ -849,7 +881,7 @@ Appartement.create!(
     nom_programme: 'Maison Neuve',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638893/Paris_appartement7_myex7l.jpg',
     departement: '06',
     loyer: '1130',
     charges: '1740',
@@ -862,7 +894,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '730'
     )
 
 Appartement.create!(
@@ -878,7 +911,7 @@ Appartement.create!(
     nom_programme: 'Les ilots du Pont de Seine',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638890/Paris_appartement6_paudki.jpg',
     departement: '06',
     loyer: '820',
     charges: '1230',
@@ -891,7 +924,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:3
+    scoring_equipements:3,
+    taxe_fonciere: '1080'
     )
 
 Appartement.create!(
@@ -907,7 +941,7 @@ Appartement.create!(
     nom_programme: "Fontaine d'Auteuil",
     promoteur: 'Kaufman & Broad',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638394/Cannes_Appartement1_iqm3jt.jpg',
     departement: '06',
     loyer: '480',
     charges: '780',
@@ -920,7 +954,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -936,7 +971,7 @@ Appartement.create!(
     nom_programme: 'Carre Seine',
     promoteur: 'Bouygues Immmobilier',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637625/Mougins_Appartement2_fmurhm.jpg',
     departement: '06',
     loyer: '980',
     charges: '1430',
@@ -949,7 +984,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -965,7 +1001,7 @@ Appartement.create!(
     nom_programme: 'Le Domaine de Gairaut',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637183/Nice_Appartement3_v1xqop.jpg',
     departement: '06',
     loyer: '1170',
     charges: '1640',
@@ -978,7 +1014,8 @@ Appartement.create!(
     scoring_dynamisme:4,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '600'
     )
 
 Appartement.create!(
@@ -994,7 +1031,7 @@ Appartement.create!(
     nom_programme: 'Corniche Marine',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567636281/Corniche_Marine_kxk9yr.jpg',
     departement: '06',
     loyer: '1460',
     charges: '2230',
@@ -1007,7 +1044,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -1023,7 +1061,7 @@ Appartement.create!(
     nom_programme: 'Carre Serenice',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567636281/Cogedim_Nice_Way_emiji0.jpg',
     departement: '06',
     loyer: '1150',
     charges: '1760',
@@ -1036,7 +1074,8 @@ Appartement.create!(
     scoring_dynamisme:4,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:3
+    scoring_equipements:3,
+    taxe_fonciere: '785'
     )
 
 Appartement.create!(
@@ -1052,7 +1091,7 @@ Appartement.create!(
     nom_programme: 'Nice Way',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638395/Cannes_Appartement3_azg3ag.jpg',
     departement: '06',
     loyer: '880',
     charges: '1220',
@@ -1065,7 +1104,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '900'
     )
 
 Appartement.create!(
@@ -1081,7 +1121,7 @@ Appartement.create!(
     nom_programme: 'Secret Park',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567636290/Cogedim_Nice_Gairault_cspia8.jpg',
     departement: '06',
     loyer: '1120',
     charges: '2000',
@@ -1094,7 +1134,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -1110,7 +1151,7 @@ Appartement.create!(
     nom_programme: 'Villa Alice',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638395/Cannes_Appartement3_azg3ag.jpg',
     departement: '06',
     loyer: '1120',
     charges: '1920',
@@ -1123,7 +1164,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:2,
     scoring_accessibilite:4,
-    scoring_equipements:4
+    scoring_equipements:4,
+    taxe_fonciere: '450'
     )
 
 Appartement.create!(
@@ -1139,7 +1181,7 @@ Appartement.create!(
     nom_programme: 'Cours des Arts',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567636281/Corniche_Marine_kxk9yr.jpg',
     departement: '06',
     loyer: '1120',
     charges: '1920',
@@ -1152,7 +1194,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:4
+    scoring_equipements:4,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -1168,7 +1211,7 @@ Appartement.create!(
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638894/Paris_appartement4_avvbj7.jpg',
     departement: '06',
     loyer: '820',
     charges: '1300',
@@ -1181,7 +1224,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:3,
-    scoring_equipements:4
+    scoring_equipements:4,
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -1197,7 +1241,7 @@ Appartement.create!(
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638896/Paris_appartement1_gupjyx.jpg',
     departement: '06',
     loyer: '920',
     charges: '1200',
@@ -1210,7 +1254,8 @@ Appartement.create!(
     scoring_dynamisme:3,
     scoring_amenites:4,
     scoring_accessibilite:4,
-    scoring_equipements:5
+    scoring_equipements:5,
+    taxe_fonciere: '850'
     )
 
 
@@ -1227,7 +1272,7 @@ Appartement.create!(
     nom_programme: 'Coeur Mougins',
     promoteur: 'Cogedim',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638394/Cannes_Appartement1_iqm3jt.jpg',
     departement: '06',
     scoring_prix: 2,
     scoring_rendement:3,
@@ -1240,7 +1285,8 @@ Appartement.create!(
     scoring_accessibilite:4,
     scoring_equipements:3,
     loyer: '1400',
-    charges: '2300'
+    charges: '2300',
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -1256,7 +1302,7 @@ Appartement.create!(
     nom_programme: 'Cour Bastille',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637175/Nice_Appartement4_mtynxz.jpg',
     departement: '06',
     scoring_prix: 2,
     scoring_rendement:3,
@@ -1269,7 +1315,8 @@ Appartement.create!(
     scoring_accessibilite:4,
     scoring_equipements:4,
     loyer: '2710',
-    charges: '4000'
+    charges: '4000',
+    taxe_fonciere: '860'
     )
 
 Appartement.create!(
@@ -1285,7 +1332,7 @@ Appartement.create!(
     nom_programme: 'Les Allees de la Bretèche',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638890/Paris_appartement6_paudki.jpg',
     departement: '06',
     scoring_prix: 5,
     scoring_rendement:4,
@@ -1298,7 +1345,8 @@ Appartement.create!(
     scoring_accessibilite:4,
     scoring_equipements:5,
     loyer: '380',
-    charges: '640'
+    charges: '640',
+    taxe_fonciere: '780'
     )
 
 Appartement.create!(
@@ -1314,7 +1362,7 @@ Appartement.create!(
     nom_programme: 'Ivory Park',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567638890/Paris_appartement6_paudki.jpg',
     departement: '06',
     scoring_prix: 2,
     scoring_rendement:3,
@@ -1327,7 +1375,8 @@ Appartement.create!(
     scoring_accessibilite:3,
     scoring_equipements:3,
     loyer: '820',
-    charges: '1530'
+    charges: '1530',
+    taxe_fonciere: '700'
     )
 
 Appartement.create!(
@@ -1343,7 +1392,7 @@ Appartement.create!(
     nom_programme: 'Factory Link',
     promoteur: 'Nexity',
     logo_promoteur: 'http:',
-    image: 'http:',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567637625/Mougins_Appartement2_fmurhm.jpg',
     departement: '06',
     scoring_prix: 4,
     scoring_rendement:5,
@@ -1356,7 +1405,8 @@ Appartement.create!(
     scoring_accessibilite:4,
     scoring_equipements:2,
     loyer: '1240',
-    charges: '1930'
+    charges: '1930',
+    taxe_fonciere: '780'
     )
 
 puts 'Love you mum'
@@ -1365,21 +1415,99 @@ puts 'Finished creating apartments...'
 puts 'Creating clients...'
 
 Client.create!(
-    prenom: 'Xavier',
-    nom: 'Niel',
+    prenom: 'Alexandre',
+    nom: 'Coulier',
     civilite: 'Monsieur',
-    tmi: '0.3',
+    tmi: '30.O',
     user_id: User.all[0].id,
-    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439284/Xavier_Niel004_snvlvz.jpg'
+    statut_marital: 'Célibataire',
+    parts_fiscales: '1',
+    revenu_net_imposable: '70000.00',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567632654/Alexandre_Coulier_fxrjvy.jpg'
     )
 
 Client.create!(
-    prenom: 'françois-henri',
-    nom: 'Pinault',
-    civilite: 'Monsieur',
-    tmi: '0.14',
+    prenom: 'Marie-Caroline',
+    nom: 'Meijer',
+    civilite: 'Madame',
+    tmi: '35.0',
     user_id: User.all[0].id,
-    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567439283/francois-henri-pinault_fnzkww.jpg'
+    statut_marital: 'Mariée',
+    parts_fiscales: 2,
+    revenu_net_imposable: '80000.00',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567632657/Marie-Caroline_Meijer_oux7ki.jpg'
+    )
+
+Client.create!(
+    prenom: 'Axelle',
+    nom: 'Bourneuf',
+    civilite: 'Madame',
+    tmi: '30.0',
+    user_id: User.all[0].id,
+    statut_marital: 'Mariée',
+    parts_fiscales: 3,
+    revenu_net_imposable: '75000.00',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567632654/Axelle_Bourneuf2_fydujo.jpg'
+    )
+
+Client.create!(
+    prenom: 'Lior',
+    nom: 'Levy',
+    civilite: 'Monsieur',
+    tmi: '18.0',
+    user_id: User.all[0].id,
+    statut_marital: 'Célibataire',
+    parts_fiscales: 1,
+    revenu_net_imposable: '35000.00',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567632657/Lior_Levy_n7hfme.jpg'
+    )
+
+Client.create!(
+    prenom: 'Pauline',
+    nom: 'Garnier',
+    civilite: 'Mademoiselle',
+    tmi: '18.0',
+    user_id: User.all[0].id,
+    statut_marital: 'Célibataire',
+    parts_fiscales: 1,
+    revenu_net_imposable: '35000.00',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567632680/Pauline_Garnier_flffxf.jpg'
+    )
+
+Client.create!(
+    prenom: 'Gaëtan',
+    nom: 'Ok',
+    civilite: 'Monsieur',
+    tmi: '15.0',
+    user_id: User.all[0].id,
+    statut_marital: 'Célibataire',
+    parts_fiscales: 1,
+    revenu_net_imposable: '45000.00',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567633948/Gaetan_Ok_pgpqkq.jpg'
+    )
+
+Client.create!(
+    prenom: 'Hubert',
+    nom: 'Kuoch',
+    civilite: 'Monsieur',
+    tmi: '40.0',
+    user_id: User.all[0].id,
+    statut_marital: 'Célibataire',
+    parts_fiscales: 1,
+    revenu_net_imposable: '115000.00',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567632655/Hubert_Kuoch_d6ktr3.jpg'
+    )
+
+Client.create!(
+    prenom: 'Alice',
+    nom: 'Fabre',
+    civilite: 'Madame',
+    tmi: '25.0',
+    user_id: User.all[0].id,
+    statut_marital: 'Célibataire',
+    parts_fiscales: 1,
+    revenu_net_imposable: '55000.00',
+    image: 'https://res.cloudinary.com/agazielly/image/upload/v1567632681/Alice_Fabre_c0hxve.jpg'
     )
 
 puts 'Finished creating clients...'

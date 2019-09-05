@@ -19,7 +19,7 @@
             <%= link_to "Comparer", selection_path(selection), class: "btn btn-success", method: :patch %>
           <% end %>
         </div>
-        <img src="https://res.cloudinary.com/agazielly/image/upload/v1567001328/download_bgcvkj.jpg"/>
+        <img src="<%= selection.appartement.image %>"/>
         <div class="card-product-infos d-flex ml-3">
          <%= render 'appartements/card_content',appartement:selection.appartement %>
           <div class="selectionable">

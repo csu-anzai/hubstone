@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_03_132607) do
+ActiveRecord::Schema.define(version: 2019_09_04_211915) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2019_09_03_132607) do
     t.integer "scoring_equipements"
     t.float "loyer"
     t.float "charges"
+    t.float "taxe_fonciere"
   end
 
   create_table "clients", force: :cascade do |t|
@@ -57,6 +58,9 @@ ActiveRecord::Schema.define(version: 2019_09_03_132607) do
     t.bigint "user_id"
     t.float "tmi"
     t.string "image"
+    t.string "statut_marital"
+    t.integer "parts_fiscales"
+    t.float "revenu_net_imposable"
     t.index ["user_id"], name: "index_clients_on_user_id"
   end
 
@@ -95,6 +99,8 @@ ActiveRecord::Schema.define(version: 2019_09_03_132607) do
     t.float "economie_impot_tot"
     t.float "loyers_tot"
     t.float "capital_net"
+    t.string "regime_fiscale"
+    t.string "investissement_credit"
     t.index ["appartement_id"], name: "index_simulations_on_appartement_id"
     t.index ["client_id"], name: "index_simulations_on_client_id"
     t.index ["user_id"], name: "index_simulations_on_user_id"
@@ -112,6 +118,7 @@ ActiveRecord::Schema.define(version: 2019_09_03_132607) do
     t.string "nom"
     t.string "carte_t"
     t.string "raison_sociale"
+    t.string "image"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

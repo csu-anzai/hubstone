@@ -43,8 +43,8 @@ const initMapbox = () => {
       .addTo(map);
     mapMarkers.push(newMarker)
     newMarker.getElement().dataset.markerId = marker.id;
-    // newMarker.getElement().addEventListener('mouseenter', (e) => toggleCardHighLighting(e) );
-    // newMarker.getElement().addEventListener('mouseleave', (e) => toggleCardHighLighting(e) );
+    newMarker.getElement().addEventListener('mouseenter', (e) => toggleCardHighLighting(e) );
+    newMarker.getElement().addEventListener('mouseleave', (e) => toggleCardHighLighting(e) );
   });
 
   // addMarkersToMap(map, markers);
@@ -71,7 +71,8 @@ const openInfoWindow = (markers, map) => {
       const latitude = (markers[index]['_lngLat']['lat']);
       map.flyTo({
         center: [longitude, latitude],
-        zoom: 13});
+        zoom: 10,
+        duration: 700});
     });
     card.addEventListener('mouseleave', () => {
       markers[index].togglePopup();
@@ -84,9 +85,9 @@ const openInfoWindow = (markers, map) => {
   });
 }
 
-// const toggleCardHighLighting = (event) => {
-//   const card = document.querySelector(`[data-appartement-id="${event.currentTarget.dataset.markerId}"]`);
-//   card.classList.toggle('highlight');
-// }
+const toggleCardHighLighting = (event) => {
+  const card = document.querySelector(`[data-appartement-id="${event.currentTarget.dataset.markerId}"]`);
+  card.classList.toggle('highlight');
+}
 
 export { initMapbox };
