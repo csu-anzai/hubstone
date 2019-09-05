@@ -1,0 +1,28 @@
+#shopping-basket {
+  position: sticky;
+  margin-top: 20px;
+  top: 250px;
+  z-index: 1000;
+  position: fixed;
+  right: 20px;
+}
+
+#shopping-basket .p1 {
+  background-color:rgba(0,0,0,.0) !important;
+}
+
+#shopping-basket .fa-stack[data-count]:after{
+  position:absolute;
+  right:0%;
+  top:1%;
+  content: attr(data-count);
+  font-size:30%;
+  padding:.6em;
+  border-radius:50%;
+  line-height:.8em;
+  color: white;
+  background:rgba(255,0,0,.85);
+  text-align:center;
+  min-width: 1em;
+  font-weight:bold;
+}

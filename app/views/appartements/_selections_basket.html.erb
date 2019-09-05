@@ -1,0 +1,10 @@
+<%= link_to selections_path do%>
+<div id="shopping-basket">
+  <!-- <i class="far fa-building"></i> -->
+  <span class="p1 fa-stack fa-2x has-badge" id='counter' data-count=<%= "#{current_user.selections.count}"%>>
+    <i class="p2 far fa-circle fa-stack-2x"></i>
+    <i class="p3 far fa-building fa-stack-1x" id='counter' data-count=<%= "#{current_user.selections.count}"%>></i>
+  </span>
+  <!-- <div class="tag basket">Panier</div> -->
+</div>
+<% end %>
